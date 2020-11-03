@@ -1,0 +1,17 @@
+"use json!./urls, require";
+
+var urls = require("json!./urls");
+
+["Console", { css: "background-color: beige;", 
+	
+	onLoad() { 
+		// this.print("urls", urls.map(_ => js.sf("curl %s -o %s", _, _.split("/").pop()))); 
+		var texts = urls.map(_ => 
+			req("text!home/" + this._uri.substring(6) + "xmls/" + _.split("/").pop())); 
+		this.print("imsikb0101", texts);
+	}
+	
+}, [
+
+
+]];

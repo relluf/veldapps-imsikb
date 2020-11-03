@@ -1,0 +1,17 @@
+"use js, vcl/Application";
+
+var app = require("vcl/Application").instances[0];
+
+["Container", [
+	
+	["Bar", [
+	
+		["Select", "select-json", { options: }]	
+		
+	]],
+
+	["List", { autoColumns: true, source: "array" }],
+	
+	["Array", "array", { array: JSON.parse(j$[674].getValue()) } ]
+	
+]];

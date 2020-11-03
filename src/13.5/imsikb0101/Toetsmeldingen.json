@@ -1,0 +1,344 @@
+[{
+    "ID": 1,
+    "Omschrijving": "gemeten gehalte is ≤ 0",
+    "Opmerking": "Koppelen aan toetsresultaat 'Geen meetwaarde'",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2,
+    "Omschrijving": "Enkele parameters ontbreken in de som",
+    "Opmerking": "Koppelen aan gemaakte somparameter",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 3,
+    "Omschrijving": "Lutum ontbreekt, toetsing kan niet volledig worden uitgevoerd",
+    "Opmerking": "Koppelen aan toetsresultaat 'Geen toetsoordeel mogelijk'",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 4,
+    "Omschrijving": "OS ontbreekt, toetsing kan niet volledig worden uitgevoerd",
+    "Opmerking": "Koppelen aan toetsresultaat 'Geen toetsoordeel mogelijk'",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 5,
+    "Omschrijving": "IW ontbreekt :zorgplicht van toepassing",
+    "Opmerking": "Koppelen aan oordeel",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 6,
+    "Omschrijving": "heeft geen normwaarde : zorgplicht van toepassing",
+    "Opmerking": "Koppelen aan toetsresultaat 'Geen toetsoordeel mogelijk'",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 7,
+    "Omschrijving": "heeft andere normwaarde : zorgplicht van toepassing",
+    "Opmerking": "Koppelen aan toetsresultaat 'Geen toetsoordeel mogelijk'",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 8,
+    "Omschrijving": "asbest voldoet",
+    "Opmerking": "Koppelen aan toetsresultaat 'asbest voldoet' en als melding aan het monsteroordeel",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 9,
+    "Omschrijving": "max waarde B ontbreekt :zorgplicht van toepassing",
+    "Opmerking": "Koppelen aan oordeel",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 10,
+    "Omschrijving": "Monsters waarmee gemiddelde is berekend zijn van ongelijke kwaliteit.",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 11,
+    "Omschrijving": "Enkele parameters ontbreken in de berekening van de somfractie",
+    "Opmerking": "Koppelen aan gemaakte somparameter",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 12,
+    "Omschrijving": "Interventiewaarde wordt overschreden door som fractie IW &gt; 1",
+    "Opmerking": "Koppelen aan toetsresultaat 'Groter dan Interventiewaarde'",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 13,
+    "Omschrijving": "Indicatieve interventiewaarde wordt overschreden",
+    "Opmerking": "Koppelen aan toetsresultaat.",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 14,
+    "Omschrijving": "Streefwaarde ontbreekt zorgplicht van toepassing",
+    "Opmerking": "Koppelen aan toetsresultaat.",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 15,
+    "Omschrijving": "gemeten emissiewaarde ontbreekt toets kan niet worden uitgevoerd",
+    "Opmerking": "Koppelen aan toetsresultaat 'Geen toetsoordeel mogelijk'",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 16,
+    "Omschrijving": "berekende emissiewaarde ontbreekt toets kan niet worden uitgevoerd",
+    "Opmerking": "Koppelen aan toetsresultaat 'Geen toetsoordeel mogelijk'",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 17,
+    "Omschrijving": "gemeten emissie is ≤ 0",
+    "Opmerking": "Koppelen aan toetsresultaat 'Geen toetsoordeel mogelijk'",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-13",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 18,
+    "Omschrijving": "Monsters waarmee gemiddelde is berekend hebben ongelijk stoffenpakket.",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-07-16",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 19,
+    "Omschrijving": "Onjuiste aanroep: instelling ontbreekt",
+    "Opmerking": "koppelen aan monster, zonder monsteroordeel",
+    "@_versie": "11.0.2",
+    "@_datum": "2013-11-29",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 20,
+    "Omschrijving": "Onjuiste aanroep: tegenstrijdige instellingen ingevuld",
+    "Opmerking": "koppelen aan monster, zonder monsteroordeel",
+    "@_versie": "11.0.2",
+    "@_datum": "2013-11-29",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 21,
+    "Omschrijving": "Overschrijding Emissietoetswaarde",
+    "Opmerking": "Koppelen aan toetsresultaat op parameter niveau.",
+    "@_versie": "11.0.2",
+    "@_datum": "2014-01-23",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 22,
+    "Omschrijving": "Max waarde verspreiden ontbreekt",
+    "Opmerking": "Koppelen aan toetsresultaat op parameter niveau.",
+    "@_versie": "11.0.3",
+    "@_datum": "2014-04-09",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 23,
+    "Omschrijving": "Technisch niet reinigbaar (niet herbruikbaar na reiniging)",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 24,
+    "Omschrijving": "Technisch niet reinigbaar (% organische stof te hoog)",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 25,
+    "Omschrijving": "Economisch niet reinigbaar",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 26,
+    "Omschrijving": "Technisch niet reinigbaar (te weinig % organische stof en % &lt;63 um)",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 27,
+    "Omschrijving": "Technisch niet reinigbaar (% lutum te hoog)",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 28,
+    "Omschrijving": "Technisch niet reinigbaar (% &lt;63 um te hoog)",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 29,
+    "Omschrijving": "Technisch niet reinigbaar (teveel niet-hechtgebonden asbest)",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 30,
+    "Omschrijving": "Technisch niet reinigbaar (teveel asbest in fractie &lt;2 mm)",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 31,
+    "Omschrijving": "Technisch niet immobiliseerbaar (gehalte anorganische parameters te hoog)",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 32,
+    "Omschrijving": "Technisch niet immobiliseerbaar (gehalte organische parameters te hoog)",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 33,
+    "Omschrijving": "Technisch niet immobiliseerbaar (% organische stof te hoog)",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 34,
+    "Omschrijving": "Technisch niet immobiliseerbaar (% &lt;63 um te hoog)",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 35,
+    "Omschrijving": "Technisch niet immobiliseerbaar",
+    "Opmerking": "koppelen aan monster, met monsteroordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 36,
+    "Omschrijving": "Geen immobilisatienorm aanwezig",
+    "Opmerking": "koppelen aan stof, zonder oordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 37,
+    "Omschrijving": "Geen overschrijding Interventiewaarde",
+    "Opmerking": "koppelen aan stof, zonder oordeel",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 38,
+    "Omschrijving": "Bij antropogene bron: &gt; voormalige interventiewaarde",
+    "Opmerking": "Koppelen aan stofoordeel; ‘Geen Toetsoordeel mogelijk’. Behalve bij T5, daar wel gekoppeld aan een oordeel.",
+    "@_versie": "12.1.0",
+    "@_datum": "2015-06-19",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 39,
+    "Omschrijving": "Bij antropogene bron: &gt; voormalige maximale waarde B",
+    "Opmerking": "Koppelen aan stofoordeel; ‘Geen Toetsoordeel mogelijk’.",
+    "@_versie": "12.1.0",
+    "@_datum": "2015-06-19",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 40,
+    "Omschrijving": "Overschrijding norm zeezand voor toepassing op plaatsen waar geen contact is of mogelijk is met zee of brak water met van nature een chloride concentratie van meer dan 5000 mg/l.",
+    "Opmerking": "Koppelen aan leeg stofoordeel.",
+    "@_versie": "12.1.0",
+    "@_datum": "2015-06-19",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 41,
+    "Omschrijving": "Verhoogde rapportagegrens",
+    "Opmerking": "Koppelen aan stofoordeel",
+    "@_versie": "12.1.0",
+    "@_datum": "2015-06-19",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 42,
+    "Omschrijving": "Interventie waarde ontbreekt, maximale waarde industrie gehanteerd",
+    "Opmerking": "Koppelen aan norm bij T5. Enkele stoffen hebben geen IW maar in de plaats daarvan wordt de Maximale Industrie waarde gehanteerd.",
+    "@_versie": "13.0.0",
+    "@_datum": "2015-11-27",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 43,
+    "Omschrijving": "Uitzonderingsregel is maximaal 2000 mg/kg ds",
+    "Opmerking": "Koppelen aan norm bij T9. Minerale olie heeft in bepaalde situaties een uitzonderings regel.",
+    "@_versie": "13.0.0",
+    "@_datum": "2015-11-27",
+    "@_status": "Bevestigd"
+}]

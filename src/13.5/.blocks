@@ -1,0 +1,152 @@
+"use json!./immetingen/lookup/nl_NL,json!./imsikb0101/lookup/nl_NL";
+
+var immetingen = require("json!./immetingen/lookup/nl_NL");
+var imsikb0101 = require("json!./imsikb0101/lookup/nl_NL");
+
+function table(name) {
+	return immetingen[String.format("sikb.%s_c", name)][name];
+}
+
+["Container", {}, [
+	["Tabs", {}, [
+		["vcl-ui:Tab", { text: "immetingen", control: "immetingen" }],
+		["vcl-ui:Tab", { text: "imsikb0101", control: "imsikb0101" }]
+	]],
+	["Container", "immetingen", { visible: false }, [
+		["Bar", { css: "display:flex;" }, [
+			["Input", "search-input", {
+				onChange: function() { 
+					var me = this, scope = me.scope();
+					
+					function filter(object) {
+						var values = me.getInputValue().toLowerCase().trim().split(" ");
+						var or = values.some(function(value) {
+							return Object.keys(object).some(function(key) {
+								return (""+object[key]).toLowerCase().indexOf(value) !== -1;
+							});
+						});
+						var and = values.every(function(value) {
+							return Object.keys(object).some(function(key) {
+								return (""+object[key]).toLowerCase().indexOf(value) !== -1;
+							});
+						});
+						
+						return !and;
+					}
+					
+					this.setTimeout("change", function() {
+						var value = me.getInputValue();
+						scope.array.setOnFilterObject(!value.length ? null : filter);
+					}, 200);
+				} ,
+				placeholder: "Filteren met bijvoorbeeld: grootheid 872"
+			}],
+			["vcl-ui:Select", { 
+				value: null, visible: false,
+				options: Object.keys(immetingen)
+					.sort()
+					.filter(function(key) {
+						return key.startsWith("sikb.");
+					})
+					.map(function(key) {
+						return key.split(".").pop().split("_")[0];
+					}),
+					
+				onChange: function() {
+					this.up().qs("#array").setArray(table(this.getValue()) || []);
+				}
+			}]
+		]],
+	
+		["List", { autoColumns: true, source: "array" }],
+		["Array", "array", { 
+			
+			onLoad: function() {
+				var arr = [];
+				for(var k in immetingen) {
+					var name = k.split(".").pop().split("_")[0];
+					(immetingen[k][name]||[]).forEach(function(item) {
+						arr.push(js.mixIn({ table: name }, item));
+					});
+				}
+				this.setArray(arr.sort(function(i1, i2) {
+					return i1.table === i2.table ? 
+						i1.id < i2.id ? -1 : 1 
+						: i1.table < i2.table ? -1 : 1;
+				}));
+			}
+			
+		}]
+	]],
+	["Container", "imsikb0101", { visible: false }, [
+		["Bar", { css: "display:flex;" }, [
+			["Input", "search-input", {
+				onChange: function() { 
+					var me = this, scope = me.scope();
+					
+					function filter(object) {
+						var values = me.getInputValue().toLowerCase().trim().split(" ");
+						var or = values.some(function(value) {
+							return Object.keys(object).some(function(key) {
+								return (""+object[key]).toLowerCase().indexOf(value) !== -1;
+							});
+						});
+						var and = values.every(function(value) {
+							return Object.keys(object).some(function(key) {
+								return (""+object[key]).toLowerCase().indexOf(value) !== -1;
+							});
+						});
+						
+						return !and;
+					}
+					
+					this.setTimeout("change", function() {
+						var value = me.getInputValue();
+						scope.array_imsikb0101.setOnFilterObject(!value.length ? null : filter);
+					}, 200);
+				} ,
+				placeholder: "Filteren met bijvoorbeeld: AfwerkingType 1"
+			}],
+			["vcl-ui:Select", { 
+				value: null, visible: false,
+				options: Object.keys(imsikb0101)
+					.sort()
+					.filter(function(key) {
+						return key.startsWith("sikb.");
+					})
+					.map(function(key) {
+						return key.split(".").pop().split("_")[0];
+					}),
+					
+				onChange: function() {
+					this.up().qs("#array_imsikb0101").setArray(table(this.getValue()) || []);
+				}
+			}]
+		]],
+	
+		["List", { autoColumns: true, source: "array_imsikb0101" }],
+		["Array", "array_imsikb0101", { 
+			
+			onLoad: function() {
+				var arr = [];
+				for(var k in imsikb0101) {
+					var name = k.split(".").pop().split("_");
+					name.pop(); name = name.join("_");
+					try {
+						(imsikb0101[k][name]||[]).forEach(function(item) {
+							arr.push(js.mixIn({ table: name }, item));
+						});
+					} catch(e) {
+						this.print("ERROR", [k, e]);
+					}
+				}
+				this.setArray(arr.sort(function(i1, i2) {
+					return i1.table === i2.table ? 
+						i1.id < i2.id ? -1 : 1 
+						: i1.table < i2.table ? -1 : 1;
+				}));
+			}
+			
+		}]
+	]]
+]];

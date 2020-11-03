@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Domeintabellen.xslt" type="text/xsl"?>
+<sikb.lookup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versie="14.3.0" datum="2020-06-26">
+	<sikb.Situatiebeschrijving_c categorie="Situatiebeschrijving" beschrijving="Gebruik in meetpunt.situatiebeschrijving : Beschrijving situatie ter plekke van meetpunt" versie="11.0.0" datum="2013-04-11">
+		<Situatiebeschrijving versie="11.0.0" datum="2013-04-11" status="Bevestigd">
+			<ID>2</ID>
+			<Omschrijving>akker</Omschrijving>
+			<Waarde>akker</Waarde>
+		</Situatiebeschrijving>
+		<Situatiebeschrijving versie="11.0.0" datum="2013-04-11" status="Bevestigd">
+			<ID>6</ID>
+			<Omschrijving>berm</Omschrijving>
+			<Waarde>berm</Waarde>
+		</Situatiebeschrijving>
+		<Situatiebeschrijving versie="11.0.0" datum="2013-04-11" status="Bevestigd">
+			<ID>7</ID>
+			<Omschrijving>bosgrond</Omschrijving>
+			<Waarde>bosgrond</Waarde>
+		</Situatiebeschrijving>
+		<Situatiebeschrijving versie="11.0.0" datum="2013-04-11" status="Bevestigd">
+			<ID>8</ID>
+			<Omschrijving>braak</Omschrijving>
+			<Waarde>braak</Waarde>
+		</Situatiebeschrijving>
+		<Situatiebeschrijving versie="11.0.0" datum="2013-04-11" status="Bevestigd">
+			<ID>9</ID>
+			<Omschrijving>erf</Omschrijving>
+			<Waarde>erf</Waarde>
+		</Situatiebeschrijving>
+		<Situatiebeschrijving versie="11.0.0" datum="2013-04-11" status="Bevestigd">
+			<ID>10</ID>
+			<Omschrijving>gazon</Omschrijving>
+			<Waarde>gazon</Waarde>
+		</Situatiebeschrijving>
+		<Situatiebeschrijving versie="11.0.0" datum="2013-04-11" status="Bevestigd">
+			<ID>11</ID>
+			<Omschrijving>groenstrook</Omschrijving>
+			<Waarde>groenstrook</Waarde>
+		</Situatiebeschrijving>
+		<Situatiebeschrijving versie="11.0.0" datum="2013-04-11" status="Bevestigd">
+			<ID>19</ID>
+			<Omschrijving>landbouwgrond</Omschrijving>
+			<Waarde>landbouwgrond</Waarde>
+		</Situatiebeschrijving>
+		<Situatiebeschrijving versie="11.0.0" datum="2013-04-11" status="Bevestigd">
+			<ID>20</ID>
+			<Omschrijving>moestuin</Omschrijving>
+			<Waarde>moestuin</Waarde>
+		</Situatiebeschrijving>
+		<Situatiebeschrijving versie="11.0.0" datum="2013-04-11" status="Bevestigd">
+			<ID>30</ID>
+			<Omschrijving>tuin</Omschrijving>
+			<Waarde>tuin</Waarde>
+		</Situatiebeschrijving>
+		<Situatiebeschrijving versie="11.0.0" datum="2013-04-11" status="Bevestigd">
+			<ID>33</ID>
+			<Omschrijving>weiland</Omschrijving>
+			<Waarde>weiland</Waarde>
+		</Situatiebeschrijving>
+		<Situatiebeschrijving versie="11.0.0" datum="2013-04-11" status="Bevestigd">
+			<ID>34</ID>
+			<Omschrijving>waterspiegel</Omschrijving>
+			<Waarde>waterspiegel</Waarde>
+		</Situatiebeschrijving>
+		<Situatiebeschrijving versie="14.2.0" datum="2019-11-22" status="Gewijzigd">
+			<ID>35</ID>
+			<Omschrijving>groep bomen, klein bos</Omschrijving>
+			<Waarde>Bosschage</Waarde>
+		</Situatiebeschrijving>
+	</sikb.Situatiebeschrijving_c>
+</sikb.lookup>

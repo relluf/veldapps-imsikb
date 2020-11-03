@@ -1,0 +1,3117 @@
+{
+	"Afwerking": {
+        "1": {
+            "waarde": "aanvulgrind",
+            "omschrijving": "aanvulgrind",
+            "bm": "AG"
+        },
+        "2": {
+            "waarde": "afsluitbare stop",
+            "omschrijving": "afsluitbare stop",
+            "bm": "AS"
+        },
+        "3": {
+            "waarde": "aanvulzand",
+            "omschrijving": "aanvulzand",
+            "bm": "AZ"
+        },
+        "4": {
+            "waarde": "bentoniet",
+            "omschrijving": "bentoniet",
+            "bm": "BE"
+        },
+        "5": {
+            "waarde": "beschermkoker plastic",
+            "omschrijving": "beschermkoker plastic",
+            "bm": "BP"
+        },
+        "6": {
+            "waarde": "beschermkoker staal",
+            "omschrijving": "beschermkoker staal",
+            "bm": "BS"
+        },
+        "7": {
+            "waarde": "casing",
+            "omschrijving": "casing",
+            "bm": "CA"
+        },
+        "8": {
+            "waarde": "deksel",
+            "omschrijving": "deksel",
+            "bm": "DE"
+        },
+        "9": {
+            "waarde": "diver",
+            "omschrijving": "diver",
+            "bm": "DI"
+        },
+        "10": {
+            "waarde": "filtergrind",
+            "omschrijving": "filtergrind",
+            "bm": "FG"
+        },
+        "11": {
+            "waarde": "filterzand",
+            "omschrijving": "filterzand",
+            "bm": "FZ"
+        },
+        "12": {
+            "waarde": "geen afwerking",
+            "omschrijving": "geen afwerking",
+            "bm": "GE"
+        },
+        "13": {
+            "waarde": "hellingbuismeter",
+            "omschrijving": "hellingbuismeter",
+            "bm": "HE"
+        },
+        "14": {
+            "waarde": "klei",
+            "omschrijving": "klei",
+            "bm": "KL"
+        },
+        "15": {
+            "waarde": "mikoliet 000",
+            "omschrijving": "mikoliet 000",
+            "bm": "M0"
+        },
+        "16": {
+            "waarde": "mikoliet 300",
+            "omschrijving": "mikoliet 300",
+            "bm": "M3"
+        },
+        "17": {
+            "waarde": "markering",
+            "omschrijving": "markering",
+            "bm": "MA"
+        },
+        "18": {
+            "waarde": "putdeksel",
+            "omschrijving": "putdeksel",
+            "bm": "PD"
+        },
+        "19": {
+            "waarde": "rubber stop",
+            "omschrijving": "rubber stop",
+            "bm": "RS"
+        },
+        "20": {
+            "waarde": "straatpot afsluitbaar",
+            "omschrijving": "straatpot afsluitbaar",
+            "bm": "SA"
+        },
+        "21": {
+            "waarde": "straatpot niet afsluitbaar",
+            "omschrijving": "straatpot niet afsluitbaar",
+            "bm": "SN"
+        },
+        "22": {
+            "waarde": "straatpot vloeistofdicht",
+            "omschrijving": "straatpot vloeistofdicht",
+            "bm": "SV"
+        },
+        "23": {
+            "waarde": "vloerpot 3mm RVS",
+            "omschrijving": "vloerpot 3mm RVS",
+            "bm": "V3"
+        },
+        "24": {
+            "waarde": "vloerpot 4mm RVS",
+            "omschrijving": "vloerpot 4mm RVS",
+            "bm": "V4"
+        },
+        "25": {
+            "waarde": "waterspanningsmeter",
+            "omschrijving": "waterspanningsmeter",
+            "bm": "WA"
+        },
+        "26": {
+            "waarde": "klinker",
+            "omschrijving": "klinker",
+            "bm": ""
+        },
+        "27": {
+            "waarde": "tegel",
+            "omschrijving": "tegel",
+            "bm": ""
+        },
+        "28": {
+            "waarde": "beton",
+            "omschrijving": "beton",
+            "bm": ""
+        },
+        "29": {
+            "waarde": "asfalt",
+            "omschrijving": "asfalt",
+            "bm": ""
+        }
+    },
+    "Bijzonderheid": {
+        "1": {
+            "waarde": "kleibrokjes",
+            "omschrijving": "kleibrokjes",
+            "bm": "KL"
+        },
+        "2": {
+            "waarde": "veenbrokjes",
+            "omschrijving": "veenbrokjes",
+            "bm": "VE"
+        },
+        "3": {
+            "waarde": "schelpen",
+            "omschrijving": "schelpen",
+            "bm": "SC"
+        },
+        "4": {
+            "waarde": "planten",
+            "omschrijving": "planten",
+            "bm": "PL"
+        },
+        "5": {
+            "waarde": "hout",
+            "omschrijving": "hout",
+            "bm": "HO"
+        },
+        "6": {
+            "waarde": "oer",
+            "omschrijving": "oer",
+            "bm": "OE"
+        },
+        "7": {
+            "waarde": "opgebracht",
+            "omschrijving": "opgebracht",
+            "bm": "-"
+        },
+        "8": {
+            "waarde": "slib",
+            "omschrijving": "slib",
+            "bm": "SB"
+        },
+        "9": {
+            "waarde": "huisvuil",
+            "omschrijving": "huisvuil",
+            "bm": "HU"
+        },
+        "10": {
+            "waarde": "verbranding",
+            "omschrijving": "verbranding",
+            "bm": "-"
+        },
+        "11": {
+            "waarde": "roest",
+            "omschrijving": "roest",
+            "bm": "RO"
+        },
+        "12": {
+            "waarde": "kooldeeltjes",
+            "omschrijving": "kooldeeltjes",
+            "bm": "KO"
+        },
+        "13": {
+            "waarde": "slakken",
+            "omschrijving": "slakken",
+            "bm": "SL"
+        },
+        "14": {
+            "waarde": "asfalt",
+            "omschrijving": "asfalt",
+            "bm": "AS"
+        },
+        "15": {
+            "waarde": "stenen",
+            "omschrijving": "stenen",
+            "bm": "ST"
+        },
+        "16": {
+            "waarde": "puin",
+            "omschrijving": "puin",
+            "bm": "PU"
+        },
+        "17": {
+            "waarde": "kalk",
+            "omschrijving": "kalk",
+            "bm": "KA"
+        },
+        "18": {
+            "waarde": "br gestaakt",
+            "omschrijving": "br gestaakt",
+            "bm": "-"
+        },
+        "19": {
+            "waarde": "verf",
+            "omschrijving": "verf",
+            "bm": "VF"
+        },
+        "20": {
+            "waarde": "metaal",
+            "omschrijving": "metaal",
+            "bm": "ME"
+        },
+        "21": {
+            "waarde": "plastic",
+            "omschrijving": "plastic",
+            "bm": "PC"
+        },
+        "22": {
+            "waarde": "glas",
+            "omschrijving": "glas",
+            "bm": "GS"
+        },
+        "23": {
+            "waarde": "teer",
+            "omschrijving": "teer",
+            "bm": "TE"
+        },
+        "24": {
+            "waarde": "olie",
+            "omschrijving": "olie",
+            "bm": "OF"
+        },
+        "25": {
+            "waarde": "cyanide",
+            "omschrijving": "cyanide",
+            "bm": "-"
+        },
+        "26": {
+            "waarde": "oliefilm",
+            "omschrijving": "oliefilm",
+            "bm": "-"
+        },
+        "27": {
+            "waarde": "olieplaatjes",
+            "omschrijving": "olieplaatjes",
+            "bm": "-"
+        },
+        "28": {
+            "waarde": "leembrokken",
+            "omschrijving": "leembrokken",
+            "bm": "-"
+        },
+        "29": {
+            "waarde": "vast",
+            "omschrijving": "vast",
+            "bm": "-"
+        },
+        "30": {
+            "waarde": "matig vast",
+            "omschrijving": "matig vast",
+            "bm": "-"
+        },
+        "31": {
+            "waarde": "slap",
+            "omschrijving": "slap",
+            "bm": "-"
+        },
+        "32": {
+            "waarde": "vullaag",
+            "omschrijving": "vullaag",
+            "bm": "-"
+        },
+        "33": {
+            "waarde": "rotsbodem",
+            "omschrijving": "rotsbodem",
+            "bm": "-"
+        },
+        "34": {
+            "waarde": "siltig zand",
+            "omschrijving": "siltig zand",
+            "bm": "-"
+        },
+        "35": {
+            "waarde": "siltsteen",
+            "omschrijving": "siltsteen",
+            "bm": "-"
+        },
+        "36": {
+            "waarde": "moddersteen",
+            "omschrijving": "moddersteen",
+            "bm": "-"
+        },
+        "37": {
+            "waarde": "conglomeraat",
+            "omschrijving": "conglomeraat",
+            "bm": "-"
+        },
+        "38": {
+            "waarde": "breccie",
+            "omschrijving": "breccie",
+            "bm": "-"
+        },
+        "39": {
+            "waarde": "vulkanische as",
+            "omschrijving": "vulkanische as",
+            "bm": "-"
+        },
+        "40": {
+            "waarde": "sintels",
+            "omschrijving": "sintels",
+            "bm": "SI"
+        },
+        "41": {
+            "waarde": "industrieel afval",
+            "omschrijving": "industrieel afval",
+            "bm": "-"
+        },
+        "42": {
+            "waarde": "grind",
+            "omschrijving": "grind",
+            "bm": "GR"
+        },
+        "43": {
+            "waarde": "mijnsteen",
+            "omschrijving": "mijnsteen",
+            "bm": "MI"
+        },
+        "44": {
+            "waarde": "asbest",
+            "omschrijving": "asbest",
+            "bm": "AB"
+        },
+        "45": {
+            "waarde": "keileem",
+            "omschrijving": "keileem",
+            "bm": "KE"
+        },
+        "46": {
+            "waarde": "aardewerk",
+            "omschrijving": "aardewerk",
+            "bm": "AA"
+        },
+        "47": {
+            "waarde": "afval",
+            "omschrijving": "afval",
+            "bm": "AF"
+        },
+        "48": {
+            "waarde": "afvalverbrandingsinstallatie-slak",
+            "omschrijving": "AVIslak",
+            "bm": "AV"
+        },
+        "49": {
+            "waarde": "baksteen",
+            "omschrijving": "baksteen",
+            "bm": "BA"
+        },
+        "50": {
+            "waarde": "ballast",
+            "omschrijving": "ballast",
+            "bm": "BL"
+        },
+        "51": {
+            "waarde": "basaltasfalt",
+            "omschrijving": "basaltasfalt",
+            "bm": "-"
+        },
+        "52": {
+            "waarde": "beton",
+            "omschrijving": "beton",
+            "bm": "BE"
+        },
+        "53": {
+            "waarde": "bewerkt steen",
+            "omschrijving": "bewerkt steen",
+            "bm": "BS"
+        },
+        "54": {
+            "waarde": "bitumen",
+            "omschrijving": "bitumen",
+            "bm": "BI"
+        },
+        "55": {
+            "waarde": "blokken",
+            "omschrijving": "blokken",
+            "bm": "BK"
+        },
+        "56": {
+            "waarde": "bot",
+            "omschrijving": "bot",
+            "bm": "BO"
+        },
+        "57": {
+            "waarde": "brekerzand",
+            "omschrijving": "brekerzand",
+            "bm": "BZ"
+        },
+        "58": {
+            "waarde": "bruinkool",
+            "omschrijving": "bruinkool",
+            "bm": "BR"
+        },
+        "59": {
+            "waarde": "combi deklaag 0/11",
+            "omschrijving": "combi deklaag 0/11",
+            "bm": "Z6"
+        },
+        "60": {
+            "waarde": "combi deklaag 0/16",
+            "omschrijving": "combi deklaag 0/16",
+            "bm": "Z7"
+        },
+        "61": {
+            "waarde": "combi deklaag 0/8",
+            "omschrijving": "combi deklaag 0/8",
+            "bm": "Z5"
+        },
+        "62": {
+            "waarde": "coproliet",
+            "omschrijving": "coproliet",
+            "bm": "CO"
+        },
+        "63": {
+            "waarde": "dicht asfaltbeton",
+            "omschrijving": "DAB",
+            "bm": "D0"
+        },
+        "64": {
+            "waarde": "dicht asfaltbeton 0/11",
+            "omschrijving": "DAB 0/11",
+            "bm": "D3"
+        },
+        "65": {
+            "waarde": "dicht asfaltbeton 0/11-0/16",
+            "omschrijving": "DAB 0/11-0/16",
+            "bm": "D7"
+        },
+        "66": {
+            "waarde": "dicht asfaltbeton 0/16",
+            "omschrijving": "DAB 0/16",
+            "bm": "D4"
+        },
+        "67": {
+            "waarde": "dicht asfaltbeton 0/6",
+            "omschrijving": "DAB 0/6",
+            "bm": "D1"
+        },
+        "68": {
+            "waarde": "dicht asfaltbeton 0/6-0/8",
+            "omschrijving": "DAB 0/6-0/8",
+            "bm": "D5"
+        },
+        "69": {
+            "waarde": "dicht asfaltbeton 0/8",
+            "omschrijving": "DAB 0/8",
+            "bm": "D2"
+        },
+        "70": {
+            "waarde": "dicht asfaltbeton 0/8-0/11",
+            "omschrijving": "DAB 0/8-0/11",
+            "bm": "D6"
+        },
+        "71": {
+            "waarde": "detritus",
+            "omschrijving": "detritus",
+            "bm": "DE"
+        },
+        "72": {
+            "waarde": "dunne deklaag",
+            "omschrijving": "dunne deklaag",
+            "bm": "T3"
+        },
+        "73": {
+            "waarde": "dy",
+            "omschrijving": "dy",
+            "bm": "DY"
+        },
+        "74": {
+            "waarde": "emulsie-asfaltbeton",
+            "omschrijving": "EAB",
+            "bm": "E0"
+        },
+        "75": {
+            "waarde": "emulsie-asfaltbeton 0/3",
+            "omschrijving": "EAB 0/3",
+            "bm": "E1"
+        },
+        "76": {
+            "waarde": "emulsie-asfaltbeton 0/6",
+            "omschrijving": "EAB 0/6",
+            "bm": "E2"
+        },
+        "77": {
+            "waarde": "emulsie-asfaltbeton 0/8",
+            "omschrijving": "EAB 0/8",
+            "bm": "E3"
+        },
+        "78": {
+            "waarde": "erts",
+            "omschrijving": "erts",
+            "bm": "ER"
+        },
+        "79": {
+            "waarde": "fijn asfalt",
+            "omschrijving": "fijn asfalt",
+            "bm": "R2"
+        },
+        "80": {
+            "waarde": "fosfaat",
+            "omschrijving": "fosfaat",
+            "bm": "FF"
+        },
+        "81": {
+            "waarde": "grindasfaltbeton",
+            "omschrijving": "GAB",
+            "bm": "G0"
+        },
+        "82": {
+            "waarde": "grindasfaltbeton 0/16",
+            "omschrijving": "GAB 0/16",
+            "bm": "G1"
+        },
+        "83": {
+            "waarde": "grindasfaltbeton 0/16-0/32",
+            "omschrijving": "GAB 0/16-0/32",
+            "bm": "G2"
+        },
+        "84": {
+            "waarde": "grindasfaltbeton 0/32",
+            "omschrijving": "GAB 0/32",
+            "bm": "G3"
+        },
+        "85": {
+            "waarde": "gedesintegreerd asfalt",
+            "omschrijving": "gedesintegreerd asfalt",
+            "bm": "R3"
+        },
+        "86": {
+            "waarde": "gestabiliseerd zand",
+            "omschrijving": "gestabiliseerd zand",
+            "bm": "SZ"
+        },
+        "87": {
+            "waarde": "gips",
+            "omschrijving": "gips",
+            "bm": "GI"
+        },
+        "88": {
+            "waarde": "glauconiet",
+            "omschrijving": "glauconiet",
+            "bm": "GC"
+        },
+        "89": {
+            "waarde": "gley",
+            "omschrijving": "gley",
+            "bm": "GL"
+        },
+        "90": {
+            "waarde": "goethietzand",
+            "omschrijving": "goethietzand",
+            "bm": "GO"
+        },
+        "91": {
+            "waarde": "gravel",
+            "omschrijving": "gravel",
+            "bm": "GV"
+        },
+        "92": {
+            "waarde": "gyttja",
+            "omschrijving": "gyttja",
+            "bm": "GY"
+        },
+        "93": {
+            "waarde": "houten vloer",
+            "omschrijving": "houten vloer",
+            "bm": "HV"
+        },
+        "94": {
+            "waarde": "houtskool",
+            "omschrijving": "houtskool",
+            "bm": "HK"
+        },
+        "95": {
+            "waarde": "ijzer",
+            "omschrijving": "ijzer",
+            "bm": "YZ"
+        },
+        "96": {
+            "waarde": "ijzerzandsteen",
+            "omschrijving": "ijzerzandsteen",
+            "bm": "IZ"
+        },
+        "97": {
+            "waarde": "kalksteen",
+            "omschrijving": "kalksteen",
+            "bm": "KS"
+        },
+        "98": {
+            "waarde": "keien",
+            "omschrijving": "keien",
+            "bm": "KI"
+        },
+        "99": {
+            "waarde": "keramiek",
+            "omschrijving": "keramiek",
+            "bm": "KM"
+        },
+        "100": {
+            "waarde": "kleeflaag",
+            "omschrijving": "kleeflaag",
+            "bm": "T8"
+        },
+        "101": {
+            "waarde": "klei",
+            "omschrijving": "klei",
+            "bm": "KL"
+        },
+        "102": {
+            "waarde": "klinkers",
+            "omschrijving": "klinkers",
+            "bm": "KK"
+        },
+        "103": {
+            "waarde": "kolen",
+            "omschrijving": "kolen",
+            "bm": "KO"
+        },
+        "104": {
+            "waarde": "kolengruis",
+            "omschrijving": "kolengruis",
+            "bm": "KG"
+        },
+        "105": {
+            "waarde": "koolas",
+            "omschrijving": "koolas",
+            "bm": "AK"
+        },
+        "106": {
+            "waarde": "koud asfalt 0/11",
+            "omschrijving": "koud asfalt 0/11",
+            "bm": "K1"
+        },
+        "107": {
+            "waarde": "koud asfalt 0/16",
+            "omschrijving": "koud asfalt 0/16",
+            "bm": "K2"
+        },
+        "108": {
+            "waarde": "krijt",
+            "omschrijving": "krijt",
+            "bm": "KR"
+        },
+        "109": {
+            "waarde": "lavalith",
+            "omschrijving": "lavalith",
+            "bm": "LL"
+        },
+        "110": {
+            "waarde": "leem",
+            "omschrijving": "leem",
+            "bm": "LE"
+        },
+        "111": {
+            "waarde": "leer",
+            "omschrijving": "leer",
+            "bm": "LR"
+        },
+        "112": {
+            "waarde": "leisteen",
+            "omschrijving": "leisteen",
+            "bm": "LS"
+        },
+        "113": {
+            "waarde": "ligniet",
+            "omschrijving": "ligniet",
+            "bm": "LI"
+        },
+        "114": {
+            "waarde": "loss",
+            "omschrijving": "loss",
+            "bm": "LO"
+        },
+        "115": {
+            "waarde": "mergel",
+            "omschrijving": "mergel",
+            "bm": "MG"
+        },
+        "116": {
+            "waarde": "metselpuin",
+            "omschrijving": "metselpuin",
+            "bm": "MP"
+        },
+        "117": {
+            "waarde": "Microville",
+            "omschrijving": "Microville",
+            "bm": "M1"
+        },
+        "118": {
+            "waarde": "Novachip 2/6",
+            "omschrijving": "Novachip 2/6",
+            "bm": "N1"
+        },
+        "119": {
+            "waarde": "Novachip 4/8",
+            "omschrijving": "Novachip 4/8",
+            "bm": "N2"
+        },
+        "120": {
+            "waarde": "Novachip 8/11",
+            "omschrijving": "Novachip 8/11",
+            "bm": "N3"
+        },
+        "121": {
+            "waarde": "open asfaltbeton",
+            "omschrijving": "OAB",
+            "bm": "O0"
+        },
+        "122": {
+            "waarde": "open asfaltbeton 0/11",
+            "omschrijving": "OAB 0/11",
+            "bm": "O2"
+        },
+        "123": {
+            "waarde": "open asfaltbeton 0/11-0/16",
+            "omschrijving": "OAB 0/11-0/16",
+            "bm": "O6"
+        },
+        "124": {
+            "waarde": "open asfaltbeton 0/16",
+            "omschrijving": "OAB 0/16",
+            "bm": "O3"
+        },
+        "125": {
+            "waarde": "open asfaltbeton 0/16-0/22",
+            "omschrijving": "OAB 0/16-0/22",
+            "bm": "O7"
+        },
+        "126": {
+            "waarde": "open asfaltbeton 0/22",
+            "omschrijving": "OAB 0/22",
+            "bm": "O4"
+        },
+        "127": {
+            "waarde": "open asfaltbeton 0/8",
+            "omschrijving": "OAB 0/8",
+            "bm": "O1"
+        },
+        "128": {
+            "waarde": "open asfaltbeton 0/8-0/11",
+            "omschrijving": "OAB 0/8-0/11",
+            "bm": "O5"
+        },
+        "129": {
+            "waarde": "oker",
+            "omschrijving": "oker",
+            "bm": "OK"
+        },
+        "130": {
+            "waarde": "onbekend",
+            "omschrijving": "onbekend",
+            "bm": "XX"
+        },
+        "131": {
+            "waarde": "penetratie-achtig",
+            "omschrijving": "penetratie-achtig",
+            "bm": "P2"
+        },
+        "132": {
+            "waarde": "penetratielaag",
+            "omschrijving": "penetratielaag",
+            "bm": "P1"
+        },
+        "133": {
+            "waarde": "potklei",
+            "omschrijving": "potklei",
+            "bm": "PO"
+        },
+        "134": {
+            "waarde": "repac",
+            "omschrijving": "repac",
+            "bm": "RP"
+        },
+        "135": {
+            "waarde": "riet",
+            "omschrijving": "riet",
+            "bm": "RI"
+        },
+        "136": {
+            "waarde": "rode slijtlaag",
+            "omschrijving": "rode slijtlaag",
+            "bm": "T2"
+        },
+        "137": {
+            "waarde": "schalie",
+            "omschrijving": "schalie",
+            "bm": "SH"
+        },
+        "138": {
+            "waarde": "silex",
+            "omschrijving": "silex",
+            "bm": "SX"
+        },
+        "139": {
+            "waarde": "slemlaag",
+            "omschrijving": "slemlaag",
+            "bm": "T4"
+        },
+        "140": {
+            "waarde": "slijtlaag",
+            "omschrijving": "slijtlaag",
+            "bm": "T1"
+        },
+        "141": {
+            "waarde": "steenmastiekasfalt",
+            "omschrijving": "SMA",
+            "bm": "S0"
+        },
+        "142": {
+            "waarde": "steenmastiekasfalt 0/11",
+            "omschrijving": "SMA 0/11",
+            "bm": "S3"
+        },
+        "143": {
+            "waarde": "steenmastiekasfalt 0/5",
+            "omschrijving": "SMA 0/5",
+            "bm": "S1"
+        },
+        "144": {
+            "waarde": "steenmastiekasfalt 0/6-0/8",
+            "omschrijving": "SMA 0/6-0/8",
+            "bm": "S4"
+        },
+        "145": {
+            "waarde": "steenmastiekasfalt 0/8",
+            "omschrijving": "SMA 0/8",
+            "bm": "S2"
+        },
+        "146": {
+            "waarde": "steenmastiekasfalt 0/8-0/11",
+            "omschrijving": "SMA 0/8-0/11",
+            "bm": "S5"
+        },
+        "147": {
+            "waarde": "split",
+            "omschrijving": "split",
+            "bm": "SP"
+        },
+        "148": {
+            "waarde": "steenslagasfaltbeton",
+            "omschrijving": "STAB",
+            "bm": " S6"
+        },
+        "149": {
+            "waarde": "steenslagasfaltbeton 0/16",
+            "omschrijving": "STAB 0/16",
+            "bm": "S7"
+        },
+        "150": {
+            "waarde": "steenslagasfaltbeton 0/16-0/22",
+            "omschrijving": "STAB 0/16-0/22",
+            "bm": "S9"
+        },
+        "151": {
+            "waarde": "steenslagasfaltbeton 0/22",
+            "omschrijving": "STAB 0/22",
+            "bm": "S8"
+        },
+        "152": {
+            "waarde": "stelcon",
+            "omschrijving": "stelcon",
+            "bm": "SN"
+        },
+        "153": {
+            "waarde": "stol",
+            "omschrijving": "stol",
+            "bm": "SO"
+        },
+        "154": {
+            "waarde": "strijkasfalt",
+            "omschrijving": "strijkasfalt",
+            "bm": "T5"
+        },
+        "155": {
+            "waarde": "teelaarde",
+            "omschrijving": "teelaarde",
+            "bm": "TA"
+        },
+        "156": {
+            "waarde": "tegel",
+            "omschrijving": "tegel",
+            "bm": "TG"
+        },
+        "157": {
+            "waarde": "textiel",
+            "omschrijving": "textiel",
+            "bm": "TX"
+        },
+        "158": {
+            "waarde": "turf",
+            "omschrijving": "turf",
+            "bm": "TU"
+        },
+        "159": {
+            "waarde": "vast gesteente",
+            "omschrijving": "vast gesteente",
+            "bm": "VG"
+        },
+        "160": {
+            "waarde": "veen",
+            "omschrijving": "veen",
+            "bm": "VE"
+        },
+        "161": {
+            "waarde": "verbrand bot",
+            "omschrijving": "verbrand bot",
+            "bm": "VB"
+        },
+        "162": {
+            "waarde": "verbrande klei",
+            "omschrijving": "verbrande klei",
+            "bm": "VK"
+        },
+        "163": {
+            "waarde": "verharding",
+            "omschrijving": "verharding",
+            "bm": "VH"
+        },
+        "164": {
+            "waarde": "vliegas",
+            "omschrijving": "vliegas",
+            "bm": "VL"
+        },
+        "165": {
+            "waarde": "vuursteen",
+            "omschrijving": "vuursteen",
+            "bm": "VS"
+        },
+        "166": {
+            "waarde": "WAB",
+            "omschrijving": "WAB",
+            "bm": "W0"
+        },
+        "167": {
+            "waarde": "WAB 0/16",
+            "omschrijving": "WAB 0/16",
+            "bm": "W1"
+        },
+        "168": {
+            "waarde": "WAB 0/22",
+            "omschrijving": "WAB 0/22",
+            "bm": "W2"
+        },
+        "169": {
+            "waarde": "waterbodem",
+            "omschrijving": "waterbodem",
+            "bm": "WB"
+        },
+        "170": {
+            "waarde": "wortels",
+            "omschrijving": "wortels",
+            "bm": "WO"
+        },
+        "171": {
+            "waarde": "zand",
+            "omschrijving": "zand",
+            "bm": "ZA"
+        },
+        "172": {
+            "waarde": "zandasfalt",
+            "omschrijving": "zandasfalt",
+            "bm": "T6"
+        },
+        "173": {
+            "waarde": "zandsteen",
+            "omschrijving": "zandsteen",
+            "bm": "ZS"
+        },
+        "174": {
+            "waarde": "zinkassen",
+            "omschrijving": "zinkassen",
+            "bm": "ZI"
+        },
+        "175": {
+            "waarde": "zeer open asfaltbeton",
+            "omschrijving": "ZOAB",
+            "bm": "Z0"
+        },
+        "176": {
+            "waarde": "zeer open asfaltbeton 0/11",
+            "omschrijving": "ZOAB 0/11",
+            "bm": "Z2"
+        },
+        "177": {
+            "waarde": "zeer open asfaltbeton 0/16",
+            "omschrijving": "ZOAB 0/16",
+            "bm": "Z3"
+        },
+        "178": {
+            "waarde": "zeer open asfaltbeton 0/8",
+            "omschrijving": "ZOAB 0/8",
+            "bm": "Z1"
+        },
+        "179": {
+            "waarde": "zeer open asfaltbeton fijn",
+            "omschrijving": "ZOAB fijn",
+            "bm": "Z4"
+        },
+        "180": {
+            "waarde": "rubber",
+            "omschrijving": "rubber",
+            "bm": "RU"
+        },
+        "181": {
+            "waarde": "lucht",
+            "omschrijving": "lucht",
+            "bm": "LU"
+        },
+        "188": {
+            "waarde": "Gepenetreerde slakken",
+            "omschrijving": "Gepenetreerde slakken",
+            "bm": "GE"
+        },
+        "189": {
+            "waarde": "Gietasfalt",
+            "omschrijving": "Gietasfalt",
+            "bm": "GA"
+        },
+        "190": {
+            "waarde": "Puin/slakken",
+            "omschrijving": "Puin/slakken",
+            "bm": "PS"
+        },
+        "191": {
+            "waarde": "Puin/zand",
+            "omschrijving": "Puin/zand",
+            "bm": "PZ"
+        },
+        "192": {
+            "waarde": "Slakken/zand",
+            "omschrijving": "Slakken/zand",
+            "bm": "SK"
+        },
+        "193": {
+            "waarde": "Steen",
+            "omschrijving": "Steen",
+            "bm": "ST"
+        },
+        "209": {
+            "waarde": "Steenmastiekasfalt NL 5",
+            "omschrijving": "SMA-NL 5",
+            "bm": "M2"
+        },
+        "210": {
+            "waarde": "Steenmastiekasfalt NL 8",
+            "omschrijving": "SMA-NL 8",
+            "bm": "M3"
+        },
+        "211": {
+            "waarde": "Steenmastiekasfalt NL-11",
+            "omschrijving": "SMA-NL-11",
+            "bm": "M4"
+        },
+        "212": {
+            "waarde": "Steenmastiekasfalt NL 5-8",
+            "omschrijving": "SMA-NL 5-8",
+            "bm": "M5"
+        },
+        "213": {
+            "waarde": "Steenmastiekasfalt NL 8-11",
+            "omschrijving": "SMA-NL 8-11",
+            "bm": "M6"
+        },
+        "214": {
+            "waarde": "microdeklaag",
+            "omschrijving": "microdeklaag",
+            "bm": "MD"
+        },
+        "215": {
+            "waarde": "grindasfaltbeton 0/8",
+            "omschrijving": "",
+            "bm": "GAB 0/8"
+        },
+        "216": {
+            "waarde": "open asfaltbeton 0/16 type 1",
+            "omschrijving": "OAB 0/16 type 1",
+            "bm": "O8"
+        },
+        "217": {
+            "waarde": "open asfaltbeton 0/16 type 2",
+            "omschrijving": "OAB 0/16 type 2",
+            "bm": "O9"
+        },
+        "218": {
+            "waarde": "open asfaltbeton 0/16 type 3",
+            "omschrijving": "OAB 0/16 type 3",
+            "bm": "B1"
+        },
+        "219": {
+            "waarde": "steenmastiekasfalt 0/11 type 1",
+            "omschrijving": "SMA 0/11 type 1",
+            "bm": "B2"
+        },
+        "220": {
+            "waarde": "steenmastiekasfalt 0/11 type 2",
+            "omschrijving": "SMA 0/11 type 2",
+            "bm": "B3"
+        },
+        "221": {
+            "waarde": "oppervlakbehandeling",
+            "omschrijving": "oppervlakbehandeling",
+            "bm": "B4"
+        },
+        "222": {
+            "waarde": "menggranulaat",
+            "omschrijving": "menggranulaat",
+            "bm": "M7"
+        },
+        "223": {
+            "waarde": "betongranulaat",
+            "omschrijving": "betongranulaat",
+            "bm": "BG"
+        },
+        "224": {
+            "waarde": "metselwerkgranulaat",
+            "omschrijving": "metselwerkgranulaat",
+            "bm": "M8"
+        },
+        "225": {
+            "waarde": "hoogovenslakken",
+            "omschrijving": "hoogovenslakken",
+            "bm": "H1"
+        },
+        "226": {
+            "waarde": "betonstraatstenen",
+            "omschrijving": "betonstraatstenen",
+            "bm": "B5"
+        },
+        "227": {
+            "waarde": "brac",
+            "omschrijving": "brac",
+            "bm": "B6"
+        },
+        "228": {
+            "waarde": "gebakkenstraatstenen",
+            "omschrijving": "gebakkenstraatstenen",
+            "bm": "G5"
+        },
+        "229": {
+            "waarde": "zandcement",
+            "omschrijving": "zandcement",
+            "bm": "ZC"
+        },
+        "230": {
+            "waarde": "Stabiflex",
+            "omschrijving": "Stabiflex",
+            "bm": "SF"
+        },
+        "231": {
+            "waarde": "Bims",
+            "omschrijving": "Bims",
+            "bm": "BM"
+        },
+        "232": {
+            "waarde": "zeer open asfaltbeton  11",
+            "omschrijving": "ZOAB 11",
+            "bm": "Z2"
+        },
+        "233": {
+            "waarde": "zeer open asfaltbeton  16",
+            "omschrijving": "ZOAB 16",
+            "bm": "Z3"
+        },
+        "234": {
+            "waarde": "zeer open asfaltbeton  11-16",
+            "omschrijving": "ZOAB 11-16",
+            "bm": "3Z"
+        },
+        "235": {
+            "waarde": "asfaltgranulaat",
+            "omschrijving": "asfaltgranulaat",
+            "bm": "RP"
+        },
+		"100001": {
+            "waarde": "asbest verdacht",
+            "omschrijving": "asbest verdacht",
+            "bm": "AT"
+		}
+    },
+    "VA": {
+        "": {
+            "waarde": "asfalt",
+            "omschrijving": "asfalt",
+            "bm": ""
+        }
+    },
+    "TI": {
+        "": {
+            "waarde": "vast punt",
+            "omschrijving": "",
+            "bm": ""
+        }
+    },
+    "Bijzonderheidgradatie": {
+        "1": {
+            "waarde": "zwak",
+            "omschrijving": "zwak",
+            "bm": "1"
+        },
+        "2": {
+            "waarde": "lenzen",
+            "omschrijving": "lenzen",
+            "bm": "10"
+        },
+        "3": {
+            "waarde": "insluitingen",
+            "omschrijving": "insluitingen",
+            "bm": "11"
+        },
+        "4": {
+            "waarde": "matig",
+            "omschrijving": "matig",
+            "bm": "2"
+        },
+        "5": {
+            "waarde": "sterk",
+            "omschrijving": "sterk",
+            "bm": "3"
+        },
+        "6": {
+            "waarde": "uiterst",
+            "omschrijving": "uiterst",
+            "bm": "4"
+        },
+        "7": {
+            "waarde": "volledig",
+            "omschrijving": "volledig",
+            "bm": "5"
+        },
+        "8": {
+            "waarde": "sporen",
+            "omschrijving": "sporen",
+            "bm": "6"
+        },
+        "9": {
+            "waarde": "resten",
+            "omschrijving": "resten",
+            "bm": "7"
+        },
+        "10": {
+            "waarde": "brokken",
+            "omschrijving": "brokken",
+            "bm": "8"
+        },
+        "11": {
+            "waarde": "laagjes",
+            "omschrijving": "laagjes",
+            "bm": "9"
+        }
+    },
+    "Boorapparaat": {
+        "1": {
+            "waarde": "Handboorgereedschap met twee verticale schoepen om het bodemmonster vast te houden en schroefachtige punt (NPR)",
+            "omschrijving": "edelman",
+            "bm": "ED"
+        },
+        "2": {
+            "waarde": "Handboorgereedschap met gesloten buis en aan de onderzijde twee boorpunten (NPR)",
+            "omschrijving": "riverside",
+            "bm": "RI"
+        },
+        "3": {
+            "waarde": "pulsboor",
+            "omschrijving": "pulsboor",
+            "bm": "PS"
+        },
+        "4": {
+            "waarde": "steekbus",
+            "omschrijving": "steekbus",
+            "bm": "ST"
+        },
+        "5": {
+            "waarde": "spiraal",
+            "omschrijving": "spiraal",
+            "bm": "SP"
+        },
+        "6": {
+            "waarde": "betonboor",
+            "omschrijving": "betonboor",
+            "bm": "BE"
+        },
+        "7": {
+            "waarde": "puinboor",
+            "omschrijving": "puinboor",
+            "bm": "PU"
+        },
+        "8": {
+            "waarde": "zuigerboor",
+            "omschrijving": "zuigerboor",
+            "bm": "ZU"
+        },
+        "9": {
+            "waarde": "mantelboor",
+            "omschrijving": "mantelboor",
+            "bm": "MA"
+        },
+        "10": {
+            "waarde": "De ramguts is een solide geconstrueerde guts die met behulp van een sloophamer in de grond wordt gedreven (NPR)",
+            "omschrijving": "ramguts",
+            "bm": "RA"
+        },
+        "11": {
+            "waarde": "casing",
+            "omschrijving": "casing",
+            "bm": "-"
+        },
+        "12": {
+            "waarde": "Half-cylindrische open boor met aan de onderkant een scherpe snijrand (NPR)",
+            "omschrijving": "guts",
+            "bm": "GU"
+        },
+        "13": {
+            "waarde": "Klein steektoestel waar het monster niet in contact komt met kunststoffen of ingesloten lucht (NPR)",
+            "omschrijving": "Steektoestel zonder folie",
+            "bm": "SZ"
+        },
+        "14": {
+            "waarde": "Zuigerboor die sonisch trillend met een lichte machine de grond in wordt gebracht. De zuiger wordt met waterdruk geblokkeerd gehouden totdat de punt op de gewenste diepte is (NPR)",
+            "omschrijving": "Aqualock-sampler",
+            "bm": "AQ"
+        },
+        "15": {
+            "waarde": "Opgebouwd uit sterke stangen die zijn omwonden met een brede stalen spiraal. Al draaiend vijzelt de boor grond omhoog (NPR)",
+            "omschrijving": "Avegaarboor",
+            "bm": "AV"
+        },
+        "16": {
+            "waarde": "Bestaat uit een snijkop met daaraan bevestigd een doorzichtige polyvinylchloride (PVC)-steekbuis die met verlengstangen de bodem in wordt gedreven. Een zuiger in de steekbuis zorgt voor een onderdruk waardoor het monster gemakkelijker de steekbuis (monsterbuis) inschuift (NPR)",
+            "omschrijving": "Beeker-sampler",
+            "bm": "BS"
+        },
+        "17": {
+            "waarde": "Continu boorsysteem om zonder te boren in ??n keer vanaf het maaiveld een monster van tien ? twintig meter lengte te steken. Dit is mogelijk doordat een zich afwikkelende kous en een boorspoeling wrijving tussen grondmonster en steekapparaat vrijwel geheel voorkomen (NPR)",
+            "omschrijving": "Begemann-sampler",
+            "bm": "BG"
+        },
+        "18": {
+            "waarde": "\"Groep van stekers met een grote",
+            "omschrijving": " ronde",
+            "bm": "BC"
+        },
+        "19": {
+            "waarde": "Metalen buis die is voorzien van een zuiger met een aan de zuiger bevestigde steunkous. De buis is verlengbaar. De steunkous is voorafgaand aan het steken opgestroopt in de steekkop (NPR)",
+            "omschrijving": "Continous soil sampler",
+            "bm": "CO"
+        },
+        "20": {
+            "waarde": "Verdringend boorsysteem (tijdens de boring wordt geen grond naar boven gebracht) om peilbuis de bodem in te brengen door middel van continue druk (NPR)",
+            "omschrijving": "Drukkend boorsysteem",
+            "bm": "DR"
+        },
+        "21": {
+            "waarde": "Happer die aan een stang wordt neergelaten (NPR)",
+            "omschrijving": "Ekman-Birge-happer",
+            "bm": "EK"
+        },
+        "22": {
+            "waarde": "Klein steektoestel met inlegfolie (NPR)",
+            "omschrijving": "Foliesteektoestel",
+            "bm": "FO"
+        },
+        "23": {
+            "waarde": "Handboorgereedschap voor ondiep bodemonderzoek met gesloten buis en aan de onderzijde twee boorpunten die naar buiten zijn gebogen waardoor het boorgat groter is dan de diameter van de buis (NPR)",
+            "omschrijving": "Grindboor",
+            "bm": "GB"
+        },
+        "24": {
+            "waarde": "Verdringend boorsysteem (tijdens de boring wordt geen grond naar boven gebracht) om peilbuis de bodem in te brengen door middel van hameren (NPR)",
+            "omschrijving": "Hamerend boorsysteem",
+            "bm": "HB"
+        },
+        "25": {
+            "waarde": "Buis die aan de bovenzijde open is en aan de onderzijde voorzien is van een klepmechanisme dat er voor zorgt dat het opgehaalde materiaal niet terugvalt. Wordt handmatig de grond ingedreven (NPR)",
+            "omschrijving": "Handpuls",
+            "bm": "PH"
+        },
+        "26": {
+            "waarde": "Opgebouwd uit sterke holle stangen die zijn omwonden met een brede stalen spiraal (NPR)",
+            "omschrijving": "Holle avegaar",
+            "bm": "AH"
+        },
+        "27": {
+            "waarde": "Metalen statief waarin een perspex monsterbuis is bevestigd. De monsterbuis kan met kleppen aan beide zijden worden afgesloten (NPR)",
+            "omschrijving": "Jenkins-mudsampler",
+            "bm": "JE"
+        },
+        "28": {
+            "waarde": "Machinaal boorsysteem voor harde gesteenten (NPR)",
+            "omschrijving": "Kernboor",
+            "bm": "KB"
+        },
+        "29": {
+            "waarde": "Kegel met snijdend uiteinde bevestigd aan een gevoerde monsterbuis voor ongeroerde grondmonsters (NPR)",
+            "omschrijving": "Mostap",
+            "bm": "MO"
+        },
+        "30": {
+            "waarde": "Transparante buis met de daarin een zuiger die door middel van een zuigerstang en koord wordt bediend (NPR)",
+            "omschrijving": "Multi-sampler",
+            "bm": "MU"
+        },
+        "31": {
+            "waarde": "Steektoestel voor grondmechanisch onderzoek (NPR)",
+            "omschrijving": "Puls-/Akkerman-steektoestel",
+            "bm": "AC"
+        },
+        "32": {
+            "waarde": "Buis die aan de bovenzijde open is en aan de onderzijde voorzien is van een klepmechanisme dat er voor zorgt dat het opgehaalde materiaal niet terugvalt. Wordt machinaal de grond ingedreven (NPR)",
+            "omschrijving": "Pulsinstallatie machinaal",
+            "bm": "PM"
+        },
+        "33": {
+            "waarde": "Buizen van een betrekkelijk geringe middellijn die in een zodanig snelle trilling (70Hz - 200Hz) worden gebracht dat de bodemmassa in een zeer dunne laag rond de punt en langs de buizen vloeibaar wordt (NPR)",
+            "omschrijving": "Sonisch boorsysteem",
+            "bm": "SO"
+        },
+        "34": {
+            "waarde": "\"Steekapparaat bestaand uit een stalen steekbuis afgesloten met een zuiger",
+            "omschrijving": " die met een standaard sondeerbuis in gesloten toestand wordt weggedrukt tot de gewenste monsterdiepte is bereikt (NPR)\"",
+            "bm": "SM"
+        },
+        "35": {
+            "waarde": "Monsterbuis in een verzwaarde monsterbuishouder die vanaf een vaartuig in vrije val uit een hijsarm wordt neergelaten (NPR)",
+            "omschrijving": "Valbom",
+            "bm": "VB"
+        },
+        "36": {
+            "waarde": "Handsteektoestel voor grondmechanisch onderzoek (NPR)",
+            "omschrijving": "Van der Horst-steektoestel",
+            "bm": "HO"
+        },
+        "37": {
+            "waarde": "Happer die met een kabel of touw wordt neergelaten tot op de bodem (NPR)",
+            "omschrijving": "Van Veen-bodemhapper",
+            "bm": "VV"
+        },
+        "38": {
+            "waarde": "Guts met een gesloten punt en een draaibare klep (NPR)",
+            "omschrijving": "Veenboor",
+            "bm": "VN"
+        },
+        "39": {
+            "waarde": "Metalen steekbuis een met daarin een uitneembare PVC-binnenbuis die door een trilkop de bodem wordt ingedrukt (NPR)",
+            "omschrijving": "Vibrocorer",
+            "bm": "VC"
+        },
+        "40": {
+            "waarde": "Wigvormige RVS-steekbuis die aan een zijde met een schuif kan worden geopend (NPR)",
+            "omschrijving": "Vrijwitboor",
+            "bm": "VW"
+        },
+        "41": {
+            "waarde": "RVS steekbuis die in de bodem wordt gedrukt. Een zuiger in de steekbuis zorgt voor een onderdruk waardoor het monster over de volle steekdiepte in de steekbuis wordt opgenomen. Handmatig bediend (NPR)",
+            "omschrijving": "Zuigerboor handmatig",
+            "bm": "ZH"
+        },
+        "42": {
+            "waarde": "RVS steekbuis die in de bodem wordt gedrukt. Een zuiger in de steekbuis zorgt voor een onderdruk waardoor het monster over de volle steekdiepte in de steekbuis wordt opgenomen. Machinaal bediend (NPR)",
+            "omschrijving": "Zuigerboor machinaal",
+            "bm": "ZM"
+        },
+        "10001": {
+            "waarde": "Graafmachine",
+            "omschrijving": "Graafmachine",
+            "bm": "GR"
+        },
+        "10002": {
+            "waarde": "Schep",
+            "omschrijving": "Schep",
+            "bm": "SC"
+        },
+        "10003": {
+            "waarde": "Wortelboor",
+            "omschrijving": "Wortelboor",
+            "bm": "WO"
+        },
+        "10004": {
+            "waarde": "Veenguts",
+            "omschrijving": "Veenguts",
+            "bm": "VE"
+        },
+        "10005": {
+            "waarde": "Geoprobe",
+            "omschrijving": "Geoprobe",
+            "bm": "GP"
+        }
+    },
+    "ExBemonsteringsmethode": {
+        "1": {
+            "waarde": "geroerd",
+            "omschrijving": "",
+            "bm": "J"
+        },
+        "2": {
+            "waarde": "ongeroerd",
+            "omschrijving": "",
+            "bm": "N"
+        }
+    },
+    "ExDoorloop": {
+        "1": {
+            "waarde": "goed",
+            "omschrijving": "",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "matig",
+            "omschrijving": "",
+            "bm": ""
+        },
+        "3": {
+            "waarde": "slecht",
+            "omschrijving": "",
+            "bm": ""
+        }
+    },
+    "ExHelderheid": {
+        "1": {
+            "waarde": "helder (<10 NTU)",
+            "omschrijving": "",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "troebel (>10 NTU)",
+            "omschrijving": "",
+            "bm": ""
+        }
+    },
+    "ExMonsterverpakking": {
+        "1": {
+            "waarde": "Emmer",
+            "omschrijving": "Emmer",
+            "bm": "EM"
+        },
+        "2": {
+            "waarde": "Emmer 10L",
+            "omschrijving": "Emmer 10L",
+            "bm": "E1"
+        },
+        "3": {
+            "waarde": "Emmer 5L",
+            "omschrijving": "Emmer 5L",
+            "bm": "E5"
+        },
+        "4": {
+            "waarde": "Pot",
+            "omschrijving": "Pot",
+            "bm": "PO"
+        },
+        "5": {
+            "waarde": "Zak",
+            "omschrijviZA": "Zak",
+            "bm": "ZA"
+        },
+        "6": {
+            "waarde": "Steekbus",
+            "omschrijving": "Steekbus",
+            "bm": "ST"
+        }
+    },
+    "ExPeilbuismateriaal": {
+        "1": {
+            "waarde": "HDPE",
+            "omschrijving": "",
+            "bm": "HDPE"
+        },
+        "2": {
+            "waarde": "RVS",
+            "omschrijving": "",
+            "bm": "RVS"
+        },
+        "3": {
+            "waarde": "PVC",
+            "omschrijving": "",
+            "bm": ""
+        }
+    },
+    "ExPompmethode": {
+        "1": {
+            "waarde": "slangenpomp",
+            "omschrijving": "",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "grundfospomp",
+            "omschrijving": "",
+            "bm": ""
+        },
+        "3": {
+            "waarde": "motorpomp",
+            "omschrijving": "",
+            "bm": ""
+        }
+    },
+    "ExGefiltreerd": {
+        "1": {
+            "waarde": "Ja",
+            "omschrijving": "",
+            "bm": "J"
+        },
+        "2": {
+            "waarde": "Nee",
+            "omschrijving": "",
+            "bm": "N"
+        }
+    },
+    "Geur": {
+        "1": {
+            "waarde": "veengeur",
+            "omschrijving": "veengeur",
+            "bm": "VE"
+        },
+        "2": {
+            "waarde": "slibgeur",
+            "omschrijving": "slibgeur",
+            "bm": "SB"
+        },
+        "3": {
+            "waarde": "riool",
+            "omschrijving": "riool",
+            "bm": "RI"
+        },
+        "4": {
+            "waarde": "vuilstort",
+            "omschrijving": "vuilstort",
+            "bm": "-"
+        },
+        "5": {
+            "waarde": "gas",
+            "omschrijving": "gas",
+            "bm": "AG"
+        },
+        "6": {
+            "waarde": "rotting",
+            "omschrijving": "rotting",
+            "bm": "RO"
+        },
+        "7": {
+            "waarde": "brandgeur",
+            "omschrijving": "brandgeur",
+            "bm": "-"
+        },
+        "8": {
+            "waarde": "muf",
+            "omschrijving": "muf",
+            "bm": "MU"
+        },
+        "9": {
+            "waarde": "scherp",
+            "omschrijving": "scherp",
+            "bm": "SG"
+        },
+        "10": {
+            "waarde": "zoetig",
+            "omschrijving": "zoetig",
+            "bm": "ZO"
+        },
+        "11": {
+            "waarde": "zurig",
+            "omschrijving": "zurig",
+            "bm": "ZU"
+        },
+        "12": {
+            "waarde": "benzine",
+            "omschrijving": "benzine",
+            "bm": "BE"
+        },
+        "13": {
+            "waarde": "diesel",
+            "omschrijving": "diesel",
+            "bm": "DI"
+        },
+        "14": {
+            "waarde": "oliegeur",
+            "omschrijving": "oliegeur",
+            "bm": "OL"
+        },
+        "15": {
+            "waarde": "brandstof",
+            "omschrijving": "brandstof",
+            "bm": "BR"
+        },
+        "16": {
+            "waarde": "teergeur",
+            "omschrijving": "teergeur",
+            "bm": "TE"
+        },
+        "17": {
+            "waarde": "carboleum",
+            "omschrijving": "carboleum",
+            "bm": "CA"
+        },
+        "18": {
+            "waarde": "petroleum",
+            "omschrijving": "petroleum",
+            "bm": "PE"
+        },
+        "19": {
+            "waarde": "terpentine",
+            "omschrijving": "terpentine",
+            "bm": "-"
+        },
+        "20": {
+            "waarde": "verfgeur",
+            "omschrijving": "verfgeur",
+            "bm": "VF"
+        },
+        "21": {
+            "waarde": "oplosmiddel",
+            "omschrijving": "oplosmiddel",
+            "bm": "OP"
+        },
+        "22": {
+            "waarde": "ammoniak",
+            "omschrijving": "ammoniak",
+            "bm": "AM"
+        },
+        "23": {
+            "waarde": "blauwzuur",
+            "omschrijving": "blauwzuur",
+            "bm": "-"
+        },
+        "24": {
+            "waarde": "chloor",
+            "omschrijving": "chloor",
+            "bm": "CH"
+        },
+        "25": {
+            "waarde": "chemisch",
+            "omschrijving": "chemisch",
+            "bm": "CM"
+        },
+        "26": {
+            "waarde": "onbekend",
+            "omschrijving": "onbekend",
+            "bm": "ON"
+        },
+        "27": {
+            "waarde": "verdachte geur",
+            "omschrijving": "verdachte geur",
+            "bm": "VD"
+        },
+        "28": {
+            "waarde": "stookolie",
+            "omschrijving": "stookolie",
+            "bm": "ST"
+        },
+        "29": {
+            "waarde": "huisbrandolie",
+            "omschrijving": "huisbrandolie",
+            "bm": "HB"
+        }
+    },
+    "Geurint": {
+        "1": {
+            "waarde": "zeer zwak",
+            "omschrijving": "zeer zwak",
+            "bm": "0"
+        },
+        "2": {
+            "waarde": "zwak",
+            "omschrijving": "zwak",
+            "bm": "1"
+        },
+        "3": {
+            "waarde": "matig",
+            "omschrijving": "matig",
+            "bm": "2"
+        },
+        "4": {
+            "waarde": "sterk",
+            "omschrijving": "sterk",
+            "bm": "3"
+        },
+        "5": {
+            "waarde": "zeer sterk",
+            "omschrijving": "zeer sterk",
+            "bm": "4"
+        }
+    },
+    "Grind": {
+        "1": {
+            "waarde": "geen grind",
+            "omschrijving": "geen",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "g1",
+            "omschrijving": "g1",
+            "bm": "G1"
+        },
+        "3": {
+            "waarde": "g2",
+            "omschrijving": "g2",
+            "bm": "G2"
+        },
+        "4": {
+            "waarde": "g3",
+            "omschrijving": "g3",
+            "bm": "G3"
+        }
+    },
+    "Grondsoort": {
+        "1": {
+            "waarde": "Zs1 (Zand zwak siltig)",
+            "omschrijving": "Zs1",
+            "bm": "ZS1"
+        },
+        "2": {
+            "waarde": "Zs2 (Zand matig siltig)",
+            "omschrijving": "Zs2",
+            "bm": "ZS2"
+        },
+        "3": {
+            "waarde": "Zs3 (Zand sterk siltig)",
+            "omschrijving": "Zs3",
+            "bm": "ZS3"
+        },
+        "4": {
+            "waarde": "Zs4 (Zand uiterst siltig)",
+            "omschrijving": "Zs4",
+            "bm": "ZS4"
+        },
+        "5": {
+            "waarde": "Zk (Zand kleiig)",
+            "omschrijving": "Zk",
+            "bm": "ZK"
+        },
+        "6": {
+            "waarde": "Ks1 (Klei zwak siltig)",
+            "omschrijving": "Ks1",
+            "bm": "KS1"
+        },
+        "7": {
+            "waarde": "Ks2 (Klei matig siltig)",
+            "omschrijving": "Ks2",
+            "bm": "KS2"
+        },
+        "8": {
+            "waarde": "Ks3 (Klei sterk siltig)",
+            "omschrijving": "Ks3",
+            "bm": "KS3"
+        },
+        "9": {
+            "waarde": "Ks4 (Klei uiterst siltig)",
+            "omschrijving": "Ks4",
+            "bm": "KS4"
+        },
+        "10": {
+            "waarde": "Kz1 (Klei zwak zandig)",
+            "omschrijving": "Kz1",
+            "bm": "KZ1"
+        },
+        "11": {
+            "waarde": "Kz2 (Klei matig zandig)",
+            "omschrijving": "Kz2",
+            "bm": "KZ2"
+        },
+        "12": {
+            "waarde": "Kz3 (Klei sterk zandig)",
+            "omschrijving": "Kz3",
+            "bm": "KZ3"
+        },
+        "13": {
+            "waarde": "Lz1 (Leem zwak zandig)",
+            "omschrijving": "Lz1",
+            "bm": "LZ1"
+        },
+        "14": {
+            "waarde": "Lz3 (Leem sterk zandig)",
+            "omschrijving": "Lz3",
+            "bm": "LZ3"
+        },
+        "15": {
+            "waarde": "Vm (Veen mineraalarm)",
+            "omschrijving": "Vm",
+            "bm": "VM?"
+        },
+        "16": {
+            "waarde": "Vk1 (Veen zwak kleiig)",
+            "omschrijving": "Vk1",
+            "bm": "VK1"
+        },
+        "17": {
+            "waarde": "Vk3 (Veen sterk kleiig)",
+            "omschrijving": "Vk3",
+            "bm": "VK3"
+        },
+        "18": {
+            "waarde": "Vz1 (Veen zwak zandig)",
+            "omschrijving": "Vz1",
+            "bm": "VZ1"
+        },
+        "19": {
+            "waarde": "Vz3 (Veen sterk zandig)",
+            "omschrijving": "Vz3",
+            "bm": "VZ3"
+        },
+        "20": {
+            "waarde": "Gs (Grind siltig)",
+            "omschrijving": "Gs",
+            "bm": "GS"
+        },
+        "21": {
+            "waarde": "Gz1 (Grind zwak zandig)",
+            "omschrijving": "Gz1",
+            "bm": "GZ1"
+        },
+        "22": {
+            "waarde": "Gz2 (Grind matig zandig)",
+            "omschrijving": "Gz2",
+            "bm": "GZ2"
+        },
+        "23": {
+            "waarde": "Gz3 (Grind sterk zandig)",
+            "omschrijving": "Gz3",
+            "bm": "GZ3"
+        },
+        "24": {
+            "waarde": "Gz4 (Grind uiterst zandig)",
+            "omschrijving": "Gz4",
+            "bm": "GZ4"
+        },
+        "25": {
+            "waarde": "Sk1 (Slib zwak kleiig)",
+            "omschrijving": "Sk1",
+            "bm": "SK1"
+        },
+        "26": {
+            "waarde": "Sk3 (Slib sterk kleiig)",
+            "omschrijving": "Sk3",
+            "bm": "SK3"
+        },
+        "27": {
+            "waarde": "Ss1 (Slib zwak siltig)",
+            "omschrijving": "Ss1",
+            "bm": "SS1"
+        },
+        "28": {
+            "waarde": "Ss2 (Slib matig siltig)",
+            "omschrijving": "Ss2",
+            "bm": "SS2"
+        },
+        "29": {
+            "waarde": "Ss3 (Slib sterk siltig)",
+            "omschrijving": "Ss3",
+            "bm": "SS3"
+        },
+        "30": {
+            "waarde": "Ss4 (Slib uiterst siltig)",
+            "omschrijving": "Ss4",
+            "bm": "SS4"
+        },
+        "31": {
+            "waarde": "Sz1 (Slib zwak zandig)",
+            "omschrijving": "Sz1",
+            "bm": "SZ1"
+        },
+        "32": {
+            "waarde": "Sz2 (Slib matig zandig)",
+            "omschrijving": "Sz2",
+            "bm": "SZ2"
+        },
+        "33": {
+            "waarde": "Sz3 (Slib sterk zandig)",
+            "omschrijving": "Sz3",
+            "bm": "SZ3"
+        },
+        "34": {
+            "waarde": "S (Slib)",
+            "omschrijving": "S",
+            "bm": "S"
+        },
+        "10001": {
+            "waarde": "Water",
+            "omschrijving": "W",
+            "bm": "W"
+        }
+    },
+    "Hoedanigheid": {
+        "1": {
+            "waarde": "bepaling bij 10 graden Celsius",
+            "omschrijving": "bepaling bij 10 graden Celsius",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "bepaling bij 20 graden Celsius",
+            "omschrijving": "bepaling bij 20 graden Celsius",
+            "bm": ""
+        },
+        "3": {
+            "waarde": "meting bij laagwater",
+            "omschrijving": "meting bij laagwater",
+            "bm": ""
+        },
+        "4": {
+            "waarde": "meting bij hoogwater",
+            "omschrijving": "meting bij hoogwater",
+            "bm": ""
+        }
+    },
+    "Humus": {
+        "1": {
+            "waarde": "geen humus",
+            "omschrijving": "geen",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "h1",
+            "omschrijving": "h1",
+            "bm": "H1"
+        },
+        "3": {
+            "waarde": "h2",
+            "omschrijving": "h2",
+            "bm": "H2"
+        },
+        "4": {
+            "waarde": "h3",
+            "omschrijving": "h3",
+            "bm": "H3"
+        }
+    },
+    "Kenmerk": {
+        "1": {
+            "waarde": "slap",
+            "omschrijving": "slap",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "doorlatend",
+            "omschrijving": "doorlatend",
+            "bm": ""
+        },
+        "3": {
+            "waarde": "roestvormend",
+            "omschrijving": "roestvormend",
+            "bm": ""
+        }
+    },
+    "Kleur": {
+        "1": {
+            "waarde": "wit",
+            "omschrijving": "wit",
+            "bm": "WI"
+        },
+        "2": {
+            "waarde": "grijs",
+            "omschrijving": "grijs",
+            "bm": "GR"
+        },
+        "3": {
+            "waarde": "zwart",
+            "omschrijving": "zwart",
+            "bm": "ZW"
+        },
+        "4": {
+            "waarde": "rood",
+            "omschrijving": "rood",
+            "bm": "RO"
+        },
+        "5": {
+            "waarde": "oranje",
+            "omschrijving": "oranje",
+            "bm": "OR"
+        },
+        "6": {
+            "waarde": "geel",
+            "omschrijving": "geel",
+            "bm": "GE"
+        },
+        "7": {
+            "waarde": "groen",
+            "omschrijving": "groen",
+            "bm": "GN"
+        },
+        "8": {
+            "waarde": "blauw",
+            "omschrijving": "blauw",
+            "bm": "BL"
+        },
+        "9": {
+            "waarde": "paars",
+            "omschrijving": "paars",
+            "bm": "PA"
+        },
+        "10": {
+            "waarde": "bruin",
+            "omschrijving": "bruin",
+            "bm": "BR"
+        },
+        "11": {
+            "waarde": "roestbruin",
+            "omschrijving": "roestbruin",
+            "bm": "-"
+        },
+        "12": {
+            "waarde": "beige",
+            "omschrijving": "beige",
+            "bm": "BE"
+        },
+        "13": {
+            "waarde": "creme",
+            "omschrijving": "creme",
+            "bm": "CR"
+        }
+    },
+    "Kleurint": {
+        "1": {
+            "waarde": "zeer licht",
+            "omschrijving": "zeer licht",
+            "bm": "-"
+        },
+        "2": {
+            "waarde": "licht",
+            "omschrijving": "licht",
+            "bm": "LI"
+        },
+        "3": {
+            "waarde": "neutraal",
+            "omschrijving": "neutraal",
+            "bm": "NE"
+        },
+        "4": {
+            "waarde": "donker",
+            "omschrijving": "donker",
+            "bm": "DR"
+        },
+        "5": {
+            "waarde": "zeer donker",
+            "omschrijving": "zeer donker",
+            "bm": "DO"
+        }
+    },
+    "Laagsoort": {
+        "1": {
+            "waarde": "ingespoeld",
+            "omschrijving": "ingespoeld",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "in situ",
+            "omschrijving": "in situ",
+            "bm": ""
+        },
+        "3": {
+            "waarde": "opgebracht",
+            "omschrijving": "opgebracht",
+            "bm": ""
+        }
+    },
+    "Lutum": {
+        "1": {
+            "waarde": "geen lutum",
+            "omschrijving": "geen lutum",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "l1",
+            "omschrijving": "l1",
+            "bm": "L1"
+        },
+        "3": {
+            "waarde": "l2",
+            "omschrijving": "l2",
+            "bm": "L2"
+        },
+        "4": {
+            "waarde": "l3",
+            "omschrijving": "l3",
+            "bm": "L3"
+        },
+        "5": {
+            "waarde": "l4",
+            "omschrijving": "l4",
+            "bm": "L4"
+        }
+    },
+    "Materiaal": {
+        "1": {
+            "waarde": "Grond",
+            "omschrijving": "Grond",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "Baggerspecie",
+            "omschrijving": "Baggerspecie",
+            "bm": ""
+        },
+        "3": {
+            "waarde": "IBC-Bouwstof",
+            "omschrijving": "IBC-Bouwstof",
+            "bm": ""
+        },
+        "4": {
+            "waarde": "Bouwstof Hertoepassing",
+            "omschrijving": "Bouwstof Hertoepassing",
+            "bm": ""
+        },
+        "5": {
+            "waarde": "Werk schone grond",
+            "omschrijving": "Werk schone grond",
+            "bm": ""
+        },
+        "6": {
+            "waarde": "Mon. IBC-bouwstoffen",
+            "omschrijving": "Mon. IBC-bouwstoffen",
+            "bm": ""
+        }
+    },
+    "Materiaalaanv": {
+        "1": {
+            "waarde": "Grond",
+            "omschrijving": "Grond",
+            "bm": "AZ"
+        },
+        "2": {
+            "waarde": "Filtergrind",
+            "omschrijving": "Filtergrind",
+            "bm": "FG"
+        },
+        "3": {
+            "waarde": "\"Filtergrind 1",
+            "omschrijving": "7-2",
+            "bm": "FG"
+        },
+        "4": {
+            "waarde": "Aanvulgrind",
+            "omschrijving": "Aanvulgrind",
+            "bm": "AG"
+        },
+        "5": {
+            "waarde": "\"Aanvulgrind 1",
+            "omschrijving": "0-1",
+            "bm": "AG"
+        }
+    },
+    "Materiaalafd": {
+        "1": {
+            "waarde": "Bentonietmanchet",
+            "omschrijving": "Bentonietmanchet",
+            "bm": "BE"
+        },
+        "2": {
+            "waarde": "Bentoniet afdichting",
+            "omschrijving": "Bentoniet afdichting",
+            "bm": "BE"
+        },
+        "3": {
+            "waarde": "Mikolit BK-00",
+            "omschrijving": "Mikolit BK-00",
+            "bm": "BE"
+        },
+        "4": {
+            "waarde": "Mikolit BK-300",
+            "omschrijving": "Mikolit BK-300",
+            "bm": "BE"
+        },
+        "5": {
+            "waarde": "BK-300",
+            "omschrijving": "BK-300",
+            "bm": "BE"
+        },
+        "6": {
+            "waarde": "BK-00",
+            "omschrijving": "BK-00",
+            "bm": "BE"
+        },
+        "7": {
+            "waarde": "QS",
+            "omschrijving": "QS",
+            "bm": ""
+        }
+    },
+    "Mediaan": {
+        "1": {
+            "waarde": "nvt",
+            "omschrijving": "nvt",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "fijn",
+            "omschrijving": "f",
+            "bm": ""
+        },
+        "3": {
+            "waarde": "uiterst fijn",
+            "omschrijving": "uf",
+            "bm": "1"
+        },
+        "4": {
+            "waarde": "zeer fijn",
+            "omschrijving": "zf",
+            "bm": "2"
+        },
+        "5": {
+            "waarde": "matig fijn",
+            "omschrijving": "mf",
+            "bm": "3"
+        },
+        "6": {
+            "waarde": "grof",
+            "omschrijving": "g",
+            "bm": ""
+        },
+        "7": {
+            "waarde": "uiterst grof",
+            "omschrijving": "ug",
+            "bm": "6"
+        },
+        "8": {
+            "waarde": "zeer grof",
+            "omschrijving": "zg",
+            "bm": "5"
+        },
+        "9": {
+            "waarde": "matig grof",
+            "omschrijving": "mg",
+            "bm": "4"
+        }
+    },
+    "Meetpunt": {
+        "1": {
+            "waarde": "grondboring",
+            "omschrijving": "grondboring",
+            "bm": "B"
+        },
+        "2": {
+            "waarde": "peilbuis met 1 filter",
+            "omschrijving": "peilbuis met 1 filter",
+            "bm": "P"
+        },
+        "3": {
+            "waarde": "peilbuis met 2 filters",
+            "omschrijving": "peilbuis met 2 filters",
+            "bm": "putbodem-b2"
+        },
+        "4": {
+            "waarde": "peilbuis met 3 filters",
+            "omschrijving": "peilbuis met 3 filters",
+            "bm": ""
+        },
+        "5": {
+            "waarde": "sondering",
+            "omschrijving": "sondering",
+            "bm": "S"
+        },
+
+        "10001": {
+            "waarde": "depot",
+            "omschrijving": "depot,",
+            "bm": "D"
+        },
+        "10002": {
+            "waarde": "dynamische sondering",
+            "omschrijving": "sondering dynamisch",
+            "bm": "O"
+        },
+        "10003": {
+            "waarde": "inspectiegat",
+            "omschrijving": "gat",
+            "bm": "A"
+        },
+        "10004": {
+            "waarde": "grepen",
+            "omschrijving": "grepen",
+            "bm": "G"
+        },
+        "10005": {
+            "waarde": "kabelslagboring",
+            "omschrijving": "kabelslagboring",
+            "bm": "K"
+        },
+        "10006": {
+            "waarde": "lozingspunt",
+            "omschrijving": "lozingspunt",
+            "bm": "L"
+        },
+        "10007": {
+            "waarde": "putbode",
+            "omschrijving": "putbodem",
+            "bm": "U"
+        },
+        "10008": {
+            "waarde": "rotatieboring",
+            "omschrijving": "rotatieboring",
+            "bm": "R"
+        },
+        "10009": {
+            "waarde": "sleuf",
+            "omschrijving": "sleuf",
+            "bm": "E"
+        },
+        "10010": {
+            "waarde": "slib",
+            "omschrijving": "slib",
+            "bm": "S"
+        },
+        "10011": {
+            "waarde": "vensterbemonsteringsboring",
+            "omschrijving": "vensterbemonsteringsboring",
+            "bm": "V"
+        },
+        "10012": {
+            "waarde": "wand ",
+            "omschrijving": "wand",
+            "bm": "W"
+        },
+        "10013": {
+            "waarde": "sondering cpt",
+            "omschrijving": "sondering cpt",
+            "bm": "C"
+        }
+    },
+    "Oliewatermate": {
+        "1": {
+            "waarde": "geen",
+            "omschrijving": "geen",
+            "bm": "0"
+        },
+        "2": {
+            "waarde": "zwak",
+            "omschrijving": "zwak",
+            "bm": "1"
+        },
+        "3": {
+            "waarde": "matig",
+            "omschrijving": "matig",
+            "bm": "2"
+        },
+        "4": {
+            "waarde": "sterk",
+            "omschrijving": "sterk",
+            "bm": "3"
+        },
+        "5": {
+            "waarde": "uiterst",
+            "omschrijving": "uiterst",
+            "bm": "4"
+        }
+    },
+    "Oorsprong": {
+        "1": {
+            "waarde": "antropogeen",
+            "omschrijving": "antropogeen",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "natuurlijk",
+            "omschrijving": "natuurlijk",
+            "bm": ""
+        },
+        "3": {
+            "waarde": "niet herkenbaar",
+            "omschrijving": "niet herkenbaar",
+            "bm": ""
+        }
+    },
+    "Referentietype": {
+        "1": {
+            "waarde": "maaiveld",
+            "omschrijving": "maaiveld",
+            "bm": "MA"
+        },
+        "2": {
+            "waarde": "NAP",
+            "omschrijving": "NAP",
+            "bm": "NA"
+        },
+        "3": {
+            "waarde": "waterspiegel",
+            "omschrijving": "waterspiegel",
+            "bm": "-"
+        },
+        "4": {
+            "waarde": "bovenkant peilbuis",
+            "omschrijving": "bovenkant peilbuis",
+            "bm": "b2"
+        },
+        "5": {
+            "waarde": "putdeksel",
+            "omschrijving": "putdeksel",
+            "bm": "-"
+        }
+    },
+    "Situatiebeschrijving": {
+        "1": {
+            "waarde": "asfaltbeton",
+            "omschrijving": "asfaltbeton",
+            "bm": "AB"
+        },
+        "2": {
+            "waarde": "akker",
+            "omschrijving": "akker",
+            "bm": "AK"
+        },
+        "3": {
+            "waarde": "asfalt",
+            "omschrijving": "asfalt",
+            "bm": "AS"
+        },
+        "4": {
+            "waarde": "baksteen",
+            "omschrijving": "baksteen",
+            "bm": "BA"
+        },
+        "5": {
+            "waarde": "beton",
+            "omschrijving": "beton",
+            "bm": "BE"
+        },
+        "6": {
+            "waarde": "berm",
+            "omschrijving": "berm",
+            "bm": "BM"
+        },
+        "7": {
+            "waarde": "bosgrond",
+            "omschrijving": "bosgrond",
+            "bm": "BO"
+        },
+        "8": {
+            "waarde": "braak",
+            "omschrijving": "braak",
+            "bm": "BR"
+        },
+        "9": {
+            "waarde": "erf",
+            "omschrijving": "erf",
+            "bm": "ER"
+        },
+        "10": {
+            "waarde": "gazon",
+            "omschrijving": "gazon",
+            "bm": "GA"
+        },
+        "11": {
+            "waarde": "groenstrook",
+            "omschrijving": "groenstrook",
+            "bm": "GK"
+        },
+        "12": {
+            "waarde": "grind",
+            "omschrijving": "grind",
+            "bm": "GR"
+        },
+        "13": {
+            "waarde": "gras",
+            "omschrijving": "gras",
+            "bm": "GS"
+        },
+        "14": {
+            "waarde": "gravel",
+            "omschrijving": "gravel",
+            "bm": "GV"
+        },
+        "15": {
+            "waarde": "houten vloer",
+            "omschrijving": "houten vloer",
+            "bm": "HV"
+        },
+        "16": {
+            "waarde": "kassei",
+            "omschrijving": "kassei",
+            "bm": "KA"
+        },
+        "17": {
+            "waarde": "kiezel",
+            "omschrijving": "kiezel",
+            "bm": "KI"
+        },
+        "18": {
+            "waarde": "klinker",
+            "omschrijving": "klinker",
+            "bm": "KL"
+        },
+        "19": {
+            "waarde": "landbouwgrond",
+            "omschrijving": "landbouwgrond",
+            "bm": "LA"
+        },
+        "20": {
+            "waarde": "moestuin",
+            "omschrijving": "moestuin",
+            "bm": "MO"
+        },
+        "21": {
+            "waarde": "puin",
+            "omschrijving": "puin",
+            "bm": "PU"
+        },
+        "22": {
+            "waarde": "stelcon",
+            "omschrijving": "stelcon",
+            "bm": "SC"
+        },
+        "23": {
+            "waarde": "strooisel",
+            "omschrijving": "strooisel",
+            "bm": "SL"
+        },
+        "24": {
+            "waarde": "stol",
+            "omschrijving": "stol",
+            "bm": "SO"
+        },
+        "25": {
+            "waarde": "split",
+            "omschrijving": "split",
+            "bm": "SP"
+        },
+        "26": {
+            "waarde": "steen",
+            "omschrijving": "steen",
+            "bm": "ST"
+        },
+        "27": {
+            "waarde": "silex",
+            "omschrijving": "silex",
+            "bm": "SX"
+        },
+        "28": {
+            "waarde": "teer",
+            "omschrijving": "teer",
+            "bm": "TE"
+        },
+        "29": {
+            "waarde": "tegel",
+            "omschrijving": "tegel",
+            "bm": "TL"
+        },
+        "30": {
+            "waarde": "tuin",
+            "omschrijving": "tuin",
+            "bm": "TU"
+        },
+        "31": {
+            "waarde": "verharding",
+            "omschrijving": "verharding",
+            "bm": "VE"
+        },
+        "32": {
+            "waarde": "waterbodem",
+            "omschrijving": "waterbodem",
+            "bm": "WA"
+        },
+        "33": {
+            "waarde": "weiland",
+            "omschrijving": "weiland",
+            "bm": "WE"
+        },
+        "34": {
+            "waarde": "waterspiegel",
+            "omschrijving": "waterspiegel",
+            "bm": "WS"
+        },
+        "35": {
+            "waarde": "bossage",
+            "omschrijving": "bossage",
+            "bm": "-"
+        }
+    },
+    "Steensoort": {
+        "1": {
+            "waarde": "leem",
+            "omschrijving": "leem",
+            "bm": "1"
+        },
+        "2": {
+            "waarde": "zandig grind/grindig zand",
+            "omschrijving": "zandig grind/grindig zand",
+            "bm": "10"
+        },
+        "3": {
+            "waarde": "kiezels",
+            "omschrijving": "kiezels",
+            "bm": "13"
+        },
+        "4": {
+            "waarde": "grind",
+            "omschrijving": "grind",
+            "bm": "12"
+        },
+        "5": {
+            "waarde": "pelliet",
+            "omschrijving": "pelliet",
+            "bm": "16"
+        },
+        "6": {
+            "waarde": "argiliet",
+            "omschrijving": "argiliet",
+            "bm": "17"
+        },
+        "7": {
+            "waarde": "silteit",
+            "omschrijving": "silteit",
+            "bm": "  "
+        },
+        "8": {
+            "waarde": "zandig leem",
+            "omschrijving": "zandig leem",
+            "bm": "2"
+        },
+        "9": {
+            "waarde": "lemige/mergelachtige zandsteen",
+            "omschrijving": "lemige/mergelachtige zandsteen",
+            "bm": "20"
+        },
+        "10": {
+            "waarde": "zandsteen",
+            "omschrijving": "zandsteen",
+            "bm": "25"
+        },
+        "11": {
+            "waarde": "zachte zandsteen",
+            "omschrijving": "zachte zandsteen",
+            "bm": "26"
+        },
+        "12": {
+            "waarde": "schelpachtig zandsteen",
+            "omschrijving": "schelpachtig zandsteen",
+            "bm": "28"
+        },
+        "13": {
+            "waarde": "glauconietachtige zand(steen)",
+            "omschrijving": "glauconietachtige zand(steen)",
+            "bm": "31"
+        },
+        "14": {
+            "waarde": "sedimentaire breccie",
+            "omschrijving": "sedimentaire breccie",
+            "bm": "33"
+        },
+        "15": {
+            "waarde": "tectonische breccie",
+            "omschrijving": "tectonische breccie",
+            "bm": "34"
+        },
+        "16": {
+            "waarde": "conglomeraten",
+            "omschrijving": "conglomeraten",
+            "bm": "35"
+        },
+        "17": {
+            "waarde": "grauwacke",
+            "omschrijving": "grauwacke",
+            "bm": "37"
+        },
+        "18": {
+            "waarde": "lumachelle",
+            "omschrijving": "lumachelle",
+            "bm": "39"
+        },
+        "19": {
+            "waarde": "lemig zand",
+            "omschrijving": "lemig zand",
+            "bm": "4"
+        },
+        "20": {
+            "waarde": "kalksteen",
+            "omschrijving": "kalksteen",
+            "bm": "41"
+        },
+        "21": {
+            "waarde": "zandig kalksteen",
+            "omschrijving": "zandig kalksteen",
+            "bm": "42"
+        },
+        "22": {
+            "waarde": "schelpachtig kalksteen",
+            "omschrijving": "schelpachtig kalksteen",
+            "bm": "43"
+        },
+        "23": {
+            "waarde": "kalksteen met numulieten",
+            "omschrijving": "kalksteen met numulieten",
+            "bm": "44"
+        },
+        "24": {
+            "waarde": "kalksteen met crinoiden",
+            "omschrijving": "kalksteen met crinoiden",
+            "bm": "45"
+        },
+        "25": {
+            "waarde": "dolomiet",
+            "omschrijving": "dolomiet",
+            "bm": "46"
+        },
+        "26": {
+            "waarde": "zandsteenachtige dolomiet",
+            "omschrijving": "zandsteenachtige dolomiet",
+            "bm": "  "
+        },
+        "27": {
+            "waarde": "leemachtge dolomiet",
+            "omschrijving": "leemachtge dolomiet",
+            "bm": "48"
+        },
+        "28": {
+            "waarde": "mergelachtig zand",
+            "omschrijving": "mergelachtig zand",
+            "bm": "5"
+        },
+        "29": {
+            "waarde": "mergelachtig kalksteen",
+            "omschrijving": "mergelachtig kalksteen",
+            "bm": "50"
+        },
+        "30": {
+            "waarde": "mergelkalk",
+            "omschrijving": "mergelkalk",
+            "bm": "52"
+        },
+        "31": {
+            "waarde": "mergel",
+            "omschrijving": "mergel",
+            "bm": "55"
+        },
+        "32": {
+            "waarde": "leemachtig mergel",
+            "omschrijving": "leemachtig mergel",
+            "bm": "56"
+        },
+        "33": {
+            "waarde": "zandig mergel",
+            "omschrijving": "zandig mergel",
+            "bm": "57"
+        },
+        "34": {
+            "waarde": "lemig silt/siltig leem",
+            "omschrijving": "lemig silt/siltig leem",
+            "bm": "6"
+        },
+        "35": {
+            "waarde": "silteit",
+            "omschrijving": "silteit",
+            "bm": "7"
+        },
+        "36": {
+            "waarde": "zand",
+            "omschrijving": "zand",
+            "bm": "8"
+        },
+        "37": {
+            "waarde": "zand met schelpen",
+            "omschrijving": "zand met schelpen",
+            "bm": "9"
+        }
+    },
+    "Subject": {
+        "1": {
+            "waarde": "aannemer",
+            "omschrijving": "aannemer",
+            "bm": ""
+        },
+        "2": {
+            "waarde": "adviseur",
+            "omschrijving": "adviseur",
+            "bm": ""
+        },
+        "3": {
+            "waarde": "belanghebbende",
+            "omschrijving": "belanghebbende",
+            "bm": ""
+        },
+        "4": {
+            "waarde": "eigenaar",
+            "omschrijving": "eigenaar",
+            "bm": ""
+        },
+        "5": {
+            "waarde": "erfpachter",
+            "omschrijving": "erfpachter",
+            "bm": ""
+        },
+        "6": {
+            "waarde": "gebruiker",
+            "omschrijving": "gebruiker",
+            "bm": ""
+        },
+        "7": {
+            "waarde": "gemachtigde",
+            "omschrijving": "gemachtigde",
+            "bm": ""
+        },
+        "8": {
+            "waarde": "Gemeente",
+            "omschrijving": "Gemeente",
+            "bm": ""
+        },
+        "9": {
+            "waarde": "huurder",
+            "omschrijving": "huurder",
+            "bm": ""
+        },
+        "10": {
+            "waarde": "Inspectie",
+            "omschrijving": "Inspectie",
+            "bm": ""
+        },
+        "11": {
+            "waarde": "Kadaster",
+            "omschrijving": "Kadaster",
+            "bm": ""
+        },
+        "12": {
+            "waarde": "locatie adres",
+            "omschrijving": "locatie adres",
+            "bm": ""
+        },
+        "13": {
+            "waarde": "melder",
+            "omschrijving": "melder",
+            "bm": ""
+        },
+        "14": {
+            "waarde": "provincie",
+            "omschrijving": "provincie",
+            "bm": ""
+        },
+        "15": {
+            "waarde": "veroorzaker",
+            "omschrijving": "veroorzaker",
+            "bm": ""
+        },
+        "16": {
+            "waarde": "BSB",
+            "omschrijving": "BSB",
+            "bm": ""
+        },
+        "17": {
+            "waarde": "Opdrachtgever",
+            "omschrijving": "Opdrachtgever",
+            "bm": ""
+        },
+        "18": {
+            "waarde": "Voormalige eigenaar",
+            "omschrijving": "Voormalige eigenaar",
+            "bm": ""
+        },
+        "19": {
+            "waarde": "Waterschap",
+            "omschrijving": "Waterschap",
+            "bm": ""
+        },
+        "20": {
+            "waarde": "Initiatief Sanering",
+            "omschrijving": "Initiatief Sanering",
+            "bm": ""
+        },
+        "21": {
+            "waarde": "(on)schuldig eigenaar",
+            "omschrijving": "(on)schuldig eigenaar",
+            "bm": ""
+        },
+        "22": {
+            "waarde": "projectontwikkelaar",
+            "omschrijving": "projectontwikkelaar",
+            "bm": ""
+        },
+        "23": {
+            "waarde": "aanvrager subsidie",
+            "omschrijving": "aanvrager subsidie",
+            "bm": ""
+        },
+        "24": {
+            "waarde": "indiener zienswijze",
+            "omschrijving": "indiener zienswijze",
+            "bm": ""
+        },
+        "25": {
+            "waarde": "uitvoerder",
+            "omschrijving": "uitvoerder",
+            "bm": ""
+        }
+    },
+    "Veldmatrix": {
+        "1": {
+            "waarde": "grond",
+            "omschrijving": "grond",
+            "bm": "GR"
+        },
+        "2": {
+            "waarde": "grondwater",
+            "omschrijving": "grondwater",
+            "bm": "GW"
+        },
+        "3": {
+            "waarde": "afvalwater",
+            "omschrijving": "afvalwater",
+            "bm": "AW"
+        },
+        "4": {
+            "waarde": "oppervlaktewater",
+            "omschrijving": "oppervlaktewater",
+            "bm": ""
+        },
+        "5": {
+            "waarde": "slib",
+            "omschrijving": "slib",
+            "bm": "SL"
+        },
+        "6": {
+            "waarde": "overig",
+            "omschrijving": "overig",
+            "bm": "OV"
+        },
+        "7": {
+            "waarde": "waterbodem",
+            "omschrijving": "waterbodem",
+            "bm": "SL"
+        }
+    },
+    "Veldwaarneming": {
+        "1": {
+            "waarde": "grondwaterstand",
+            "omschrijving": "grondwaterstand",
+            "bm": "GWS"
+        },
+        "2": {
+            "waarde": "lutum",
+            "omschrijving": "lutum",
+            "bm": ""
+        },
+        "3": {
+            "waarde": "humus",
+            "omschrijving": "humus",
+            "bm": ""
+        },
+        "4": {
+            "waarde": "pid-waarden",
+            "omschrijving": "pid-waarden",
+            "bm": ""
+        },
+        "5": {
+            "waarde": "oliepan",
+            "omschrijving": "oliepan",
+            "bm": ""
+        },
+        "6": {
+            "waarde": "zuurgraad",
+            "omschrijving": "zuurgraad",
+            "bm": "PH"
+        },
+        "7": {
+            "waarde": "temperatuur",
+            "omschrijving": "temperatuur",
+            "bm": "TEMP"
+        },
+        "8": {
+            "waarde": "geleidbaarheid",
+            "omschrijving": "geleidbaarheid",
+            "bm": "ECwaarde3"
+        },
+        "9": {
+            "waarde": "drijflaag",
+            "omschrijving": "drijflaag",
+            "bm": "DRIJFLAAG"
+        },
+        "10": {
+            "waarde": "kleur water",
+            "omschrijving": "kleur water",
+            "bm": "KLEURA1"
+        },
+        "11": {
+            "waarde": "geur water",
+            "omschrijving": "geur water",
+            "bm": "GEUR"
+        }
+    }
+}

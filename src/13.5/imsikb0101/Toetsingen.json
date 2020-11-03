@@ -1,0 +1,180 @@
+[{
+    "ID": 1,
+    "Naam": "T.1",
+    "Omschrijving": "Beoordeling kwaliteit van grond en bagger bij toepassing op of in de bodem",
+    "Toetskader": "BBK",
+    "Basisschemakeuze": "2015-11-27",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2,
+    "Naam": "T.2",
+    "Omschrijving": "Beoordeling kwaliteit ontvangende landbodem",
+    "Toetskader": "BBK",
+    "Basisschemakeuze": "Landbodem/grond/waterbodem/bagger/GBT emissietoetswaarde",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 3,
+    "Naam": "T.3",
+    "Omschrijving": "Beoordeling kwaliteit van  bagger en ontvangende bodem bij toepassing in een oppervlaktewaterlichaam",
+    "Toetskader": "BBK",
+    "Basisschemakeuze": "Landbodem/grond/waterbodem/bagger/GBT emissietoetswaarde",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 4,
+    "Naam": "T.4",
+    "Omschrijving": "Beoordeling kwaliteit van grond bij toepassing op bodem of oever van oppervlaktewater",
+    "Toetskader": "BBK",
+    "Basisschemakeuze": "Landbodem/grond/waterbodem/bagger/GBT emissietoetswaarde",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 5,
+    "Naam": "T.5",
+    "Omschrijving": "Beoordeling kwaliteit van bagger bij verspreiden op een aangrenzend perceel (landbodem)",
+    "Toetskader": "BBK",
+    "Basisschemakeuze": "Baggerspecie Verspreiding op aangrenzend perceel",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 6,
+    "Naam": "T.6",
+    "Omschrijving": "Beoordeling kwaliteit van  bagger bij verspreiden in een zoet oppervlaktewaterlichaam",
+    "Toetskader": "BBK",
+    "Basisschemakeuze": "Landbodem/grond/waterbodem/bagger/GBT emissietoetswaarde",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 7,
+    "Naam": "T.7",
+    "Omschrijving": "Beoordeling kwaliteit van bagger bij verspreiden in een zout oppervlaktewaterlichaam",
+    "Toetskader": "BBK",
+    "Basisschemakeuze": "Landbodem/grond/waterbodem/bagger/GBT emissietoetswaarde",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 8,
+    "Naam": "T.8",
+    "Omschrijving": "Beoordeling kwaliteit van grond bij GBT op landbodem (emissietoetswaarde)",
+    "Toetskader": "BBK",
+    "Basisschemakeuze": "Landbodem/grond/waterbodem/bagger/GBT emissietoetswaarde",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 9,
+    "Naam": "T.9",
+    "Omschrijving": "Beoordeling kwaliteit van baggerspecie bij GBT op landbodem (emissietoetswaarde)",
+    "Toetskader": "BBK",
+    "Basisschemakeuze": "Landbodem/grond/waterbodem/bagger/GBT emissietoetswaarde",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 10,
+    "Naam": "T.10",
+    "Omschrijving": "Beoordeling kwaliteit van grond bij GBT in oppervlaktewaterlichamen (emissietoetswaarde)",
+    "Toetskader": "BBK",
+    "Basisschemakeuze": "Landbodem/grond/waterbodem/bagger/GBT emissietoetswaarde",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 11,
+    "Naam": "T.11",
+    "Omschrijving": "Beoordeling kwaliteit van baggerspecie bij GBT in oppervlaktewaterlichamen (emissietoetswaarde)",
+    "Toetskader": "BBK",
+    "Basisschemakeuze": "Landbodem/grond/waterbodem/bagger/GBT emissietoetswaarde",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 12,
+    "Naam": "T.12",
+    "Omschrijving": "Beoordeling kwaliteit van grond volgens Wbb",
+    "Toetskader": "WBB",
+    "Basisschemakeuze": "Landbodem/grond/waterbodem/bagger/GBT emissietoetswaarde",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 13,
+    "Naam": "T.13",
+    "Omschrijving": "Beoordeling kwaliteit van grondwater volgens Wbb",
+    "Toetskader": "WBB",
+    "Basisschemakeuze": "Grondwater",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 15,
+    "Naam": "T.15",
+    "Omschrijving": "Beoordeling reinigbaarheid grond",
+    "Toetskader": "Reinigbaarheid",
+    "Basisschemakeuze": "Reinigbaarheid grond",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 16,
+    "Naam": "T.16",
+    "Omschrijving": "Beoordeling kwaliteit bouwstoffen (emissie)",
+    "Toetskader": "Bouwstoffen",
+    "Basisschemakeuze": "Bouwstoffen (Emissiewaarde)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 17,
+    "Naam": "T.17",
+    "Omschrijving": "Beoordeling kwaliteit bouwstoffen (samenstelling)",
+    "Toetskader": "Bouwstoffen",
+    "Basisschemakeuze": "Bouwstoffen (Samenstellingswaarde)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 27,
+    "Naam": "T.27",
+    "Omschrijving": "Beoordeling kwaliteit van grond en baggerspecie bij GBT (emissiewaarde)",
+    "Toetskader": "BBK",
+    "Basisschemakeuze": "GBT (Emissiewaarde)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 31,
+    "Naam": "T.31",
+    "Omschrijving": "Beoordeling kwaliteit bouwstoffen  (hergebruik)",
+    "Toetskader": "Bouwstoffen",
+    "Basisschemakeuze": "Bouwstoffen (hergebruik)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+}]

@@ -1,0 +1,2079 @@
+[{
+    "sikbId": 4,
+    "omschrijving": "1,1,1-Trichloorethaan",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "009",
+    "veldofficeId": 88473
+},
+{
+    "sikbId": 5,
+    "omschrijving": "1,1,2,2-Tetrachloorethaan",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "039",
+    "veldofficeId": 88478
+},
+{
+    "sikbId": 6,
+    "omschrijving": "1,1,2-Trichloorethaan",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "010",
+    "veldofficeId": 88483
+},
+{
+    "sikbId": 8,
+    "omschrijving": "1,1-Dichloorethaan",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "003",
+    "veldofficeId": 88493
+},
+{
+    "sikbId": 9,
+    "omschrijving": "1,1-Dichlooretheen",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "005",
+    "veldofficeId": 88498
+},
+{
+    "sikbId": 10,
+    "omschrijving": "1,1-Dichloorpropaan",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "008",
+    "veldofficeId": 88503
+},
+{
+    "sikbId": 35,
+    "omschrijving": "1,2-Dichloorbenzeen",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "17",
+    "veldofficeId": 88628
+},
+{
+    "sikbId": 36,
+    "omschrijving": "1,2-Dichloorethaan",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "004",
+    "veldofficeId": 88633
+},
+{
+    "sikbId": 37,
+    "omschrijving": "1,2-Dichloorethenen (som )",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "009",
+    "veldofficeId": 88638
+},
+{
+    "sikbId": 38,
+    "omschrijving": "1,2-Dichloorpropaan",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "003",
+    "veldofficeId": 88643
+},
+{
+    "sikbId": 47,
+    "omschrijving": "1,3-Dichloorbenzeen",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "18",
+    "veldofficeId": 88688
+},
+{
+    "sikbId": 48,
+    "omschrijving": "1,3-Dichloorpropaan",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "21",
+    "veldofficeId": 88693
+},
+{
+    "sikbId": 54,
+    "omschrijving": "1,4-Dichloorbenzeen",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "19",
+    "veldofficeId": 88723
+},
+{
+    "sikbId": 1341,
+    "omschrijving": "2-Xyleen (ortho-Xyleen)",
+    "groep": "Aromatische verbindingen",
+    "sorteringG": "d",
+    "type": "Standaard",
+    "sortering": "12",
+    "veldofficeId": 95158
+},
+{
+    "sikbId": 199,
+    "omschrijving": "3-Chloorpropeen",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "036",
+    "veldofficeId": 89448
+},
+{
+    "sikbId": 225,
+    "omschrijving": "MCPA",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "021",
+    "veldofficeId": 89578
+},
+{
+    "sikbId": 2253,
+    "omschrijving": "4-chloormethylfenolen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "",
+    "sortering": "095",
+    "veldofficeId": 99718
+},
+{
+    "sikbId": 247,
+    "omschrijving": "Acenafteen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "021",
+    "veldofficeId": 89688
+},
+{
+    "sikbId": 248,
+    "omschrijving": "Acenaftyleen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "020",
+    "veldofficeId": 89693
+},
+{
+    "sikbId": 254,
+    "omschrijving": "Acrylonitril",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "018",
+    "veldofficeId": 89723
+},
+{
+    "sikbId": 268,
+    "omschrijving": "Aldrin",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "006",
+    "veldofficeId": 89793
+},
+{
+    "sikbId": 2106,
+    "omschrijving": "alfa-Chloordaan",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "038",
+    "veldofficeId": 98983
+},
+{
+    "sikbId": 269,
+    "omschrijving": "alfa-Endosulfan",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "010",
+    "veldofficeId": 89798
+},
+{
+    "sikbId": 271,
+    "omschrijving": "alfa-HCH",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "011",
+    "veldofficeId": 89808
+},
+{
+    "sikbId": 299,
+    "omschrijving": "Anthraceen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "003",
+    "veldofficeId": 89948
+},
+{
+    "sikbId": 301,
+    "omschrijving": "Antimoon (Sb)",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "001",
+    "veldofficeId": 89958
+},
+{
+    "sikbId": 310,
+    "omschrijving": "Arseen (As)",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "002",
+    "veldofficeId": 90003
+},
+{
+    "sikbId": 313,
+    "omschrijving": "Asbest (som)",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "001",
+    "veldofficeId": 90018
+},
+{
+    "sikbId": 325,
+    "omschrijving": "Atrazine",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "022",
+    "veldofficeId": 90078
+},
+{
+    "sikbId": 333,
+    "omschrijving": "Barium [Ba]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "003",
+    "veldofficeId": 90118
+},
+{
+    "sikbId": 342,
+    "omschrijving": "Benzeen",
+    "groep": "Aromatische verbindingen",
+    "sorteringG": "d",
+    "type": "Standaard",
+    "sortering": "001",
+    "veldofficeId": 90163
+},
+{
+    "sikbId": 345,
+    "omschrijving": "Benzo(a)anthraceen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "005",
+    "veldofficeId": 90178
+},
+{
+    "sikbId": 346,
+    "omschrijving": "Benzo(a)pyreen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "008",
+    "veldofficeId": 90183
+},
+{
+    "sikbId": 347,
+    "omschrijving": "Benzo(b)fluoranteen + Benzo(k)fluoranteen (som)",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "015",
+    "veldofficeId": 90188
+},
+{
+    "sikbId": 351,
+    "omschrijving": "Benzo(g,h,i)peryleen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "011",
+    "veldofficeId": 90208
+},
+{
+    "sikbId": 353,
+    "omschrijving": "Benzo(k)fluorantheen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "007",
+    "veldofficeId": 90218
+},
+{
+    "sikbId": 364,
+    "omschrijving": "beta-Chloordaan",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "039",
+    "veldofficeId": 90273
+},
+{
+    "sikbId": 365,
+    "omschrijving": "beta-Endosulfan",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "036",
+    "veldofficeId": 90278
+},
+{
+    "sikbId": 366,
+    "omschrijving": "beta-HCH",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "012",
+    "veldofficeId": 90283
+},
+{
+    "sikbId": 367,
+    "omschrijving": "beta-Heptachloorepoxide",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "034",
+    "veldofficeId": 90288
+},
+{
+    "sikbId": 381,
+    "omschrijving": "Di(2-ethylhexyl)ftalaat (DEHP)",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "009",
+    "veldofficeId": 90358
+},
+{
+    "sikbId": 391,
+    "omschrijving": "Bromide",
+    "groep": "Overige anorganische stoffen",
+    "sorteringG": "c",
+    "type": "Standaard",
+    "sortering": "005",
+    "veldofficeId": 90408
+},
+{
+    "sikbId": 396,
+    "omschrijving": "Broomdichloormethaan",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "038",
+    "veldofficeId": 90433
+},
+{
+    "sikbId": 401,
+    "omschrijving": "BTEX (som)",
+    "groep": "Aromatische verbindingen",
+    "sorteringG": "d",
+    "type": "Standaard",
+    "sortering": "055",
+    "veldofficeId": 90458
+},
+{
+    "sikbId": 402,
+    "omschrijving": "BTEX (som)",
+    "groep": "Aromatische verbindingen",
+    "sorteringG": "d",
+    "type": "Standaard",
+    "sortering": "055",
+    "veldofficeId": 90463
+},
+{
+    "sikbId": 406,
+    "omschrijving": "Butanol",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "022",
+    "veldofficeId": 90483
+},
+{
+    "sikbId": 412,
+    "omschrijving": "Butylacetaat",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "1014",
+    "veldofficeId": 90513
+},
+{
+    "sikbId": 416,
+    "omschrijving": "Butyl benzyl ftalaat",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "007",
+    "veldofficeId": 90533
+},
+{
+    "sikbId": 441,
+    "omschrijving": "Cadmium [Cd]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "004",
+    "veldofficeId": 90658
+},
+{
+    "sikbId": 443,
+    "omschrijving": "Calciet",
+    "groep": "Diversen",
+    "sorteringG": "m",
+    "type": "Standaard",
+    "sortering": "002",
+    "veldofficeId": 90668
+},
+{
+    "sikbId": 458,
+    "omschrijving": "Carbaryl",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "024",
+    "veldofficeId": 90743
+},
+{
+    "sikbId": 462,
+    "omschrijving": "Carbofuran",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "025",
+    "veldofficeId": 90763
+},
+{
+    "sikbId": 476,
+    "omschrijving": "b.Chloorbenzenen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "014",
+    "veldofficeId": 90833
+},
+{
+    "sikbId": 480,
+    "omschrijving": "Chloordaan (som)",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "001",
+    "veldofficeId": 90853
+},
+{
+    "sikbId": 491,
+    "omschrijving": "Chloornaftaleen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "032",
+    "veldofficeId": 90908
+},
+{
+    "sikbId": 508,
+    "omschrijving": "Chloride",
+    "groep": "Overige anorganische stoffen",
+    "sorteringG": "c",
+    "type": "Standaard",
+    "sortering": "001",
+    "veldofficeId": 90993
+},
+{
+    "sikbId": 517,
+    "omschrijving": "Chroom [Cr]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "005",
+    "veldofficeId": 91038
+},
+{
+    "sikbId": 518,
+    "omschrijving": "Chryseen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "006",
+    "veldofficeId": 91043
+},
+{
+    "sikbId": 520,
+    "omschrijving": "1,2-Dichlooretheen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "006",
+    "veldofficeId": 91053
+},
+{
+    "sikbId": 523,
+    "omschrijving": "cis-Heptachloorepoxide",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "061",
+    "veldofficeId": 91068
+},
+{
+    "sikbId": 531,
+    "omschrijving": "Cresolen (som)",
+    "groep": "Aromatische verbindingen",
+    "sorteringG": "d",
+    "type": "Standaard",
+    "sortering": "013",
+    "veldofficeId": 91108
+},
+{
+    "sikbId": 542,
+    "omschrijving": "Cyclohexanon",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "002",
+    "veldofficeId": 91163
+},
+{
+    "sikbId": 552,
+    "omschrijving": "DDD (som)",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "004",
+    "veldofficeId": 91213
+},
+{
+    "sikbId": 553,
+    "omschrijving": "DDE (som)",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "003",
+    "veldofficeId": 91218
+},
+{
+    "sikbId": 555,
+    "omschrijving": "DDT + DDE + DDD (som)",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "005",
+    "veldofficeId": 91228
+},
+{
+    "sikbId": 562,
+    "omschrijving": "delta-HCH",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "013",
+    "veldofficeId": 91263
+},
+{
+    "sikbId": 577,
+    "omschrijving": "Di-isobutyl ftalaat",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "005",
+    "veldofficeId": 91338
+},
+{
+    "sikbId": 600,
+    "omschrijving": "Dibutyl ftalaat",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "006",
+    "veldofficeId": 91453
+},
+{
+    "sikbId": 2094,
+    "omschrijving": "Dichlooranilinen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "090",
+    "veldofficeId": 98923
+},
+{
+    "sikbId": 607,
+    "omschrijving": "Dichloorbenzenen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "016",
+    "veldofficeId": 91488
+},
+{
+    "sikbId": 612,
+    "omschrijving": "Dichloorethanen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "012",
+    "veldofficeId": 91513
+},
+{
+    "sikbId": 613,
+    "omschrijving": "Dichloorethenen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "11",
+    "veldofficeId": 91518
+},
+{
+    "sikbId": 615,
+    "omschrijving": "Dichloorfenolen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "023",
+    "veldofficeId": 91528
+},
+{
+    "sikbId": 619,
+    "omschrijving": "Dichloormethaan",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "002",
+    "veldofficeId": 91548
+},
+{
+    "sikbId": 622,
+    "omschrijving": "Dichloorpropanen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "007",
+    "veldofficeId": 91563
+},
+{
+    "sikbId": 633,
+    "omschrijving": "Dieldrin",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "007",
+    "veldofficeId": 91618
+},
+{
+    "sikbId": 639,
+    "omschrijving": "Diethyleenglycol",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "017",
+    "veldofficeId": 91648
+},
+{
+    "sikbId": 642,
+    "omschrijving": "Diethyl ftalaat",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "004",
+    "veldofficeId": 91663
+},
+{
+    "sikbId": 650,
+    "omschrijving": "Dihexyl ftalaat",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "008",
+    "veldofficeId": 91703
+},
+{
+    "sikbId": 661,
+    "omschrijving": "Dimethylftalaat",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "003",
+    "veldofficeId": 91758
+},
+{
+    "sikbId": 2160,
+    "omschrijving": "Dioxine (som I-TEQ)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "031",
+    "veldofficeId": 99253
+},
+{
+    "sikbId": 2159,
+    "omschrijving": "Dodecylbenzeen",
+    "groep": "Aromatische verbindingen",
+    "sorteringG": "d",
+    "type": "Standaard",
+    "sortering": "017",
+    "veldofficeId": 99248
+},
+{
+    "sikbId": 690,
+    "omschrijving": "Drins (som)",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "009",
+    "veldofficeId": 91903
+},
+{
+    "sikbId": 692,
+    "omschrijving": "Droge stof",
+    "groep": "Algemeen",
+    "sorteringG": "a",
+    "type": "Standaard",
+    "sortering": "001",
+    "veldofficeId": 91913
+},
+{
+    "sikbId": 2119,
+    "omschrijving": "EC na LS1",
+    "groep": "Diversen",
+    "sorteringG": "m",
+    "type": "Standaard",
+    "sortering": "004",
+    "veldofficeId": 99048
+},
+{
+    "sikbId": 703,
+    "omschrijving": "Endosulfansulfaat",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "037",
+    "veldofficeId": 91968
+},
+{
+    "sikbId": 704,
+    "omschrijving": "Endrin",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "008",
+    "veldofficeId": 91973
+},
+{
+    "sikbId": 708,
+    "omschrijving": "EOX",
+    "groep": "EOX",
+    "sorteringG": "f",
+    "type": "Standaard",
+    "sortering": "001",
+    "veldofficeId": 91993
+},
+{
+    "sikbId": 725,
+    "omschrijving": "Ethylacetaat",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "024",
+    "veldofficeId": 92078
+},
+{
+    "sikbId": 728,
+    "omschrijving": "Ethylbenzeen",
+    "groep": "Aromatische verbindingen",
+    "sorteringG": "d",
+    "type": "Standaard",
+    "sortering": "002",
+    "veldofficeId": 92093
+},
+{
+    "sikbId": 732,
+    "omschrijving": "Ethyleenglycol",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "016",
+    "veldofficeId": 92113
+},
+{
+    "sikbId": 746,
+    "omschrijving": "Fenanthreen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "002",
+    "veldofficeId": 92183
+},
+{
+    "sikbId": 751,
+    "omschrijving": "Fenol",
+    "groep": "Aromatische verbindingen",
+    "sorteringG": "d",
+    "type": "Standaard",
+    "sortering": "006",
+    "veldofficeId": 92208
+},
+{
+    "sikbId": 754,
+    "omschrijving": "Fenolindex",
+    "groep": "Aromatische verbindingen",
+    "sorteringG": "d",
+    "type": "Standaard",
+    "sortering": "012",
+    "veldofficeId": 92223
+},
+{
+    "sikbId": 775,
+    "omschrijving": "Fluorantheen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "004",
+    "veldofficeId": 92328
+},
+{
+    "sikbId": 777,
+    "omschrijving": "Fluoreen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "022",
+    "veldofficeId": 92338
+},
+{
+    "sikbId": 1853,
+    "omschrijving": "Fluoride",
+    "groep": "Overige anorganische stoffen",
+    "sorteringG": "c",
+    "type": "Standaard",
+    "sortering": "007",
+    "veldofficeId": 97718
+},
+{
+    "sikbId": 785,
+    "omschrijving": "Formaldehyde",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "019",
+    "veldofficeId": 92378
+},
+{
+    "sikbId": 831,
+    "omschrijving": "Gloeirest",
+    "groep": "Algemeen",
+    "sorteringG": "a",
+    "type": "Gloeirest",
+    "sortering": "004",
+    "veldofficeId": 92608
+},
+{
+    "sikbId": 849,
+    "omschrijving": "HCH-verbindingen (som)",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "014",
+    "veldofficeId": 92698
+},
+{
+    "sikbId": 853,
+    "omschrijving": "Heptachloor",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "015",
+    "veldofficeId": 92718
+},
+{
+    "sikbId": 857,
+    "omschrijving": "Heptachloorepoxide",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "016",
+    "veldofficeId": 92738
+},
+{
+    "sikbId": 861,
+    "omschrijving": "Hexachloorbenzeen (HCB)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "020",
+    "veldofficeId": 92758
+},
+{
+    "sikbId": 2146,
+    "omschrijving": "Hexachloorbutadieen",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "035",
+    "veldofficeId": 99183
+},
+{
+    "sikbId": 865,
+    "omschrijving": "Hexachloorethaan (HCE)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "035",
+    "veldofficeId": 92778
+},
+{
+    "sikbId": 882,
+    "omschrijving": "Indeno-(1,2,3-c,d)pyreen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "010",
+    "veldofficeId": 92863
+},
+{
+    "sikbId": 895,
+    "omschrijving": "Butylacetaat",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "023",
+    "veldofficeId": 92928
+},
+{
+    "sikbId": 903,
+    "omschrijving": "iso-Propylbenzeen (Cumeen)",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "011",
+    "veldofficeId": 92968
+},
+{
+    "sikbId": 907,
+    "omschrijving": "Isodrin",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "019",
+    "veldofficeId": 92988
+},
+{
+    "sikbId": 527,
+    "omschrijving": "Kobalt [Co]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "006",
+    "veldofficeId": 91088
+},
+{
+    "sikbId": 971,
+    "omschrijving": "Koper [Cu]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "007",
+    "veldofficeId": 93308
+},
+{
+    "sikbId": 1097,
+    "omschrijving": "Kwik [Hg]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "008",
+    "veldofficeId": 93938
+},
+{
+    "sikbId": 1116,
+    "omschrijving": "Lood [Pb]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "009",
+    "veldofficeId": 94033
+},
+{
+    "sikbId": 1118,
+    "omschrijving": "Lutum",
+    "groep": "Algemeen",
+    "sorteringG": "a",
+    "type": "Lutum",
+    "sortering": "2",
+    "veldofficeId": 94043
+},
+{
+    "sikbId": 1714,
+    "omschrijving": "Maneb",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "017",
+    "veldofficeId": 97023
+},
+{
+    "sikbId": 1154,
+    "omschrijving": "Methanol",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "021",
+    "veldofficeId": 94223
+},
+{
+    "sikbId": 1163,
+    "omschrijving": "Methyl-tert-butylether (MTBE)",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "025",
+    "veldofficeId": 94268
+},
+{
+    "sikbId": 1171,
+    "omschrijving": "Methylethylketon (MEK)",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "026",
+    "veldofficeId": 94308
+},
+{
+    "sikbId": 1195,
+    "omschrijving": "MInerale olie (als benzine)",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94428
+},
+{
+    "sikbId": 1196,
+    "omschrijving": "Minerale olie (als diesel)",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94433
+},
+{
+    "sikbId": 1197,
+    "omschrijving": "Minerale olie (als dieselolie)",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94438
+},
+{
+    "sikbId": 1198,
+    "omschrijving": "Minerale olie (GCMS)",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94443
+},
+{
+    "sikbId": 1199,
+    "omschrijving": "Minerale olie (massa 57)",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94448
+},
+{
+    "sikbId": 1200,
+    "omschrijving": "Minerale olie (totaal)",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "011",
+    "veldofficeId": 94453
+},
+{
+    "sikbId": 1201,
+    "omschrijving": "Minerale olie (vluchtig totaal)",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94458
+},
+{
+    "sikbId": 1202,
+    "omschrijving": "Minerale olie > C15",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94463
+},
+{
+    "sikbId": 1203,
+    "omschrijving": "Minerale olie C10 - C12",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94468
+},
+{
+    "sikbId": 2096,
+    "omschrijving": "Minerale olie C10-C14",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 98933
+},
+{
+    "sikbId": 1204,
+    "omschrijving": "Minerale olie C10 - C16",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94473
+},
+{
+    "sikbId": 1205,
+    "omschrijving": "Minerale olie C10 - C20",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94478
+},
+{
+    "sikbId": 1206,
+    "omschrijving": "Minerale olie C10 - C25",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94483
+},
+{
+    "sikbId": 1207,
+    "omschrijving": "Minerale olie C10 - C40",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94488
+},
+{
+    "sikbId": 1208,
+    "omschrijving": "Minerale olie C12 - C14",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94493
+},
+{
+    "sikbId": 1209,
+    "omschrijving": "Minerale olie C12 - C16",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94498
+},
+{
+    "sikbId": 2097,
+    "omschrijving": "Minerale olie C12-C20",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 98938
+},
+{
+    "sikbId": 1210,
+    "omschrijving": "Minerale olie C12 - C22",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94503
+},
+{
+    "sikbId": 2098,
+    "omschrijving": "Minerale olie C13-C23",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 98943
+},
+{
+    "sikbId": 1211,
+    "omschrijving": "Minerale olie C14 - C20",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94508
+},
+{
+    "sikbId": 1212,
+    "omschrijving": "Minerale olie C16 - C20",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94513
+},
+{
+    "sikbId": 1213,
+    "omschrijving": "Minerale olie C16 - C22",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94518
+},
+{
+    "sikbId": 1214,
+    "omschrijving": "Minerale olie C17",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "001",
+    "veldofficeId": 94523
+},
+{
+    "sikbId": 2099,
+    "omschrijving": "Minerale olie C19-C36",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 98948
+},
+{
+    "sikbId": 1215,
+    "omschrijving": "Minerale olie C2 - C6",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94528
+},
+{
+    "sikbId": 1216,
+    "omschrijving": "Minerale olie C20 - C24",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94533
+},
+{
+    "sikbId": 1217,
+    "omschrijving": "Minerale olie C20 - C26",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94538
+},
+{
+    "sikbId": 1218,
+    "omschrijving": "Minerale olie C20 - C30",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94543
+},
+{
+    "sikbId": 2100,
+    "omschrijving": "Minerale olie C21-C40",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 98953
+},
+{
+    "sikbId": 1219,
+    "omschrijving": "Minerale olie C22 - C30",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94548
+},
+{
+    "sikbId": 2101,
+    "omschrijving": "Minerale olie C23-C30",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 98958
+},
+{
+    "sikbId": 1220,
+    "omschrijving": "Minerale olie C24 - C28",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94553
+},
+{
+    "sikbId": 1221,
+    "omschrijving": "Minerale olie C25 - C40",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94558
+},
+{
+    "sikbId": 1222,
+    "omschrijving": "Minerale olie C26 - C34",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94563
+},
+{
+    "sikbId": 1223,
+    "omschrijving": "Minerale olie C28 - C32",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94568
+},
+{
+    "sikbId": 1224,
+    "omschrijving": "Minerale olie C30 - C36",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94573
+},
+{
+    "sikbId": 1225,
+    "omschrijving": "Minerale olie C30 - C40",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94578
+},
+{
+    "sikbId": 1226,
+    "omschrijving": "Minerale olie C32 - C36",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94583
+},
+{
+    "sikbId": 1227,
+    "omschrijving": "Minerale olie C34 - C40",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94588
+},
+{
+    "sikbId": 1228,
+    "omschrijving": "Minerale olie C36 - C40",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94593
+},
+{
+    "sikbId": 2326,
+    "omschrijving": "Minerale olie (C4-C12)",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 100083
+},
+{
+    "sikbId": 1229,
+    "omschrijving": "Minerale olie C5 - C8",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94598
+},
+{
+    "sikbId": 1230,
+    "omschrijving": "Minerale olie C5 - C9",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94603
+},
+{
+    "sikbId": 2344,
+    "omschrijving": "Minerale olie C5-C6",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 100173
+},
+{
+    "sikbId": 1231,
+    "omschrijving": "Minerale olie C6 - C10",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94608
+},
+{
+    "sikbId": 1232,
+    "omschrijving": "Minerale olie C6 - C12",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94613
+},
+{
+    "sikbId": 1233,
+    "omschrijving": "Minerale olie C6 - C16",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94618
+},
+{
+    "sikbId": 1234,
+    "omschrijving": "Minerale olie C6 - C40",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94623
+},
+{
+    "sikbId": 1235,
+    "omschrijving": "Minerale olie C6 - C8",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94628
+},
+{
+    "sikbId": 1236,
+    "omschrijving": "Minerale olie C8 - C10",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94633
+},
+{
+    "sikbId": 1237,
+    "omschrijving": "Minerale olie C8 - C12",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94638
+},
+{
+    "sikbId": 2102,
+    "omschrijving": "Minerale olie C8-C13",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 98963
+},
+{
+    "sikbId": 2103,
+    "omschrijving": "Minerale olie C8-C18",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 98968
+},
+{
+    "sikbId": 1238,
+    "omschrijving": "Minerale olie C9 - C15",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94643
+},
+{
+    "sikbId": 2104,
+    "omschrijving": "Minerale olie C9-C24",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 98973
+},
+{
+    "sikbId": 2345,
+    "omschrijving": "Minerale olie groter dan C6 tot C7",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 100178
+},
+{
+    "sikbId": 2346,
+    "omschrijving": "Minerale olie groter dan C7 tot C8",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 100183
+},
+{
+    "sikbId": 2347,
+    "omschrijving": "Minerale olie groter dan C8 tot C10",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 100188
+},
+{
+    "sikbId": 1239,
+    "omschrijving": "Minerale olie IR < C25",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 94648
+},
+{
+    "sikbId": 2332,
+    "omschrijving": "Minerale olie totaal (Alifaten en Aromaten C5-C35)",
+    "groep": "Minerale olie",
+    "sorteringG": "g",
+    "type": "Standaard",
+    "sortering": "",
+    "veldofficeId": 100113
+},
+{
+    "sikbId": 1243,
+    "omschrijving": "Molybdeen [Mo]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "010",
+    "veldofficeId": 94668
+},
+{
+    "sikbId": 1246,
+    "omschrijving": "Monochloorbenzeen",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "015",
+    "veldofficeId": 94683
+},
+{
+    "sikbId": 1248,
+    "omschrijving": "Monochloorfenolen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "022",
+    "veldofficeId": 94693
+},
+{
+    "sikbId": 1259,
+    "omschrijving": "Naftaleen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "001",
+    "veldofficeId": 94748
+},
+{
+    "sikbId": 1267,
+    "omschrijving": "Nikkel [Ni]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "011",
+    "veldofficeId": 94788
+},
+{
+    "sikbId": 1319,
+    "omschrijving": "Organische stof (humus)",
+    "groep": "Algemeen",
+    "sorteringG": "a",
+    "type": "Humus",
+    "sortering": "3",
+    "veldofficeId": 95048
+},
+{
+    "sikbId": 1326,
+    "omschrijving": "Organotinverbindingen (som)",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "019",
+    "veldofficeId": 95083
+},
+{
+    "sikbId": 1352,
+    "omschrijving": "PAK 10 VROM",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "012",
+    "veldofficeId": 95213
+},
+{
+    "sikbId": 1713,
+    "omschrijving": "PCB (som 6)",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "23",
+    "veldofficeId": 97018
+},
+{
+    "sikbId": 1365,
+    "omschrijving": "PCB's (som 7)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "28",
+    "veldofficeId": 95278
+},
+{
+    "sikbId": 1372,
+    "omschrijving": "PCB 101",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "005",
+    "veldofficeId": 95313
+},
+{
+    "sikbId": 1374,
+    "omschrijving": "PCB 118",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "006",
+    "veldofficeId": 95323
+},
+{
+    "sikbId": 1376,
+    "omschrijving": "PCB 138",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "007",
+    "veldofficeId": 95333
+},
+{
+    "sikbId": 1377,
+    "omschrijving": "PCB 153",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "008",
+    "veldofficeId": 95338
+},
+{
+    "sikbId": 1380,
+    "omschrijving": "PCB 180",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "009",
+    "veldofficeId": 95353
+},
+{
+    "sikbId": 1381,
+    "omschrijving": "PCB 28",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "003",
+    "veldofficeId": 95358
+},
+{
+    "sikbId": 1382,
+    "omschrijving": "PCB 52",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "004",
+    "veldofficeId": 95363
+},
+{
+    "sikbId": 1387,
+    "omschrijving": "Pentachloorbenzeen (QCB)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "019",
+    "veldofficeId": 95388
+},
+{
+    "sikbId": 1390,
+    "omschrijving": "Pentachloorfenol (PCP)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "026",
+    "veldofficeId": 95403
+},
+{
+    "sikbId": 1398,
+    "omschrijving": "pH",
+    "groep": "Diversen",
+    "sorteringG": "m",
+    "type": "Standaard",
+    "sortering": "005",
+    "veldofficeId": 95443
+},
+{
+    "sikbId": 1445,
+    "omschrijving": "Pyreen",
+    "groep": "PAK's",
+    "sorteringG": "e",
+    "type": "Standaard",
+    "sortering": "023",
+    "veldofficeId": 95678
+},
+{
+    "sikbId": 1451,
+    "omschrijving": "Pyridine",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "012",
+    "veldofficeId": 95708
+},
+{
+    "sikbId": 1455,
+    "omschrijving": "Quintozeen",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "040",
+    "veldofficeId": 95728
+},
+{
+    "sikbId": 1476,
+    "omschrijving": "Seleen [Se]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "015",
+    "veldofficeId": 95833
+},
+{
+    "sikbId": 1503,
+    "omschrijving": "Styreen (Vinylbenzeen)",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "1005",
+    "veldofficeId": 95968
+},
+{
+    "sikbId": 1507,
+    "omschrijving": "Sulfaat (als S)",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "001",
+    "veldofficeId": 95988
+},
+{
+    "sikbId": 1520,
+    "omschrijving": "Tellurium [Te]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "016",
+    "veldofficeId": 96053
+},
+{
+    "sikbId": 1521,
+    "omschrijving": "Telodrin",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "018",
+    "veldofficeId": 96058
+},
+{
+    "sikbId": 1533,
+    "omschrijving": "Tetrachloorbenzenen (som )",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "018",
+    "veldofficeId": 96118
+},
+{
+    "sikbId": 1536,
+    "omschrijving": "Tetrachlooretheen (Per)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "013",
+    "veldofficeId": 96133
+},
+{
+    "sikbId": 1537,
+    "omschrijving": "Tetrachloorfenolen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "025",
+    "veldofficeId": 96138
+},
+{
+    "sikbId": 1538,
+    "omschrijving": "Tetrachloormethaan (Tetra)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "012",
+    "veldofficeId": 96143
+},
+{
+    "sikbId": 1544,
+    "omschrijving": "Tetrahydrofuran",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "013",
+    "veldofficeId": 96173
+},
+{
+    "sikbId": 1546,
+    "omschrijving": "Tetrahydrothiofeen",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "014",
+    "veldofficeId": 96183
+},
+{
+    "sikbId": 1556,
+    "omschrijving": "Thiocyanaten (som)",
+    "groep": "Overige anorganische stoffen",
+    "sorteringG": "c",
+    "type": "Standaard",
+    "sortering": "004",
+    "veldofficeId": 96233
+},
+{
+    "sikbId": 1564,
+    "omschrijving": "Tin [Sn]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "012",
+    "veldofficeId": 96273
+},
+{
+    "sikbId": 2075,
+    "omschrijving": "TOC",
+    "groep": "Algemeen",
+    "sorteringG": "a",
+    "type": "TOC",
+    "sortering": "005",
+    "veldofficeId": 98828
+},
+{
+    "sikbId": 1568,
+    "omschrijving": "Tolueen",
+    "groep": "Aromatische verbindingen",
+    "sorteringG": "d",
+    "type": "Standaard",
+    "sortering": "003",
+    "veldofficeId": 96293
+},
+{
+    "sikbId": 1578,
+    "omschrijving": "trans-1,2-Dichlooretheen",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "16",
+    "veldofficeId": 96343
+},
+{
+    "sikbId": 1581,
+    "omschrijving": "trans-Heptachloorepoxide",
+    "groep": "Bestrijdingsmiddelen",
+    "sorteringG": "j",
+    "type": "Standaard",
+    "sortering": "062",
+    "veldofficeId": 96358
+},
+{
+    "sikbId": 1590,
+    "omschrijving": "Tribroommethaan (bromoform)",
+    "groep": "Overige verontreinigingen",
+    "sorteringG": "k",
+    "type": "Standaard",
+    "sortering": "015",
+    "veldofficeId": 96403
+},
+{
+    "sikbId": 1593,
+    "omschrijving": "Trichlooranilinen",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "091",
+    "veldofficeId": 96418
+},
+{
+    "sikbId": 1595,
+    "omschrijving": "Trichloorbenzenen (som )",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "017",
+    "veldofficeId": 96428
+},
+{
+    "sikbId": 1597,
+    "omschrijving": "Trichloorethanen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "014",
+    "veldofficeId": 96438
+},
+{
+    "sikbId": 1598,
+    "omschrijving": "Trichlooretheen (Tri)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "011",
+    "veldofficeId": 96443
+},
+{
+    "sikbId": 1600,
+    "omschrijving": "Trichloorfenolen (som)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "024",
+    "veldofficeId": 96453
+},
+{
+    "sikbId": 1711,
+    "omschrijving": "Trichloormethaan (Chloroform)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "008",
+    "veldofficeId": 97008
+},
+{
+    "sikbId": 1642,
+    "omschrijving": "Vanadium [V]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "013",
+    "veldofficeId": 96663
+},
+{
+    "sikbId": 1654,
+    "omschrijving": "Monochlooretheen (vinylchloride)",
+    "groep": "Gechloreerde koolwaterstoffen",
+    "sorteringG": "h",
+    "type": "Standaard",
+    "sortering": "001",
+    "veldofficeId": 96723
+},
+{
+    "sikbId": 1143,
+    "omschrijving": "Xyleen (som meta + para)",
+    "groep": "Aromatische verbindingen",
+    "sorteringG": "d",
+    "type": "Standaard",
+    "sortering": "11",
+    "veldofficeId": 94168
+},
+{
+    "sikbId": 1686,
+    "omschrijving": "Xylenen (som)",
+    "groep": "Aromatische verbindingen",
+    "sorteringG": "d",
+    "type": "Standaard",
+    "sortering": "004",
+    "veldofficeId": 96883
+},
+{
+    "sikbId": 1692,
+    "omschrijving": "Zilver [Ag]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "017",
+    "veldofficeId": 96913
+},
+{
+    "sikbId": 1693,
+    "omschrijving": "Zink [Zn]",
+    "groep": "Metalen",
+    "sorteringG": "b",
+    "type": "Standaard",
+    "sortering": "014",
+    "veldofficeId": 96918
+}]

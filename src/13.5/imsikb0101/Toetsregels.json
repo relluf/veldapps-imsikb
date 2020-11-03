@@ -1,0 +1,448 @@
+[{
+    "ID": 0,
+    "Naam": "T.0.",
+    "Omschrijving": "definitief Globaal stroomschema",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 101,
+    "Naam": "T.1.1",
+    "Omschrijving": "definitief Beoordeling kwaliteit van grond en bagger bij toepassing op of in de bodem op parameterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 102,
+    "Naam": "T.1.2.",
+    "Omschrijving": "definitief Beoordeling kwaliteit van grond en bagger bij toepassing op of in de bodem op monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 201,
+    "Naam": "T.2.2",
+    "Omschrijving": "definitief Beoordeling kwaliteit ontvangende landbodem monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 301,
+    "Naam": "T.3.1.",
+    "Omschrijving": "definitief Beoordeling kwaliteit van bagger en ontvangende bodem en oever bij toepassen in een oppervlaktewaterlichaam op parameterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 302,
+    "Naam": "T.3.2.",
+    "Omschrijving": "definitief Beoordeling kwaliteit van bagger en ontvangende bodem bij toepassing in een oppervlaktewaterlichaam op monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 401,
+    "Naam": "T.4.1",
+    "Omschrijving": "definitief Beoordeling kwaliteit van grond bij toepassing in bodem of oever van oppervlaktewater parameterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 402,
+    "Naam": "T.4.2.",
+    "Omschrijving": "definitief Beoordeling kwaliteit van grond bij toepassing in bodem of oever van oppervlaktewater monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 501,
+    "Naam": "T.5.1",
+    "Omschrijving": "definitief Beoordeling verspreidbaarheid van baggerspecie op aangrenzend perceel (landbodem) parameterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 502,
+    "Naam": "T.5.2",
+    "Omschrijving": "definitief Beoordeling verspreidbaarheid van baggerspecie op aangrenzend perceel (landbodem) monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 601,
+    "Naam": "T.6.1.",
+    "Omschrijving": "definitief Beoordeling kwaliteit van bagger bij verspreiden en in een zoet oppervlaktewaterlichaam op parameterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 602,
+    "Naam": "T.6.2.",
+    "Omschrijving": "definitief Beoordeling kwaliteit van bagger bij verspreiden in een zoet oppervlaktewaterlichaam op monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 701,
+    "Naam": "T.7.1",
+    "Omschrijving": "definitief Beoordeling verspreidbaarheid van baggerspecie in zoute oppervlaktewaterlichamen op parameterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 702,
+    "Naam": "T.7.2",
+    "Omschrijving": "definitief Beoordeling verspreidbaarheid van baggerspecie in zoute oppervlaktewaterlichamen op monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 802,
+    "Naam": "T.8.2",
+    "Omschrijving": "definitief Beoordeling kwaliteit van grond bij GBT op landbodem (emissietoetswaarde) monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 902,
+    "Naam": "T.9.2",
+    "Omschrijving": "definitief Beoordeling kwaliteit van baggerspecie bij GBT op landbodem (emissietoetswaarde) monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1002,
+    "Naam": "T.10.2",
+    "Omschrijving": "definitief Beoordeling kwaliteit van grond bij GBT in oppervlaktewateren (emissietoetswaarde) monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1102,
+    "Naam": "T.11.2",
+    "Omschrijving": "definitief Beoordeling kwaliteit van baggerspecie bij GBT in oppervlaktewateren (Emissietoetswaarde) monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1202,
+    "Naam": "T.12.2",
+    "Omschrijving": "definitief Beoordeling kwaliteit van grond volgens Wbb (monsterniveau)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1301,
+    "Naam": "T.13.1",
+    "Omschrijving": "definitief Beoordeling kwaliteit van grondwater volgens Wbb (parameterniveau)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1302,
+    "Naam": "T.13.2",
+    "Omschrijving": "definitief Beoordeling kwaliteit van grondwater volgens Wbb (monsterniveau)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1500,
+    "Naam": "T.15.0",
+    "Omschrijving": "definitief Toetsing Reinigbaarheid (Overall)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1501,
+    "Naam": "T.15.1",
+    "Omschrijving": "definitief Vaststelling vracht ongereinigd",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 15021,
+    "Naam": "T.15.2.a",
+    "Omschrijving": "definitief Vaststelling kwaliteit na reiniging",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 15022,
+    "Naam": "T.15.2.b",
+    "Omschrijving": "definitief Vaststelling kwaliteit na reiniging",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1503,
+    "Naam": "T.15.3",
+    "Omschrijving": "definitief Vaststelling vracht gereinigd",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1504,
+    "Naam": "T.15.4",
+    "Omschrijving": "definitief Toetsing reinigbaarheid",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1505,
+    "Naam": "T.15.5",
+    "Omschrijving": "definitief Berekening % residu",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1506,
+    "Naam": "T.15.6",
+    "Omschrijving": "definitief Toetsing voorkeurstechniek",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1507,
+    "Naam": "T.15.7",
+    "Omschrijving": "definitief Toetsing reinigingskosten per techniek",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1508,
+    "Naam": "T.15.8",
+    "Omschrijving": "definitief Beoordeling kwaliteit grond na reiniging parameter",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1509,
+    "Naam": "T.15.9",
+    "Omschrijving": "definitief Beoordeling kwaliteit grond na reiniging monster",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1601,
+    "Naam": "T.16.1",
+    "Omschrijving": "definitief Beoordeling kwaliteit bouwstoffen (Emissiewaarden) - parameterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1602,
+    "Naam": "T.16.2",
+    "Omschrijving": "definitief Beoordeling kwaliteit bouwstoffen (Emissiewaarden) - monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1701,
+    "Naam": "T.17.1",
+    "Omschrijving": "definitief Beoordeling kwaliteit bouwstoffen (Samenstellingswaarde) - parameterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1702,
+    "Naam": "T.17.2",
+    "Omschrijving": "definitief Beoordeling kwaliteit bouwstoffen (Samenstellingswaarde) - monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1800,
+    "Naam": "T.18",
+    "Omschrijving": "definitief Toetsregel (F) overschrijdingsregels AW verspreiden op aangrenzend perceel",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 1900,
+    "Naam": "T.19.",
+    "Omschrijving": "definitief Correctie standaardisatie rekengehalte (bijlage G III uit Rbk)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2000,
+    "Naam": "T.20.",
+    "Omschrijving": "definitief Toetsregels overschrijding AW en Wonen (teller A en B)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2200,
+    "Naam": "T.22.",
+    "Omschrijving": "definitief Toetsregels overschrijding AW en Wonen Baggerspecie (Teller C)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2100,
+    "Naam": "T.21.",
+    "Omschrijving": "definitief Bepaal rekengehalte parameter (App. G IV)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2400,
+    "Naam": "T.24.",
+    "Omschrijving": "definitief Bepaal rekengehalte emissiewaarde (Bijlage G IV, Emissiewaarde)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2300,
+    "Naam": "T.23",
+    "Omschrijving": "definitief Toetsregels overschrijding GBT baggerspecie op landbodem (Teller D)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2601,
+    "Naam": "T.26.I",
+    "Omschrijving": "definitief Bepaal % OS, % Lu op monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2602,
+    "Naam": "T.26.II",
+    "Omschrijving": "definitief Berekening van %Organische stof vanuit % Gloeiverlies, %Gloeirest, %OC",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2603,
+    "Naam": "T.26.III",
+    "Omschrijving": "definitief Bepaal %OC op monsterniveau berekening PAF",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2701,
+    "Naam": "T.27.1",
+    "Omschrijving": "definitief Beoordeling kwaliteit van grond en baggerspecie bij GBT (Emissiewaarden) parameterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2702,
+    "Naam": "T.27.2",
+    "Omschrijving": "definitief Beoordeling kwaliteit van grond en baggerspecie bij GBT (Emissiewaarden) monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2800,
+    "Naam": "T.28.",
+    "Omschrijving": "definitief Toetsregels overschrijding AW verspreiding in zoet (Teller E)",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 3102,
+    "Naam": "T.31.2",
+    "Omschrijving": "definitief bouwstoffen hergebruik - Emissie - monsterniveau",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 3300,
+    "Naam": "T.33.",
+    "Omschrijving": "definitief Bepaal rekengehalte somparameters als fractie van IW",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 3400,
+    "Naam": "T.34.",
+    "Omschrijving": "definitief Bepaling van rekengehalten van somparameters",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 3500,
+    "Naam": "T.35",
+    "Omschrijving": "definitief Bepaling van gemiddelden",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 3600,
+    "Naam": "T.36.",
+    "Omschrijving": "definitief PAF metalen bereken concentratie poriewater",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 3700,
+    "Naam": "T.37.",
+    "Omschrijving": "definitief PAF metalen correctie poriewater Aw en DOC",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 3800,
+    "Naam": "T.38.",
+    "Omschrijving": "definitief PAF organisch bereken concentratie poriewater",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+}]

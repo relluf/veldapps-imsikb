@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Domeintabellen.xslt" type="text/xsl"?>
+<sikb.lookup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versie="10.2.5" datum="2014-11-21" xsi:noNamespaceSchemaLocation="sikb0101-versie10.2.5_Lookup.xsd">
+	<sikb.situatiebeschrijving_c categorie="situatiebeschrijving" versie="8.0.0" datum="2009-10-07">
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-10-16" status="Bevestigd">
+			<id>1</id>
+			<omschrijving>asfaltbeton</omschrijving>
+			<waarde>asfaltbeton</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>2</id>
+			<omschrijving>akker</omschrijving>
+			<waarde>akker</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>3</id>
+			<omschrijving>asfalt</omschrijving>
+			<waarde>asfalt</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>4</id>
+			<omschrijving>baksteen</omschrijving>
+			<waarde>baksteen</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>5</id>
+			<omschrijving>beton</omschrijving>
+			<waarde>beton</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>6</id>
+			<omschrijving>berm</omschrijving>
+			<waarde>berm</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>7</id>
+			<omschrijving>bosgrond</omschrijving>
+			<waarde>bosgrond</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>8</id>
+			<omschrijving>braak</omschrijving>
+			<waarde>braak</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>9</id>
+			<omschrijving>erf</omschrijving>
+			<waarde>erf</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>10</id>
+			<omschrijving>gazon</omschrijving>
+			<waarde>gazon</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>11</id>
+			<omschrijving>groenstrook</omschrijving>
+			<waarde>groenstrook</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>12</id>
+			<omschrijving>grind</omschrijving>
+			<waarde>grind</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>13</id>
+			<omschrijving>gras</omschrijving>
+			<waarde>gras</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>14</id>
+			<omschrijving>gravel</omschrijving>
+			<waarde>gravel</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>15</id>
+			<omschrijving>houten vloer</omschrijving>
+			<waarde>houten vloer</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>16</id>
+			<omschrijving>kassei</omschrijving>
+			<waarde>kassei</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>17</id>
+			<omschrijving>kiezel</omschrijving>
+			<waarde>kiezel</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>18</id>
+			<omschrijving>klinker</omschrijving>
+			<waarde>klinker</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>19</id>
+			<omschrijving>landbouwgrond</omschrijving>
+			<waarde>landbouwgrond</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>20</id>
+			<omschrijving>moestuin</omschrijving>
+			<waarde>moestuin</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>21</id>
+			<omschrijving>puin</omschrijving>
+			<waarde>puin</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>22</id>
+			<omschrijving>stelcon</omschrijving>
+			<waarde>stelcon</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>23</id>
+			<omschrijving>strooisel</omschrijving>
+			<waarde>strooisel</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>24</id>
+			<omschrijving>stol</omschrijving>
+			<waarde>stol</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>25</id>
+			<omschrijving>split</omschrijving>
+			<waarde>split</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>26</id>
+			<omschrijving>steen</omschrijving>
+			<waarde>steen</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>27</id>
+			<omschrijving>silex</omschrijving>
+			<waarde>silex</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>28</id>
+			<omschrijving>teer</omschrijving>
+			<waarde>teer</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>29</id>
+			<omschrijving>tegel</omschrijving>
+			<waarde>tegel</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>30</id>
+			<omschrijving>tuin</omschrijving>
+			<waarde>tuin</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>31</id>
+			<omschrijving>verharding</omschrijving>
+			<waarde>verharding</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>32</id>
+			<omschrijving>waterbodem</omschrijving>
+			<waarde>waterbodem</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>33</id>
+			<omschrijving>weiland</omschrijving>
+			<waarde>weiland</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>34</id>
+			<omschrijving>waterspiegel</omschrijving>
+			<waarde>waterspiegel</waarde>
+		</sikb.situatiebeschrijving>
+		<sikb.situatiebeschrijving versie="8.0.0" datum="2009-11-24" status="Bevestigd">
+			<id>35</id>
+			<omschrijving>bossage</omschrijving>
+			<waarde>bossage</waarde>
+		</sikb.situatiebeschrijving>
+	</sikb.situatiebeschrijving_c>
+</sikb.lookup>

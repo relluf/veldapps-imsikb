@@ -1,0 +1,22 @@
+/*- just trying something */
+
+var L = window.locale;
+
+["Tree", [
+	["Node", {
+		classes: "root-invisible",
+		expanded: true,
+		text: L("codes.sikb.nl"),
+		// onNodesNeeded: function() {
+		// 	return new Promise(function(resolve, reject) {
+		// 		require("jquery").ajax({
+					
+		// 		});
+		// 		setTimeout(function() {
+		// 			resolve(1);
+		// 		}, 2000);
+		// 	});
+		// }
+	}, ["Bemonsteringsapparaat","Bemonsteringsmethode","Bemonsteringssoort","Biotaxon","BodemlaagBodemkenmerken","BodemlaagBodemkenmerkenGradatie","BodemlaagBodemkenmerkenOorsprong","BodemlaagBodemkenmerkenSpecificatie","BodemlaagType","Bodemsoort","BodemsoortMediaan","CertificeringsCode","Compartiment","Eenheid","Geslacht","GrindGehalte","Hoedanigheid","Kansverdeling","KenmerkBodemlaag","KenmerkMonstername","Kleur","Kleursterkte","Kwaliteitsoordeel","LabopdrachtStatus","LocatieTypeWaardebepaling","Meetapparaat","Meetinstantie","MeetObjectSoort","Monsterbewerkingsmethode","MonsterType","MonsterVerpakking","MonsterVoorbehandeling","OliewaterReactieMate","Onderzoekssoort","Orgaan","OrganischeStofGehalte","Parameter","RelatedObservationRollen","RelatedSamplingFeatureRollen","RelatedSubjectRollen","RolBetrokkene","StatistischeParameter","ValidationScore","ValidationSteps","Waardebepalingsmethode","Waardebepalingstechniek","Waardebewerkingsmethode","WaarnemingReeksType"].map(_ => ["Node", { text: _ }])
+	]
+]];

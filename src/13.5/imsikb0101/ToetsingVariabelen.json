@@ -1,0 +1,477 @@
+[{
+    "ID": 1,
+    "Omschrijving": "Teller: Parameters met normwaarde",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 2,
+    "Omschrijving": "Teller: Parameter oordeel &gt; IW",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 3,
+    "Omschrijving": "Teller: Parameter oordeel &gt; Industrie",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 4,
+    "Omschrijving": "Teller: Parameter oordeel &gt; ETW",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 5,
+    "Omschrijving": "Teller: Parameter oordeel &gt; Achtergrondwaarde",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 6,
+    "Omschrijving": "Teller: Parameter oordeel &gt; \"woonwaarde ontbreekt\" (W.II)",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 7,
+    "Omschrijving": "Teller: Parameter oordeel &gt; generieke woonwaarde (W.I)",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 8,
+    "Omschrijving": "Teller: T.23 - Teller D",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 9,
+    "Omschrijving": "Teller: T.20 - Teller A",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 10,
+    "Omschrijving": "Teller: T.20 - Teller B",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 11,
+    "Omschrijving": "Teller: T.22 - Teller C",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 12,
+    "Omschrijving": "Teller: Parameter oordeel &gt; B",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 13,
+    "Omschrijving": "Teller: Parameter oordeel &gt; A waarde",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 14,
+    "Omschrijving": "Aantal monsters waaruit gemiddelde is bepaald",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 15,
+    "Omschrijving": "Is Waddenzee / Zeeuwse Delta",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 16,
+    "Omschrijving": "Is Diep grondwater",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 17,
+    "Omschrijving": "Teller: T.18 - Teller F",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 18,
+    "Omschrijving": "Teller: Parameter oordeel niet verspreidbaar",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.0",
+    "@_datum": "2013-04-11",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 19,
+    "Omschrijving": "Teller: Parameter oordeel &gt; S",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 20,
+    "Omschrijving": "Teller: T.28 - Teller E",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 21,
+    "Omschrijving": "Teller: Parameter oordeel &gt; EW",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 22,
+    "Omschrijving": "Teller: Parameter oordeel &gt; SW",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 23,
+    "Omschrijving": "Teller: 'III'",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 24,
+    "Omschrijving": "Teller: Parameter oordeel &gt; 2 SW",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 25,
+    "Omschrijving": "Teller: Parameter oordeel &gt; 2 EW",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 26,
+    "Omschrijving": "Is Bitumenproducten",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 27,
+    "Omschrijving": "Is Asfaltproducten",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 28,
+    "Omschrijving": "Is Granulaten",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 29,
+    "Omschrijving": "Is Polymeerbeton",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 30,
+    "Omschrijving": "Is Vormzand",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 31,
+    "Omschrijving": "Is Rubberproducten algemene toepassing",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.2",
+    "@_datum": "2013-11-29",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 32,
+    "Omschrijving": "Is Vormgegeven",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 33,
+    "Omschrijving": "Is Niet-vormgegeven",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 34,
+    "Omschrijving": "Is Groot oppervlaktewater zoet water",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.2",
+    "@_datum": "2013-11-29",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 35,
+    "Omschrijving": "Is Contactzone Zeewater of brak water",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 36,
+    "Omschrijving": "Is IBC",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.1",
+    "@_datum": "2013-10-30",
+    "@_status": "Gewijzigd"
+},
+{
+    "ID": 37,
+    "Omschrijving": "Is Standaard (Samenstellingswaarde)",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.2",
+    "@_datum": "2013-11-29",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 38,
+    "Omschrijving": "Is Rubberproducten op of onder kunstgrasvelden",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.2",
+    "@_datum": "2013-11-29",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 39,
+    "Omschrijving": "Is Groot oppervlaktewater zout water of brak water",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "11.0.2",
+    "@_datum": "2013-11-29",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 40,
+    "Omschrijving": "Aantal monsters waaruit hergebruik emissie is bepaald",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.2",
+    "@_datum": "2014-01-15",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 41,
+    "Omschrijving": "Aantal monsters waaruit hergebruik samenstelling is bepaald",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "11.0.2",
+    "@_datum": "2014-01-15",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 42,
+    "Omschrijving": "Tonnage monster (in Ton)",
+    "Instelling": "handmatig",
+    "Type": "floatValue",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 43,
+    "Omschrijving": "Fijnpuin herbruikbaar",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 44,
+    "Omschrijving": "Puintoeslag berekenen?",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 45,
+    "Omschrijving": "Zeefmaat (gebruikt bij Slib %, 63 of 32 um)",
+    "Instelling": "handmatig",
+    "Type": "floatValue",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 46,
+    "Omschrijving": "Is het gehalte niet-hechtgebonden asbest &lt;100 mg/kg ds?",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 47,
+    "Omschrijving": "Is het gehalte asbest, in de fractie &lt;2mm, &lt;100 mg/kg ds?",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 48,
+    "Omschrijving": "Tonnage residu na reinigen",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 49,
+    "Omschrijving": "Percentage residu na reinigen",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 50,
+    "Omschrijving": "Reinigingskosten (in Euro)",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 51,
+    "Omschrijving": "Type reiniging",
+    "Instelling": "bepaald",
+    "Type": "floatValue",
+    "@_versie": "12.0.0",
+    "@_datum": "2014-11-21",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 52,
+    "Omschrijving": "Alle normen terugsturen",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "12.1.0",
+    "@_datum": "2015-06-19",
+    "@_status": "Bevestigd"
+},
+{
+    "ID": 53,
+    "Omschrijving": "RKGs ook terugsturen",
+    "Instelling": "handmatig",
+    "Type": "booleanValue",
+    "@_versie": "12.1.0",
+    "@_datum": "2015-06-19",
+    "@_status": "Bevestigd"
+}]

@@ -1,0 +1,352 @@
+[{
+    "sikb_id": 441,
+    "grond:WBB_RG": "0.2",
+    "grond:WBB_AW": "0.6",
+    "grond:WBB_T": "6.8",
+    "grond:WBB_I": "13",
+    "grond:BKK_Wonen": "1.2",
+    "grond:BKK_Industrie": "4.3",
+    "grondwater:WBB_AW": "0.4",
+    "grondwater:WBB_T": "3.2",
+    "grondwater:WBB_I": "6"
+},
+{
+    "sikb_id": 527,
+    "grond:WBB_RG": "3",
+    "grond:WBB_AW": "15",
+    "grond:WBB_T": "103",
+    "grond:WBB_I": "190",
+    "grond:BKK_Wonen": "35",
+    "grond:BKK_Industrie": "190",
+    "grondwater:WBB_AW": "20",
+    "grondwater:WBB_T": "60",
+    "grondwater:WBB_I": "100"
+},
+{
+    "sikb_id": 971,
+    "grond:WBB_RG": "5",
+    "grond:WBB_AW": "40",
+    "grond:WBB_T": "115",
+    "grond:WBB_I": "190",
+    "grond:BKK_Wonen": "54",
+    "grond:BKK_Industrie": "190",
+    "grondwater:WBB_AW": "15",
+    "grondwater:WBB_T": "45",
+    "grondwater:WBB_I": "75"
+},
+{
+    "sikb_id": 1097,
+    "grond:WBB_RG": "0.05",
+    "grond:WBB_AW": "0.15",
+    "grond:WBB_T": "18.1",
+    "grond:WBB_I": "36",
+    "grond:BKK_Wonen": "0.83",
+    "grond:BKK_Industrie": "4.8",
+    "grondwater:WBB_AW": "0.05",
+    "grondwater:WBB_T": "0.175",
+    "grondwater:WBB_I": "0.3"
+},
+{
+    "sikb_id": 1116,
+    "grond:WBB_RG": "10",
+    "grond:WBB_AW": "50",
+    "grond:WBB_T": "290",
+    "grond:WBB_I": "530",
+    "grond:BKK_Wonen": "210",
+    "grond:BKK_Industrie": "530",
+    "grondwater:WBB_AW": "15",
+    "grondwater:WBB_T": "45",
+    "grondwater:WBB_I": "75"
+},
+{
+    "sikb_id": 1243,
+    "grond:WBB_RG": "1.5",
+    "grond:WBB_AW": "1.5",
+    "grond:WBB_T": "95.8",
+    "grond:WBB_I": "190",
+    "grond:BKK_Wonen": "88",
+    "grond:BKK_Industrie": "190",
+    "grondwater:WBB_AW": "5",
+    "grondwater:WBB_T": "152.5",
+    "grondwater:WBB_I": "300"
+},
+{
+    "sikb_id": 1267,
+    "grond:WBB_RG": "4",
+    "grond:WBB_AW": "35",
+    "grond:WBB_T": "67.5",
+    "grond:WBB_I": "100",
+    "grond:BKK_Wonen": "39",
+    "grond:BKK_Industrie": "100",
+    "grondwater:WBB_AW": "15",
+    "grondwater:WBB_T": "45",
+    "grondwater:WBB_I": "75"
+},
+{
+    "sikb_id": 1693,
+    "grond:WBB_RG": "20",
+    "grond:WBB_AW": "140",
+    "grond:WBB_T": "430",
+    "grond:WBB_I": "720",
+    "grond:BKK_Wonen": "200",
+    "grond:BKK_Industrie": "720",
+    "grondwater:WBB_AW": "65",
+    "grondwater:WBB_T": "432.5",
+    "grondwater:WBB_I": "800"
+},
+{
+    "sikb_id": 1352,
+    "grond:WBB_RG": "0.35",
+    "grond:WBB_AW": "1.5",
+    "grond:WBB_T": "20.75",
+    "grond:WBB_I": "40",
+    "grond:BKK_Wonen": "6.8",
+    "grond:BKK_Industrie": "40"
+},
+{
+    "sikb_id": 1200,
+    "grond:WBB_RG": "35",
+    "grond:WBB_AW": "190",
+    "grond:WBB_T": "2595",
+    "grond:WBB_I": "5000",
+    "grond:BKK_Wonen": "190",
+    "grond:BKK_Industrie": "500",
+    "grondwater:WBB_AW": "50",
+    "grondwater:WBB_T": "325",
+    "grondwater:WBB_I": "600"
+},
+{
+    "sikb_id": 1365,
+    "grond:WBB_RG": "0.007",
+    "grond:WBB_AW": "0.02",
+    "grond:WBB_T": "0.51",
+    "grond:WBB_I": "1",
+    "grond:BKK_Wonen": "0.04",
+    "grond:BKK_Industrie": "0.5"
+},
+{
+    "sikb_id": 342,
+    "grondwater:WBB_AW": "0.2",
+    "grondwater:WBB_T": "15.1",
+    "grondwater:WBB_I": "30"
+},
+{
+    "sikb_id": 728,
+    "grondwater:WBB_AW": "4",
+    "grondwater:WBB_T": "77",
+    "grondwater:WBB_I": "150"
+},
+{
+    "sikb_id": 1259,
+    "grondwater:WBB_AW": "0.01",
+    "grondwater:WBB_T": "35.005",
+    "grondwater:WBB_I": "70"
+},
+{
+    "sikb_id": 1503,
+    "grondwater:WBB_AW": "6",
+    "grondwater:WBB_T": "153",
+    "grondwater:WBB_I": "300"
+},
+{
+    "sikb_id": 1568,
+    "grondwater:WBB_AW": "7",
+    "grondwater:WBB_T": "503.5",
+    "grondwater:WBB_I": "1000"
+},
+{
+    "sikb_id": 1686,
+    "grondwater:WBB_AW": "0.2",
+    "grondwater:WBB_T": "35.1",
+    "grondwater:WBB_I": "70"
+},
+{
+    "sikb_id": 4,
+    "grondwater:WBB_AW": "0.01",
+    "grondwater:WBB_T": "150.005",
+    "grondwater:WBB_I": "300"
+},
+{
+    "sikb_id": 6,
+    "grondwater:WBB_AW": "0.01",
+    "grondwater:WBB_T": "65.005",
+    "grondwater:WBB_I": "130"
+},
+{
+    "sikb_id": 8,
+    "grondwater:WBB_AW": "7",
+    "grondwater:WBB_T": "453.5",
+    "grondwater:WBB_I": "900"
+},
+{
+    "sikb_id": 9,
+    "grondwater:WBB_AW": "0.01",
+    "grondwater:WBB_T": "5.005",
+    "grondwater:WBB_I": "10"
+},
+{
+    "sikb_id": 36,
+    "grondwater:WBB_AW": "7",
+    "grondwater:WBB_T": "203.5",
+    "grondwater:WBB_I": "400"
+},
+{
+    "sikb_id": 619,
+    "grondwater:WBB_AW": "0.01",
+    "grondwater:WBB_T": "500.005",
+    "grondwater:WBB_I": "1000"
+},
+{
+    "sikb_id": 1654,
+    "grondwater:WBB_AW": "0.01",
+    "grondwater:WBB_T": "2.505",
+    "grondwater:WBB_I": "5"
+},
+{
+    "sikb_id": 1536,
+    "grondwater:WBB_AW": "0.01",
+    "grondwater:WBB_T": "20.005",
+    "grondwater:WBB_I": "40"
+},
+{
+    "sikb_id": 1538,
+    "grondwater:WBB_AW": "0.01",
+    "grondwater:WBB_T": "5.005",
+    "grondwater:WBB_I": "10"
+},
+{
+    "sikb_id": 1598,
+    "grondwater:WBB_AW": "24",
+    "grondwater:WBB_T": "262",
+    "grondwater:WBB_I": "500"
+},
+{
+    "sikb_id": 1711,
+    "grondwater:WBB_AW": "6",
+    "grondwater:WBB_T": "203",
+    "grondwater:WBB_I": "400"
+},
+{
+    "sikb_id": 519,
+    "grondwater:WBB_AW": "0.01",
+    "grondwater:WBB_T": "10.005",
+    "grondwater:WBB_I": "20"
+},
+{
+    "sikb_id": 622,
+    "grondwater:WBB_AW": "0.8",
+    "grondwater:WBB_T": "40.4",
+    "grondwater:WBB_I": "80"
+},
+{
+    "sikb_id": 1590,
+    "grondwater:WBB_I": "630"
+},
+{
+    "sikb_id": 268,
+    "grond:WBB_I": "0.32"
+},
+{
+    "sikb_id": 853,
+    "grond:WBB_AW": "0.0007",
+    "grond:WBB_T": "2.0035",
+    "grond:WBB_I": "4",
+    "grond:BKK_Wonen": "0.0007",
+    "grond:BKK_Industrie": "0.1"
+},
+{
+    "sikb_id": 269,
+    "grond:WBB_AW": "0.0009",
+    "grond:WBB_T": "2.00045",
+    "grond:WBB_I": "4",
+    "grond:BKK_Wonen": "0.0009",
+    "grond:BKK_Industrie": "0.1"
+},
+{
+    "sikb_id": 271,
+    "grond:WBB_AW": "0.001",
+    "grond:WBB_T": "8.5005",
+    "grond:WBB_I": "17",
+    "grond:BKK_Wonen": "0.001",
+    "grond:BKK_Industrie": "0.5"
+},
+{
+    "sikb_id": 366,
+    "grond:WBB_AW": "0.002",
+    "grond:WBB_T": "0.801",
+    "grond:WBB_I": "1.6",
+    "grond:BKK_Wonen": "0.002",
+    "grond:BKK_Industrie": "0.5"
+},
+{
+    "sikb_id": 816,
+    "grond:WBB_AW": "0.003",
+    "grond:WBB_T": "0.6015",
+    "grond:WBB_I": "1.2",
+    "grond:BKK_Wonen": "0.04",
+    "grond:BKK_Industrie": "0.5"
+},
+{
+    "sikb_id": 861,
+    "grond:WBB_AW": "0.0085",
+    "grond:WBB_T": "1.00425",
+    "grond:WBB_I": "2",
+    "grond:BKK_Wonen": "0.27",
+    "grond:BKK_Industrie": "1.4"
+},
+{
+    "sikb_id": 2146,
+    "grond:WBB_AW": "0.003"
+},
+{
+    "sikb_id": 552,
+    "grond:WBB_AW": "0.02",
+    "grond:WBB_T": "17.01",
+    "grond:WBB_I": "34",
+    "grond:BKK_Wonen": "0.84",
+    "grond:BKK_Industrie": "34"
+},
+{
+    "sikb_id": 553,
+    "grond:WBB_AW": "0.1",
+    "grond:WBB_T": "1.2",
+    "grond:WBB_I": "2.3",
+    "grond:BKK_Wonen": "0.13",
+    "grond:BKK_Industrie": "1.3"
+},
+{
+    "sikb_id": 554,
+    "grond:WBB_AW": "0.2",
+    "grond:WBB_T": "0.95",
+    "grond:WBB_I": "1.7",
+    "grond:BKK_Wonen": "0.2",
+    "grond:BKK_Industrie": "1"
+},
+{
+    "sikb_id": 689,
+    "grond:WBB_AW": "0.015",
+    "grond:WBB_T": "2.0075",
+    "grond:WBB_I": "4",
+    "grond:BKK_Wonen": "0.04",
+    "grond:BKK_Industrie": "0.14"
+},
+{
+    "sikb_id": 857,
+    "grond:WBB_AW": "0.002",
+    "grond:WBB_T": "2.001",
+    "grond:WBB_I": "4",
+    "grond:BKK_Wonen": "0.002",
+    "grond:BKK_Industrie": "0.1"
+},
+{
+    "sikb_id": 480,
+    "grond:WBB_AW": "0.002",
+    "grond:WBB_T": "2.001",
+    "grond:WBB_I": "4",
+    "grond:BKK_Wonen": "0.002",
+    "grond:BKK_Industrie": "0.1"
+},
+{
+    "sikb_id": 2718,
+    "grond:WBB_AW": "0.4"
+}]
