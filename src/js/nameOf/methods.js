@@ -121,7 +121,7 @@ define(function(require) {
 				return js.nameOf(obj['imsikb0101:destinationType']);
 			}
 			if(keys[0] === "imsikb0101:Dossier") {
-				return [
+				return (obj['imsikb0101:soilLocation'] && js.nameOf(obj['imsikb0101:soilLocation'])) || [
 					obj['imsikb0101:dossierIdLocalAuthority'],
 					obj['imsikb0101:dossierIdNotLocalAuthority']
 				].filter(v=>v).join("/");
@@ -219,7 +219,6 @@ define(function(require) {
 		(obj) => typeof obj === "string" && obj.indexOf("urn:") === 0 ? 
 			(obj = lookup(obj)) && js.nameOf(obj) : undefined
 	);
-	
 	require("js/nameOf").methods.push(function(obj) {
 		var ent = guess(obj);
 		if(ent === "Meetpunt") {
@@ -241,7 +240,6 @@ define(function(require) {
 			return obj.contactpersoon;
 		}
 	});
-	
 	require("js/nameOf").methods.after.push(
 		(obj) => js.get(["imsikb0101:identification", "immetingen:NEN3610ID", "immetingen:lokaalID"], obj)
 	);
