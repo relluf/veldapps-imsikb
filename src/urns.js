@@ -33,4 +33,4 @@ define(function(require) {
 	urns.immetingen.bodemlaagbijzonderhedengradatie = urns.immetingen.bodemlaagbodemkenmerkengradatie;
 
 	return urns;	
-})
+});

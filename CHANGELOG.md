@@ -1,6 +1,9 @@
 - Maybe we need some parse() options?
 	- resolve urns, yes or no?
-	- 
+
+### 2020-11-09 - 1.0.16
+- Developing SIKB 9 and 13
+
 ### 2020-10-28 - 1.0.15
 - Introducing `traverse`
 

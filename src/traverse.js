@@ -32,7 +32,7 @@ return function traverse(root, handlers, cache) {
 	
 				if(key.charAt(0) === key.charAt(0).toUpperCase()) {
 					// imsikb0101 - entity instance
-					handle(key, value);
+					handle("imsikb0101:" + key, value);
 				}
 	
 				if(key === "Project") {
