@@ -28,7 +28,8 @@ define(function(require) {
 			obj = obj[keys[0]];
 			if(keys[0].startsWith("immetingen:AnalyticResult")) {
 				var nv = obj['immetingen:numericValue'];
-				return js.sf("%s %s %s", 
+				var av = obj['immetingen:alphanumericValue'];
+				return (!nv && av) || js.sf("%s %s %s", 
 					rxe(obj['immetingen:limitSymbol'])||"", 
 					nv['#text'], js.get("Code", lookup(nv['@_uom'])) || "");
 			}
