@@ -4,11 +4,12 @@ return function guessSikbEntity(obj) {
 		return "Point";
 	}
 	
-	if(obj.locatie) return "Bodeminformatie";
+	if(obj.projectcode) return "Onderzoek";
+	if(obj.locatie && !obj.metainformatie) return "Onderzoek"; // Bodeminformatie
 	if(obj.metainformatie) return "Bodeminformatie";
-	if(obj.onderzoek) return "Locatie";
-	if(obj.analysemonster) return "Onderzoek";
-	if(obj.meetpunt) return "Onderzoek";
+	// if(obj.onderzoek) return "Meetpunt"; // Analysemonster
+	// if(obj.analysemonster) return "Onderzoek"; // Analysresultaat?
+	// if(obj.meetpunt) return "Bodemlaag"; // Filter, Bodemmmonster
 	if(obj.contactpersoon) return "Subject";
 
 	if(["@_monstertype","@_lab", "analyseresultaat"].some(_ => obj.hasOwnProperty(_))) {
@@ -27,11 +28,13 @@ return function guessSikbEntity(obj) {
 		return "Bodemlaag";
 	}
 	
-	if(obj.veldmonster) {
-		return "Bodemmonster";
+	if(obj.veldmonster) { 
+		return "Bodemmonster"; // Watermonster?
 	}
 	
-	if(obj === undefined || obj === null || typeof obj !== "object") return undefined;
+	// if(obj === undefined || obj === null || typeof obj !== "object") return undefined;
+	
+	if(obj.code) return "Meetpunt";
 	if(obj.afwerking || obj.bodemlaag || obj.bodemlaag || obj.filter) return "Meetpunt";
 	if(obj.afdichtingsoort) return "Afwerking";
 	

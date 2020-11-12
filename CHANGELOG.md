@@ -1,6 +1,13 @@
 - Maybe we need some parse() options?
 	- resolve urns, yes or no?
 
+refactored a lot of js/nameOf.methods over several packages
+
+### 2020-11-11 - 1.0.18
+- Refactoring js/nameOf-methods over several packages (Rijkswaterstaat-demo)
+- Finetuning js.nameOf 
+	- Filter (upper-lower not set)
+
 ### 2020-11-09 - 1.0.16
 - Developing SIKB 9 and 13
 

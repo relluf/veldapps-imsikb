@@ -1,6 +1,6 @@
 {
   "name": "veldapps-imsikb",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "The purpose of this package is to centralize codes and standards distilled from schemas and standards (indirectly) found at https://codes.sikb.nl.",
   "main": "index.js",
   "scripts": {
