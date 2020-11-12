@@ -182,7 +182,7 @@ define(function(require) {
 			if(ent === "Meetpunt") {
 				return obj.code;
 			}
-			if(ent === "Bodemlaag" || ent === "Bodemmonster" || ent === "Filter" && js.get("onderkant")) {
+			if((ent === "Bodemlaag" || ent === "Bodemmonster" || ent === "Filter") && js.get("onderkant")) {
 				return js.sf("%s-%s m", js.get("bovenkant.@_diepte", obj), js.get("onderkant.@_diepte", obj));
 			}
 			if(ent === "Afwerking") {
@@ -196,6 +196,21 @@ define(function(require) {
 			}
 			if(ent === "Subject") {
 				return obj.contactpersoon;
+			}
+			if(ent === "Analyseresultaat") {
+				return js.sf("%n: %s %n", obj['@_componentid-urn'], rxe(obj.meetwaarde_oms||"") || obj.meetwaarde, obj['@_eenheid-urn']);
+			}
+			if(obj.hasOwnProperty("van") && obj.hasOwnProperty("tot")) {
+				return js.sf("%s-%s m", js.get("van.@_diepte", obj), js.get("tot.@_diepte", obj));
+			}
+			if(js.get("onderkant", obj)) {
+				return js.sf("%s-%s m", js.get("bovenkant.@_diepte", obj), js.get("onderkant.@_diepte", obj));
+			}
+			if(obj['@_va:bodemmonster'] && obj['@_va:analysemonsters']) {
+				return js.nameOf(obj['@_va:bodemmonster']);
+			}
+			if(obj['@_toetskader']) {
+				return js.sf("T%s: %s", obj['@_toetskader'], obj.getalswaarde || "?");
 			}
 		},
 		(obj) => typeof obj === "string" && obj.indexOf("urn:") === 0 ? (obj = lookup(obj)) && js.nameOf(obj) : undefined

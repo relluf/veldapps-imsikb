@@ -3,10 +3,9 @@
 
 refactored a lot of js/nameOf.methods over several packages
 
-### 2020-11-11 - 1.0.18
+### 2020-11-11 - 1.0.19
 - Refactoring js/nameOf-methods over several packages (Rijkswaterstaat-demo)
-- Finetuning js.nameOf 
-	- Filter (upper-lower not set)
+- Finetuning js.nameOf more and more (_I don't know where I am going to_)
 
 ### 2020-11-09 - 1.0.16
 - Developing SIKB 9 and 13
