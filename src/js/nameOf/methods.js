@@ -220,6 +220,7 @@ define(function(require) {
 	);
 	require("js/nameOf").methods.after.push(
 		(obj) => js.get(["imsikb0101:identification", "immetingen:NEN3610ID", "immetingen:lokaalID"], obj),
-		(obj) => obj['gml:timePosition']
+		(obj) => obj['gml:timePosition'],
+		(obj) => obj['_@xlink:href-resolved'] ? js.nameOf(obj['_@xlink:href-resolved']) : undefined
 	);
 });
