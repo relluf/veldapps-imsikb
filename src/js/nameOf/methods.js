@@ -206,6 +206,9 @@ define(function(require) {
 			if(js.get("onderkant", obj)) {
 				return js.sf("%s-%s m", js.get("bovenkant.@_diepte", obj), js.get("onderkant.@_diepte", obj));
 			}
+			if(obj['@_va:filter'] && obj['@_va:analysemonsters']) {
+				return js.nameOf(obj['@_va:filter']);
+			}
 			if(obj['@_va:bodemmonster'] && obj['@_va:analysemonsters']) {
 				return js.nameOf(obj['@_va:bodemmonster']);
 			}
@@ -216,6 +219,7 @@ define(function(require) {
 		(obj) => typeof obj === "string" && obj.indexOf("urn:") === 0 ? (obj = lookup(obj)) && js.nameOf(obj) : undefined
 	);
 	require("js/nameOf").methods.after.push(
-		(obj) => js.get(["imsikb0101:identification", "immetingen:NEN3610ID", "immetingen:lokaalID"], obj)
+		(obj) => js.get(["imsikb0101:identification", "immetingen:NEN3610ID", "immetingen:lokaalID"], obj),
+		(obj) => obj['gml:timePosition']
 	);
 });
