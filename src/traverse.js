@@ -91,7 +91,7 @@ return function traverse(root, handlers, cache) {
 				}
 
 				if(keys.length === 1 || keys[0] === "sikb") {
-					var entity = keys[1] || guessSikbEntity(value);
+					var entity = keys[1] || (value && guessSikbEntity(value));
 					
 					if(entity === "Onderzoek") {
 						handle("sikb:Onderzoek", value);

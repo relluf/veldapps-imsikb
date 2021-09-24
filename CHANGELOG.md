@@ -1,7 +1,11 @@
 - Maybe we need some parse() options?
 	- resolve urns, yes or no?
 
-refactored a lot of js/nameOf.methods over several packages
+
+### 2020-12-23 - 1.0.24
+- Updating in favor of `#VA-20201218-1` (ie. Arcadis SIKB/CSV-conversion - 1st order)
+- Mainly refactored a lot of js/nameOf.methods 
+
 
 ### 2020-11-11 - 1.0.19
 - Refactoring js/nameOf-methods over several packages (Rijkswaterstaat-demo)

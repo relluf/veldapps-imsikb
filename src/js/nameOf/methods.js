@@ -178,6 +178,25 @@ define(function(require) {
 		(obj) => obj['imsikb0101:name'],
 		(obj) => obj['immetingen:name'],
 		(obj) => {
+			
+			if(obj['immetingen:physicalProperty']) {
+			// TODO duplicate code in this file			
+				return [
+					obj['immetingen:physicalProperty'] && js.nameOf(obj['immetingen:physicalProperty']),
+					obj['om:result'] && js.nameOf(obj['om:result'])
+				].filter(v=>v).map(v=>js.nameOf(v)).join(": ");
+			}
+			if(obj['imsikb0101:publicSpace'] || obj['imsikb0101:zipcode'] || obj['imsikb0101:districtCode'] || obj['imsikb0101:city']) {
+			// TODO duplicate code in this file			
+				return [
+					obj['imsikb0101:publicSpace'],
+					obj['imsikb0101:zipcode'],
+					obj['imsikb0101:districtCode'],
+					obj['imsikb0101:city'],
+					obj['imsikb0101:country'],
+				].filter(v=>v).map(v=>js.nameOf(v)).join(", ");
+			}
+
 			var ent = guess(obj);//.split(":").pop();
 			if(ent === "Meetpunt") {
 				return obj.code;
@@ -216,7 +235,7 @@ define(function(require) {
 				return js.sf("T%s: %s", obj['@_toetskader'], obj.getalswaarde || "?");
 			}
 		},
-		(obj) => typeof obj === "string" && obj.indexOf("urn:") === 0 ? (obj = lookup(obj)) && js.nameOf(obj) : undefined
+		(obj) => typeof obj === "string" && obj.indexOf("urn:") === 0 ? (obj = lookup(obj)) && js.sf("%s - urn", js.nameOf(obj)) : undefined
 	);
 	require("js/nameOf").methods.after.push(
 		(obj) => js.get(["imsikb0101:identification", "immetingen:NEN3610ID", "immetingen:lokaalID"], obj),
