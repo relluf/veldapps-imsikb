@@ -1,6 +1,102 @@
+### 2026/07/02 2.0.0
+
+**SIKB entity detection**
+
+* `guess.js`: modern SIKB 11+/IMSIKB/IMMetingen detection.
+* Wrapped entity recognition.
+* Safer `hasOwnProperty` handling.
+
+**Naming / display labels**
+
+* `nameOf/methods.js`: sample names with depth ranges.
+* Better formatting for depths, measures, URNs, finishing, samples.
+* Numeric formatting via `Math.f`.
+
+**Depth parsing / units**
+
+* `common.js`: better nested value extraction.
+* Correct unit handling for mm/cm/m.
+* Adds `directValueForKeys`.
+
+**URN lookup / tables**
+
+* `urns.js`: switches lookup tables to `./current/...`.
+* Safer aliases via `alias()`.
+* Fixes accidental global `arr`.
+* `lookup.js`: debug guard for empty URN.
+
+**Map layers / styling**
+
+* `Project.js`: updated project legend styling.
+* `Testing.js`: major testing layer improvements:
+  * groups testing features by source feature;
+  * representative/severity-based judgement selection;
+  * cleaner hints and legends;
+  * unique testing layer keys;
+  * default visible depth/parameter group;
+  * cleanup of legacy testing nodes.
+
+**Parsing / entity linking**
+
+* `util.js`: still parses legacy and modern documents.
+* Links `Analysis` back to `Sample`.
+* Links `Characteristic` back to `Layer`.
+* Uses current lookup tables.
+
+### 2026/06/30 Bijgewerkt: [imsikb0101-all.json](src/current/:) en [immetingen-all.json](src/current/:)
+
+* **[imsikb0101-new.json](src/:)**: 84 tabellen, 3732 waarden
+* **[immetingen-new.json](src/:)**: 58 brontabellen, 62 wrappers, 11609 waarden
+
+#### > [build-imsikb0101-new.js](tools/scripts/:)
+
+- Oude file: 96 XML-wrapper-tabellen, 677 KB
+- Nieuwe file: 84 `SIKB0101` service-tabellen, 1.1 MB
+- Nieuwe waarden: 3.732
+- Tabellen met `name !== technicalName`: 48
+- Shape blijft runtime-compatible: `sikb.<TechnicalName>_c` met array `<TechnicalName>` en `ID`
+
+Voor `Toetsoordelen` zit dit er nu in:
+
+```json
+{
+  "@_naam": "ToetsOordeel",
+  "@_technicalName": "Toetsoordelen",
+  "@_urnDomain": "imsikb0101",
+  "@_urnKey": "toetsoordelen"
+}
+```
+
+En ID 79/91 zitten erin, inclusief de nieuwe service-metadata. De genormaliseerde runtime-vergelijking gaf 60 overlappende keys, 24 nieuwe keys en 35 verdwenen oude keys. Veel verschil komt door oude technische namen die nu explicieter/anders heten, zoals `aanleiding` versus `onderzoekaanleidingen`.
+
+#### > [build-immetingen-new.js](scripts/:)
+
+- 58 `Metingen` brontabellen
+- 11.609 unieke servicewaarden
+- 62 wrappers in JSON, omdat ik 4 alias-wrappers heb toegevoegd voor `name !== technicalName`
+- Bestand: 4.5 MB
+
+Belangrijk voor runtime/URNs: bij de bodemlaag-tabellen zijn beide vormen opgenomen. Bijvoorbeeld:
+
+```text
+sikb.BodemlaagBijzonderheden_c      // technicalName / URN key
+sikb.BodemlaagBodemkenmerken_c      // name / bestaande runtime key
+```
+
+Daarmee blijven zowel `urn:immetingen:bodemlaagbijzonderheden:id:*` als bestaande code die `bodemlaagbodemkenmerken` verwacht bruikbaar.
+
+Sanity checks:
+
+- `MonsterType` ID 10 = `analysemonster`
+- `Compartiment` ID 1 = `Bodem/Sediment`
+- `BodemlaagBijzonderheden` en `BodemlaagBodemkenmerken` wijzen inhoudelijk naar dezelfde tabel
+- Nieuwe runtime keys t.o.v. oud: o.a. `conserveringsmethode`, `limietsymboolreferentie`, `primertargetgen`
+- Verdwenen t.o.v. oud: `grondsoort`, `grondsoortmediaan`
+
+### TODOS
+
 - Maybe we need some parse() options?
 	- resolve urns, yes or no?
-
 
 ### 2020-12-23 - 1.0.24
 - Updating in favor of `#VA-20201218-1` (ie. Arcadis SIKB/CSV-conversion - 1st order)

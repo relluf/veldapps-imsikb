@@ -322,6 +322,17 @@ define(function(require) {
 		createFeature: (obj, index, context) => (spec.createFeature || createFeature)(obj, spec.name, index || 0, Geometry.cachedOpenLayersGeometryFrom(context, obj), context)
 	});
 
+	const directValueForKeys = (obj, keys) => {
+		if(!obj || typeof obj !== "object") return undefined;
+
+		for(let i = 0; i < keys.length; i++) {
+			if(obj[keys[i]] !== undefined && obj[keys[i]] !== null) {
+				return arrX(obj[keys[i]])[0];
+			}
+		}
+		return undefined;
+	};
+
 	const depthValueFor = (obj, keys) => {
 		const value = firstValueForKeys(obj, keys);
 
@@ -335,13 +346,22 @@ define(function(require) {
 		let uom = "";
 
 		if(value && typeof value === "object") {
-			const depth = get("immetingen:Depth", value) || get("imsikb0101:Depth", value) || get("Depth", value) || value;
-			const measure = get("immetingen:value", depth) || get("imsikb0101:value", depth) || get("value", depth);
+			const depth = directValueForKeys(value, ["immetingen:Depth", "imsikb0101:Depth", "Depth"]) ||
+				get("immetingen:Depth", value) ||
+				get("imsikb0101:Depth", value) ||
+				get("Depth", value) ||
+				value;
+			const measure = directValueForKeys(depth, ["immetingen:value", "imsikb0101:value", "value"]) ||
+				get("immetingen:value", depth) ||
+				get("imsikb0101:value", depth) ||
+				get("value", depth);
 
 			text = textOf(measure) || textOf(depth) || text;
-			uom = textOf(get("@_uom", measure)) ||
+			uom = textOf(directValueForKeys(measure, ["@_uom", "@uom", "uom"])) ||
+				textOf(get("@_uom", measure)) ||
 				textOf(get("@uom", measure)) ||
 				textOf(get("uom", measure)) ||
+				textOf(directValueForKeys(depth, ["@_uom", "@uom", "uom"])) ||
 				textOf(get("@_uom", depth)) ||
 				textOf(get("@uom", depth)) ||
 				textOf(get("uom", depth));
@@ -352,7 +372,8 @@ define(function(require) {
 
 		const number = parseFloat(match[0]);
 		if(!isFinite(number)) return null;
-		if(/\bmm\b/i.test(text) || /Eenheid:id:21\b|eenheid:id:21\b/.test(uom)) return number / 10;
+		if(/\bmm\b/i.test(text) || /Eenheid:id:66\b|eenheid:id:66\b/.test(uom)) return number / 10;
+		if(/\bcm\b/i.test(text) || /Eenheid:id:19\b|eenheid:id:19\b/.test(uom)) return number;
 		if(/\bm(?:eter)?(?:\b|-mv)/i.test(text) || /Eenheid:id:115\b|eenheid:id:115\b/.test(uom)) return number * 100;
 		return number;
 	};
@@ -395,6 +416,7 @@ define(function(require) {
 		addFeatureLayerToMap,
 		addSpecToMap,
 		layerApi,
+		directValueForKeys,
 		depthValueFor,
 		parseDepthCm,
 		upperDepthOf,
