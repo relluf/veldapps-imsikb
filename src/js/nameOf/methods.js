@@ -227,7 +227,7 @@ define(function(require) {
 					return [ln,fn].filter(v=>v).map(v=>js.nameOf(v)).join(", ");
 				}
 				if(keys[0] === "imsikb0101:Sample") {
-					return sampleNameOf(obj['imsikb0101:Sample']);
+					return sampleNameOf(obj);
 				}
 				if(keys[0] === "imsikb0101:Remediation") {
 					return [

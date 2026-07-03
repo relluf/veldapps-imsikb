@@ -392,6 +392,15 @@ define(function(require) {
 		if(!isFinite(number)) return null;
 		return match[2] && /^m$/i.test(match[2]) ? number * 100 : number;
 	};
+	const depthFromText = value => {
+		const text = String(value || "").replace(",", ".");
+		const match = text.match(new RegExp("(?:^|[\\s(])-?\\d+(?:\\.\\d+)?\\s*(?:-|\\u2013|\\u2014|tot|t\\s*/\\s*m)\\s*(-?\\d+(?:\\.\\d+)?)\\s*(cm|m)?(?:\\)|\\s|$)", "i"));
+		if(!match) return null;
+
+		const number = parseFloat(match[1]);
+		if(!isFinite(number)) return null;
+		return match[2] && /^m$/i.test(match[2]) ? number * 100 : number;
+	};
 	const depthTopOf = obj => {
 		let top = Common.upperDepthOf(obj);
 		if(top !== null) return top;
@@ -403,6 +412,18 @@ define(function(require) {
 		if(top !== null) return top;
 
 		return depthTopFromText(normalizedReference(obj));
+	};
+	const depthBottomOf = obj => {
+		let bottom = Common.lowerDepthOf(obj);
+		if(bottom !== null) return bottom;
+
+		bottom = depthFromText(featureNameOf(obj, ""));
+		if(bottom !== null) return bottom;
+
+		bottom = depthFromText(textOf(obj));
+		if(bottom !== null) return bottom;
+
+		return depthFromText(normalizedReference(obj));
 	};
 	const addUnique = (arr, value) => {
 		if(value && arr.indexOf(value) === -1) arr.push(value);
@@ -423,9 +444,16 @@ define(function(require) {
 		});
 		return objects;
 	};
-	const depthGroupForTop = top => top < 100 ?
-		{ key: "bovengrond", name: "Grond - bovengrond (<100 cm-mv)", sort: 1 } :
-		{ key: "ondergrond", name: "Grond - ondergrond (>=100 cm-mv)", sort: 2 };
+	const addDepthGroupsForTrajectory = (groups, top, bottom) => {
+		if(top === null) return;
+		bottom = bottom === null ? top : bottom;
+		if(top < 100) {
+			groups.bovengrond = { key: "bovengrond", name: "Grond - bovengrond (<100 cm-mv)", sort: 1 };
+		}
+		if(bottom > 100 || top >= 100) {
+			groups.ondergrond = { key: "ondergrond", name: "Grond - ondergrond (>=100 cm-mv)", sort: 2 };
+		}
+	};
 	const depthGroupsForTestingItem = item => {
 		const objects = depthObjectsForTestingItem(item);
 		const depths = {};
@@ -436,9 +464,7 @@ define(function(require) {
 
 		objects.forEach(obj => {
 			const top = depthTopOf(obj);
-			if(top === null) return;
-			const group = depthGroupForTop(top);
-			depths[group.key] = group;
+			addDepthGroupsForTrajectory(depths, top, depthBottomOf(obj));
 		});
 
 		return Object.keys(depths).map(key => depths[key]);
