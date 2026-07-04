@@ -4,7 +4,6 @@ define(function(require) {
 	const spec = {
 		key: "Project",
 		name: "Project",
-		title: "Project",
 		keys: [
 			"imsikb0101:Project",
 			"Project"
