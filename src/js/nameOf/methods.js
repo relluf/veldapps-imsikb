@@ -74,6 +74,13 @@ define(function(require) {
 		if(!name || !depth || /\(\s*-?\d+(?:[.,]\d+)?\s*-\s*-?\d+(?:[.,]\d+)?\s*(?:cm|m)?\s*\)$/.test(name)) return name;
 		return js.sf("%s (%s)", name, depth);
 	};
+	var personNameOf = (obj) => {
+		var ln = sampleValueForKeys(obj, ["immetingen:lastName", "imsikb0101:lastName", "lastName"]);
+		var fn = sampleValueForKeys(obj, ["immetingen:firstName", "imsikb0101:firstName", "firstName"]);
+
+		if(fn === ln) return ln && js.nameOf(ln);
+		return [ln, fn].filter(v=>v).map(v=>js.nameOf(v)).join(", ");
+	};
 	var modernFinishingNameOf = (obj) => {
 		var traject = js.sf("%n-%n",
 			obj['imsikb0101:upperDepth'] || "?",
@@ -160,10 +167,7 @@ define(function(require) {
 					].filter(v=>v).map(v=>js.nameOf(v)).join(": ");
 				}
 				if(keys[0] === "immetingen:Person") {
-					return [
-						obj['immetingen:lastName'],
-						obj['immetingen:firstName'],
-					].filter(v=>v).map(v=>js.nameOf(v)).join(", ");
+					return personNameOf(obj);
 				}
 				if(keys[0] === "imsikb0101:Activity") {
 					return js.sf("%s (%s-%s)", 
@@ -221,10 +225,7 @@ define(function(require) {
 					return obj['imsikb0101:physicalProperty'] && js.nameOf(obj['imsikb0101:physicalProperty']);
 				}
 				if(keys[0] === "imsikb0101:Person") {
-					var ln = obj['imsikb0101:lastName'];
-					var fn = obj['imsikb0101:firstName'];
-					if(fn === ln) return ln;
-					return [ln,fn].filter(v=>v).map(v=>js.nameOf(v)).join(", ");
+					return personNameOf(obj);
 				}
 				if(keys[0] === "imsikb0101:Sample") {
 					return sampleNameOf(obj);
@@ -285,6 +286,9 @@ define(function(require) {
 					obj['imsikb0101:city'],
 					obj['imsikb0101:country'],
 				].filter(v=>v).map(v=>js.nameOf(v)).join(", ");
+			}
+			if(obj['immetingen:firstName'] || obj['immetingen:lastName'] || obj['imsikb0101:firstName'] || obj['imsikb0101:lastName'] || obj.firstName || obj.lastName) {
+				return personNameOf(obj);
 			}
 
 			var ent = guess(obj);//.split(":").pop();
@@ -357,6 +361,7 @@ define(function(require) {
 	require("js/nameOf").methods.after.push(
 		(obj) => js.get(["imsikb0101:identification", "immetingen:NEN3610ID", "immetingen:lokaalID"], obj),
 		(obj) => obj['gml:timePosition'],
+		(obj) => obj['@_xlink:href-resolved'] ? js.nameOf(obj['@_xlink:href-resolved']) : undefined,
 		(obj) => obj['_@xlink:href-resolved'] ? js.nameOf(obj['_@xlink:href-resolved']) : undefined
 	);
 });

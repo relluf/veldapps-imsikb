@@ -4,7 +4,6 @@ define(function(require) {
 	const spec = {
 		key: "SoilLocation",
 		name: "SoilLocation",
-		title: "Soil location",
 		keys: [
 			"imsikb0101:SoilLocation",
 			"immetingen:SoilLocation",

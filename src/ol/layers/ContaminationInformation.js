@@ -4,7 +4,6 @@ define(function(require) {
 	const spec = {
 		key: "ContaminationInformation",
 		name: "ContaminationInformation",
-		title: "Contamination information",
 		keys: [
 			"imsikb0101:ContaminationInformation",
 			"ContaminationInformation"

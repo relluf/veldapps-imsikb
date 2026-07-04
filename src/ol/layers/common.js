@@ -1,5 +1,6 @@
 define(function(require) {
 	const ol = require("ol");
+	const DocumentModel = require("../../DocumentModel");
 	const Geometry = require("../geometry");
 
 	const arrX = Geometry.arrX;
@@ -8,7 +9,9 @@ define(function(require) {
 		if(typeof value === "string" || typeof value === "number") return "" + value;
 		return value["#text"] || value._Data || value._data || value.text || value.value || "";
 	};
-	const xmlOfResult = result => result && (result.sikbXml || result.sikbRoot || result.xml || result.root || result.document || result);
+	const modelOfResult = result => DocumentModel.from(result);
+	const xmlOfResult = result => modelOfResult(result).root;
+	const rawXmlOfResult = result => modelOfResult(result).xml;
 	const normalizedReference = value => {
 		if(value === undefined || value === null) return "";
 		if(typeof value === "string" || typeof value === "number") return String(value).replace(/^#/, "");
@@ -61,6 +64,9 @@ define(function(require) {
 
 		return values;
 	};
+	const collectDirectObjectsForKeys = (obj, keys, values) => {
+		return DocumentModel.collectDirectObjectsForKeys(obj, keys, values);
+	};
 
 	const get = (path, obj) => typeof js !== "undefined" && js.get ? js.get(path, obj) : undefined;
 
@@ -97,7 +103,7 @@ define(function(require) {
 
 		objects.forEach(obj => {
 			idKeysOf(obj).forEach(id => {
-				index[id] = obj;
+				if(index[id] === undefined) index[id] = obj;
 			});
 		});
 
@@ -155,14 +161,61 @@ define(function(require) {
 		return textOf(name) || textOf(get("code", obj)) || obj.gml_id || objectKeyOf(obj) || fallback || "";
 	};
 
-	const collectObjectsForSpec = (result, spec) => collectObjectsForKeys(xmlOfResult(result), spec.keys || []);
+	const featureMembersOf = xml => {
+		return DocumentModel.featureMembersOf(xml);
+	};
+	const featureMemberIndexForContext = context => {
+		if(context.featureMemberIndex) return context.featureMemberIndex;
 
-	const createLayerContext = result => ({
-		xml: xmlOfResult(result),
-		objects: null,
-		objectIndex: null,
-		geometryCache: Geometry.createGeometryCache()
-	});
+		const index = {};
+		const members = featureMembersOf(context && context.xml);
+
+		members.forEach(member => {
+			if(!member || typeof member !== "object") return;
+			Object.keys(member).forEach(key => {
+				if(/^@|#/.test(key)) return;
+				arrX(member[key]).forEach(value => {
+					if(value && typeof value === "object") {
+						(index[key] || (index[key] = [])).push(value);
+					}
+				});
+			});
+		});
+
+		context.featureMemberIndex = index;
+		return index;
+	};
+	const collectObjectsFromFeatureMemberIndex = (context, keys) => {
+		const index = featureMemberIndexForContext(context);
+		const values = [];
+
+		(keys || []).forEach(key => {
+			arrX(index[key]).forEach(value => {
+				if(values.indexOf(value) === -1) values.push(value);
+			});
+		});
+
+		return values;
+	};
+	const collectObjectsForSpec = (result, spec, context) => {
+		context = context || createLayerContext(result);
+
+		return context.model.collect(spec.keys || []);
+	};
+
+	const createLayerContext = result => {
+		const model = modelOfResult(result);
+
+		return {
+			model: model,
+			xml: model.root,
+			rawXml: model.xml,
+			objects: null,
+			objectIndex: null,
+			featureMemberIndex: null,
+			geometryCache: model.geometryCache || Geometry.createGeometryCache()
+		};
+	};
 
 	const collectIndexedObjects = (context, extraObjects) => {
 		context.objects = context.objects || [];
@@ -209,7 +262,7 @@ define(function(require) {
 
 	const collectFeaturesForSpec = (result, spec, opts) => {
 		const context = opts && opts.context || createLayerContext(result);
-		const objects = collectObjectsForSpec(result, spec);
+		const objects = collectObjectsForSpec(result, spec, context);
 
 		collectIndexedObjects(context, objects);
 
@@ -219,6 +272,7 @@ define(function(require) {
 			if(feature) {
 				feature.set("sikb:layerKey", spec.key || spec.name);
 				feature.set("sikb:spec", spec);
+				(spec.keys || []).concat([spec.key]).filter(Boolean).forEach(key => feature.set(key, obj));
 			}
 
 			return feature;
@@ -274,7 +328,8 @@ define(function(require) {
 
 	const layerKeyForInfo = (info, suffix) => (info && info.node && info.node.hashCode ? info.node.hashCode() : "document") + ":" + suffix;
 
-	const createVectorLayer = (title, features, style, legend) => new ol.layer.Vector({
+	const createVectorLayer = (name, title, features, style, legend) => new ol.layer.Vector({
+		name,
 		source: new ol.source.Vector({ features }),
 		style,
 		title,
@@ -284,7 +339,7 @@ define(function(require) {
 	const addFeatureLayerToMap = (OL, info, layerInfo, features, style, legend) => {
 		if(!features || features.length === 0) return null;
 
-		const layer = createVectorLayer(layerInfo.title, features, style, legend);
+		const layer = createVectorLayer(layerInfo.name, layerInfo.title, features, style, legend);
 
 		layer.set("veldapps:key", layerInfo.key);
 		if(OL && OL.getMap) {
@@ -310,6 +365,7 @@ define(function(require) {
 
 		return addFeatureLayerToMap(OL, info, {
 			key: layerKeyForInfo(info, spec.key || spec.name),
+			name: spec.name,
 			title: spec.title || spec.name
 		}, features, spec.style, spec.legend);
 	};
@@ -372,24 +428,28 @@ define(function(require) {
 
 		const number = parseFloat(match[0]);
 		if(!isFinite(number)) return null;
-		if(/\bmm\b/i.test(text) || /Eenheid:id:66\b|eenheid:id:66\b/.test(uom)) return number / 10;
+		if(/\bmm\b/i.test(text) || /Eenheid:id:(?:21|66)\b|eenheid:id:(?:21|66)\b/.test(uom)) return number / 10;
 		if(/\bcm\b/i.test(text) || /Eenheid:id:19\b|eenheid:id:19\b/.test(uom)) return number;
 		if(/\bm(?:eter)?(?:\b|-mv)/i.test(text) || /Eenheid:id:115\b|eenheid:id:115\b/.test(uom)) return number * 100;
 		return number;
 	};
-	const upperDepthOf = obj => parseDepthCm(depthValueFor(obj, ["immetingen:upperDepth", "imsikb0101:upperDepth", "upperDepth", "bemonsterdeLaagBovenkant", "bovengrens"]));
-	const lowerDepthOf = obj => parseDepthCm(depthValueFor(obj, ["immetingen:lowerDepth", "imsikb0101:lowerDepth", "lowerDepth", "bemonsterdeLaagOnderkant", "ondergrens"]));
+	const upperDepthOf = obj => parseDepthCm(depthValueFor(obj, ["immetingen:upperDepth", "imsikb0101:upperDepth", "upperDepth", "upperdepth", "topDepth", "bemonsterdeLaagBovenkant", "bovengrens"]));
+	const lowerDepthOf = obj => parseDepthCm(depthValueFor(obj, ["immetingen:lowerDepth", "imsikb0101:lowerDepth", "lowerDepth", "lowerdepth", "bottomDepth", "bemonsterdeLaagOnderkant", "ondergrens"]));
+	const depthOf = obj => parseDepthCm(depthValueFor(obj, ["imsikb0101:depth", "immetingen:depth", "depth", "diepte"]));
 
 	return {
 		arrX,
+		modelOfResult,
 		textOf,
 		xmlOfResult,
+		rawXmlOfResult,
 		normalizedReference,
 		createSeenObjects,
 		hasSeenObject,
 		addSeenObject,
 		collectValuesForKeys,
 		collectObjectsForKeys,
+		collectDirectObjectsForKeys,
 		idKeysOf,
 		objectKeyOf,
 		indexObjects,
@@ -420,6 +480,7 @@ define(function(require) {
 		depthValueFor,
 		parseDepthCm,
 		upperDepthOf,
-		lowerDepthOf
+		lowerDepthOf,
+		depthOf
 	};
 });

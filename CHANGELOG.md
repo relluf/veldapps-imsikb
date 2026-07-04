@@ -1,3 +1,39 @@
+### 2026/07/04 Document model, geometry and sample layer improvements
+
+#### Features
+
+* Adds `DocumentModel`-based layer context and object collection across `ol/layers/common.js`.
+* Adds Borehole profile preview integration via `BoreholeProfilePreview`, including new preview-related API methods.
+* Adds lazy loading support for Sample layers to reduce initial map load time.
+* Adds grouped Sample rendering with optional grouped measurement sublayers.
+* Adds support for `sam:shape` / `shape` geometry sources.
+* Adds support for `@_xlink:href-resolved` when resolving display names.
+
+#### Geometry & Parsing
+
+* Improves geometry parsing to support nested `srsName` discovery.
+* Adds support for `gml:coordinates` alongside `gml:pos` / `gml:posList`.
+* Improves polygon extraction from `MultiSurface` and nested `Polygon` structures.
+* Supports `MultiPolygon` creation when multiple polygons are present.
+* Extends text extraction to recognize `_Data`, `_data` and `text` fields.
+
+#### Performance
+
+* Caches Sample, Borehole and Trench collections and lookup indices per document.
+* Caches sample-to-measurement relationship resolution.
+* Reuses cached geometries during feature creation.
+* Adds timing instrumentation for Sample layer processing.
+
+#### Improvements
+
+* Unifies person name formatting across `immetingen`, `imsikb0101` and generic person objects.
+* Expands supported depth field names (`topDepth`, `bottomDepth`, `upperdepth`, `lowerdepth`, `depth`) and additional unit identifiers.
+* Prevents duplicate object indexing from overwriting existing entries.
+* Stores source object references on generated OpenLayers features.
+* Simplifies layer metadata by relying on `name` instead of explicit `title` definitions for multiple layer specs.
+
+*No breaking API changes detected.*
+
 ### 2026/07/02 2.0.0
 
 **SIKB entity detection**
@@ -101,7 +137,6 @@ Sanity checks:
 ### 2020-12-23 - 1.0.24
 - Updating in favor of `#VA-20201218-1` (ie. Arcadis SIKB/CSV-conversion - 1st order)
 - Mainly refactored a lot of js/nameOf.methods 
-
 
 ### 2020-11-11 - 1.0.19
 - Refactoring js/nameOf-methods over several packages (Rijkswaterstaat-demo)

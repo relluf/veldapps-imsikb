@@ -8,7 +8,7 @@ define(function(require) {
 	const TARGET_PROJECTION = "EPSG:28992";
 
 	const arrX = value => value === undefined || value === null ? [] : Array.isArray(value) ? value : [value];
-	const textOf = value => value && typeof value === "object" ? (value["#text"] || value._ || value.value || "") : value;
+	const textOf = value => value && typeof value === "object" ? (value["#text"] || value._Data || value._data || value.text || value._ || value.value || "") : value;
 	const firstValueForKeys = (obj, keys) => {
 		let ret = undefined;
 		keys.some(key => {
@@ -19,6 +19,23 @@ define(function(require) {
 			return false;
 		});
 		return ret;
+	};
+	const collectValuesForKeys = (obj, keys, values, seen) => {
+		values = values || [];
+		seen = seen || [];
+
+		if(Array.isArray(obj)) {
+			obj.forEach(value => collectValuesForKeys(value, keys, values, seen));
+		} else if(obj && typeof obj === "object") {
+			if(seen.indexOf(obj) !== -1) return values;
+			seen.push(obj);
+			Object.keys(obj).forEach(key => {
+				if(keys.indexOf(key) !== -1) values.push(obj[key]);
+				collectValuesForKeys(obj[key], keys, values, seen);
+			});
+		}
+
+		return values;
 	};
 
 	const coordinatePairsFromText = text => {
@@ -49,7 +66,12 @@ define(function(require) {
 		return coordinates;
 	};
 
-	const srsNameOf = obj => obj && (obj["@_srsName"] || obj["@srsName"] || obj.srsName);
+	const srsNameOf = obj => obj && (
+		obj["@_srsName"] ||
+		obj["@srsName"] ||
+		obj.srsName ||
+		collectValuesForKeys(obj, ["@_srsName", "@srsName", "srsName"]).map(textOf).filter(Boolean)[0]
+	);
 
 	const isWgs84Coordinate = coordinate => coordinate && coordinate[0] >= 3 && coordinate[0] <= 8 && coordinate[1] >= 50 && coordinate[1] <= 54;
 	const isWgs84AxisFlippedCoordinate = coordinate => coordinate && coordinate[0] >= 50 && coordinate[0] <= 54 && coordinate[1] >= 3 && coordinate[1] <= 8;
@@ -81,25 +103,61 @@ define(function(require) {
 			return null;
 		}
 
-		const pos = firstValueForKeys(point, ["gml:pos", "pos"]);
-		const coordinates = coordinatePairsFromText(pos || point);
+		const values = [
+			firstValueForKeys(point, ["gml:pos", "pos", "gml:coordinates", "coordinates"]),
+			typeof point === "string" ? point : ""
+		].concat(collectValuesForKeys(point, ["gml:pos", "pos", "gml:coordinates", "coordinates"]));
+		const coordinates = values.map(coordinatePairsFromText).filter(value => value.length)[0] || [];
 		const coordinate = transformCoordinateToRD(coordinates[0], srsNameOf(point));
 
 		return coordinate ? new ol.geom.Point(coordinate) : null;
 	};
 
-	const polygonGeometryFrom = polygon => {
-		polygon = Array.isArray(polygon) ? polygon[0] : polygon;
-		if(!polygon) {
-			return null;
+	const polygonCandidatesFrom = geometry => {
+		const candidates = [];
+
+		arrX(firstValueForKeys(geometry, ["gml:Polygon", "Polygon"])).forEach(value => candidates.push(value));
+		arrX(firstValueForKeys(geometry, ["gml:MultiSurface", "MultiSurface"])).forEach(multiSurface => {
+			arrX(firstValueForKeys(multiSurface, ["gml:surfaceMember", "surfaceMember"])).forEach(member => {
+				arrX(firstValueForKeys(member, ["gml:Polygon", "Polygon"]) || member).forEach(value => candidates.push(value));
+			});
+		});
+		if(!candidates.length && geometry && typeof geometry === "object" && /Polygon/.test(Object.keys(geometry)[0] || "")) {
+			candidates.push(geometry);
 		}
 
-		const exterior = firstValueForKeys(polygon, ["gml:exterior", "exterior"]) || polygon;
-		const ring = firstValueForKeys(exterior, ["gml:LinearRing", "LinearRing"]) || exterior;
-		const posList = firstValueForKeys(ring, ["gml:posList", "posList"]);
-		const coordinates = closeRing(transformCoordinatesToRD(coordinatePairsFromText(posList || ring), srsNameOf(polygon) || srsNameOf(ring)));
+		return candidates;
+	};
+	const polygonGeometryFrom = polygon => {
+		const source = polygon;
+		const candidates = polygonCandidatesFrom(polygon);
+		const polygons = candidates.concat(candidates.length ? [] : arrX(polygon))
+			.map(polygon => {
+				polygon = Array.isArray(polygon) ? polygon[0] : polygon;
+				if(!polygon) return null;
 
-		return coordinates.length ? new ol.geom.Polygon([coordinates]) : null;
+				const exterior = firstValueForKeys(polygon, ["gml:exterior", "exterior"]) || polygon;
+				const ring = firstValueForKeys(exterior, ["gml:LinearRing", "LinearRing"]) || exterior;
+				const posList = firstValueForKeys(ring, ["gml:posList", "posList", "gml:coordinates", "coordinates"]) ||
+					collectValuesForKeys(polygon, ["gml:posList", "posList", "gml:coordinates", "coordinates"])[0];
+				let coordinates = coordinatePairsFromText(posList || ring);
+
+				if(!coordinates.length) {
+					coordinates = collectValuesForKeys(polygon, ["gml:pos", "pos"])
+						.map(coordinatePairsFromText)
+						.filter(value => value.length === 1)
+						.map(value => value[0]);
+				}
+
+				coordinates = closeRing(transformCoordinatesToRD(coordinates, srsNameOf(polygon) || srsNameOf(source) || srsNameOf(ring)));
+				return coordinates.length ? [coordinates] : null;
+			})
+			.filter(Boolean);
+
+		if(polygons.length > 1) {
+			return new ol.geom.MultiPolygon(polygons);
+		}
+		return polygons.length ? new ol.geom.Polygon(polygons[0]) : null;
 	};
 
 	const geometryOf = obj => {
@@ -115,6 +173,8 @@ define(function(require) {
 			"imsikb0101:geometry",
 			"immetingen:geometrie",
 			"imsikb0101:geometrie",
+			"sam:shape",
+			"shape",
 			"geometrie",
 			"geometry",
 			"gml:geometry"
@@ -151,10 +211,7 @@ define(function(require) {
 
 		const multiSurface = firstValueForKeys(geometry, ["gml:MultiSurface", "MultiSurface"]);
 		if(multiSurface) {
-			const surfaceMember = firstValueForKeys(multiSurface, ["gml:surfaceMember", "surfaceMember"]);
-			const surfacePolygon = firstValueForKeys(surfaceMember, ["gml:Polygon", "Polygon"]);
-
-			return surfacePolygon ? polygonGeometryFrom(surfacePolygon) : null;
+			return polygonGeometryFrom(geometry);
 		}
 
 		if(firstValueForKeys(geometry, ["gml:pos", "pos"])) {

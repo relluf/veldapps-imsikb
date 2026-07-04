@@ -270,6 +270,15 @@ define(function(require) {
 	};
 
 	const layerKeyForInfo = info => "extra-layers/document-sikb/" + (info && (info.id || info.uri || info.name) || "current");
+	const documentPathForInfo = info => [{
+		key: layerKeyForInfo(info),
+		name: info && (info.name || info.uri) || "SIKB document",
+		index: info && info.mapDocumentIndex,
+		expanded: true,
+		runtime: true,
+		closeable: true,
+		document: info
+	}];
 	const testingLayerKeyForItems = (info, items) => {
 		const keys = {};
 
@@ -355,7 +364,7 @@ define(function(require) {
 				expanded: true,
 				checked: true,
 				root: parent ? undefined : { key: "Documenten", name: "Documenten", expanded: true },
-				path: parent ? undefined : [{ key: layerKeyForInfo(layerInfo), name: layerInfo.name || layerInfo.uri || "SIKB document", expanded: true }],
+				path: parent ? undefined : documentPathForInfo(layerInfo),
 				document: layerInfo
 			}
 		});
