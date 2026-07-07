@@ -1,4 +1,18 @@
-### 2026/07/04 Document model, geometry and sample layer improvements
+### `2026/07/07` Improve remediation labels and document legends
+
+- Adds `remediationNameOf(obj)` in `src/js/nameOf/methods.js`.
+- Uses remediation destination transitions as `"before => after"` labels.
+- Falls back to `remediationReason` and `startTime` when destinations are missing.
+- Supports both prefixed and unprefixed remediation keys.
+- Applies remediation naming to `imsikb0101:Remediation` objects.
+- Detects remediation-like objects by destination, reason, or `amountCleaned`.
+- Adds geometry-type detection for document layer features.
+- Adjusts document legend entries based on geometry type.
+- Sets legend `radius` to `"0"` for surface and line geometries.
+- Preserves point legend radius behavior.
+- Avoids mutating original legend items by cloning entries.
+
+### `2026/07/04` Document model, geometry and sample layer improvements
 
 #### Features
 
@@ -34,7 +48,7 @@
 
 *No breaking API changes detected.*
 
-### 2026/07/02 2.0.0
+### `2026/07/02` 2.0.0
 
 **SIKB entity detection**
 
@@ -79,7 +93,7 @@
 * Links `Characteristic` back to `Layer`.
 * Uses current lookup tables.
 
-### 2026/06/30 Bijgewerkt: [imsikb0101-all.json](src/current/:) en [immetingen-all.json](src/current/:)
+### `2026/06/30` Bijgewerkt: [imsikb0101-all.json](src/current/:) en [immetingen-all.json](src/current/:)
 
 * **[imsikb0101-new.json](src/:)**: 84 tabellen, 3732 waarden
 * **[immetingen-new.json](src/:)**: 58 brontabellen, 62 wrappers, 11609 waarden

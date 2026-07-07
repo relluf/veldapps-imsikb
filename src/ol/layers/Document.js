@@ -43,6 +43,24 @@ define(function(require) {
 
 		return { source: source, layer: layer };
 	};
+	const geometryTypesOf = features => {
+		const types = {};
+		(features || []).forEach(feature => {
+			const geometry = feature && feature.getGeometry && feature.getGeometry();
+			const type = geometry && geometry.getType && geometry.getType();
+			if(type) types[type] = true;
+		});
+		return types;
+	};
+	const legendForEntry = entry => {
+		const legend = entry.legend || [];
+		const types = geometryTypesOf(entry.features);
+		const hasSurface = types.Polygon || types.MultiPolygon || types.Circle;
+		const hasLine = types.LineString || types.MultiLineString || types.Curve || types.MultiCurve;
+		const hasPoint = types.Point || types.MultiPoint;
+		const radius = hasSurface || hasLine ? "0" : hasPoint ? undefined : undefined;
+		return legend.map(item => Object.assign({}, item, { radius: radius }));
+	};
 	const findDocumentLayerNode = (OL, info) => {
 		if(info && info.node) return info.node;
 
@@ -93,7 +111,7 @@ define(function(require) {
 				layer: vector.layer,
 				count: entry.features.length,
 				style: entry.style,
-				legend: entry.legend,
+				legend: legendForEntry(entry),
 				runtime: true,
 				static: true,
 				closeable: false,

@@ -81,6 +81,17 @@ define(function(require) {
 		if(fn === ln) return ln && js.nameOf(ln);
 		return [ln, fn].filter(v=>v).map(v=>js.nameOf(v)).join(", ");
 	};
+	var remediationNameOf = (obj) => {
+		var transition = [
+			sampleValueForKeys(obj, ["imsikb0101:destinationBeforeRemediation", "destinationBeforeRemediation"]),
+			sampleValueForKeys(obj, ["imsikb0101:destinationAfterRemediation", "destinationAfterRemediation"])
+		].filter(v=>v).map(v=>js.nameOf(v)).join(" => ");
+
+		return transition || [
+			sampleValueForKeys(obj, ["imsikb0101:remediationReason", "remediationReason"]),
+			sampleValueForKeys(obj, ["imsikb0101:startTime", "startTime"])
+		].filter(v=>v).map(v=>js.nameOf(v)).join(", ");
+	};
 	var modernFinishingNameOf = (obj) => {
 		var traject = js.sf("%n-%n",
 			obj['imsikb0101:upperDepth'] || "?",
@@ -231,10 +242,7 @@ define(function(require) {
 					return sampleNameOf(obj);
 				}
 				if(keys[0] === "imsikb0101:Remediation") {
-					return [
-						obj['imsikb0101:destinationBeforeRemediation'],
-						obj['imsikb0101:destinationAfterRemediation']
-					].filter(v=>v).map(v=>js.nameOf(v)).join(" => ");
+					return remediationNameOf(obj);
 				}
 				if(keys[0] === "imsikb0101:SourceSystem") {
 					return js.sf("%s @ %n", obj['imsikb0101:applicationID'], obj['imsikb0101:application']);
@@ -289,6 +297,10 @@ define(function(require) {
 			}
 			if(obj['immetingen:firstName'] || obj['immetingen:lastName'] || obj['imsikb0101:firstName'] || obj['imsikb0101:lastName'] || obj.firstName || obj.lastName) {
 				return personNameOf(obj);
+			}
+			if(obj['imsikb0101:destinationBeforeRemediation'] || obj['imsikb0101:destinationAfterRemediation'] ||
+					obj['imsikb0101:remediationReason'] || obj['imsikb0101:amountCleaned']) {
+				return remediationNameOf(obj);
 			}
 
 			var ent = guess(obj);//.split(":").pop();
