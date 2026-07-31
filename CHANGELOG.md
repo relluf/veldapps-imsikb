@@ -1,3 +1,32 @@
+### `2026/07/31` Package-owned SIKB document facet and safer 9.1 output
+
+#### Document parsing and views
+
+* Adds `Tabs<Document.sikb>` as the package-owned SIKB document specialization for validation results, legacy SIKB 9 documents and modern IMSIKB/IMMetingen feature collections.
+* Restores domain-specific collection views at the client boundary while preserving normalized parser results and document capabilities.
+* Adds GML/xlink resolution, cross-document linking and object inspection for related samples, analyses, characteristics and boreholes.
+* Adds document summaries for projects, boreholes, locations, layers, characteristics, samples and analyses.
+
+#### Profiles, filtering and testing
+
+* Adds interactive SVG borehole profiles with soil patterns, intervals, samples, filters, finishing details, zooming, panning and click-through inspection.
+* Adds lazy batched rendering for large profile collections with filtering by code, text, type, depth, date, diagnostics and domain-specific values.
+* Adds sample-testing reports with BoToVa conclusions, severity ordering, parameter grouping and links back to their spatial and analytical context.
+* Adds a dedicated CSS module for profile cards, filters, testing reports, tables, badges and SVG presentation.
+
+#### Actions, exports and maps
+
+* Adds SIKB validation actions for BRO SAD, laboratory, LIB, notification and investigation document variants.
+* Adds BoToVa presets and custom testing actions, including linked testing documents and map-layer generation.
+* Adds map actions for complete documents, projects, boreholes, soil locations, trenches, samples and testing results.
+* Adds exports for filtered profile SVG, GeoJSON and the BKN Excel template.
+
+#### Writer and package metadata
+
+* Changes the SIKB 9.1 writer to emit key and barcode comments only when a numeric identifier is available, preventing `key: undefined` output.
+* Updates the project index with current versions, rendering/testing modules and the package-owned VCL components.
+* Changes the declared package version from `2.0.0` to `1.0.25`.
+
 ### `2026/07/07` Improve remediation labels and document legends
 
 - Adds `remediationNameOf(obj)` in `src/js/nameOf/methods.js`.

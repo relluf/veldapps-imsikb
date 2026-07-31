@@ -206,6 +206,12 @@ define(function() {
 			return instance.id;
 			// return parseInt(js.util.HexaQuad.format(instance.$.getKey(), "%d%d"), 10);
 		}
+		function commentKey(writer, instance) {
+			var key = getNumericId(instance);
+			if(key !== undefined && key !== null && key !== "") {
+				writer.comment(String.format("key: %d", key));
+			}
+		}
 		
 		function Writer9() {}
 		
@@ -318,7 +324,7 @@ define(function() {
 	            writer.attribute('sikb_id', instance['sikb_id'], 'xs:string', 25);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	        },
 	        LocatieTaak: function (writer, instance) {
@@ -458,7 +464,7 @@ define(function() {
 	            writer.attribute('melding', instance['melding'], 'xid');
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	            writer.elements('geoobject', instance['geoobjecten'], this.SaneringcontGeoobject, this);
 	            writer.element('bovenkant', instance['bovenkant'], this.Diepte, this);
@@ -480,7 +486,7 @@ define(function() {
 	            writer.attribute('datum_opvoer', instance['datum_opvoer'], 'xs:date', 0);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	            writer.element('geoobject', instance['geoobject'], this.Geoobject, this);
 	            writer.element('bovenkant', instance['bovenkant'], this.Diepte, this);
@@ -493,7 +499,7 @@ define(function() {
 	            writer.attribute('einddatum', instance['einddatum'], 'xs:date', 0);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	            writer.elements('geoobject', instance['geoobjecten'], this.ZorgmaatregelGeoobject, this);
 	            writer.elements('kosten', instance['kosten'], this.ZorgmaatregelKosten, this);
@@ -527,7 +533,7 @@ define(function() {
 	            writer.attribute('sikb_id', instance['sikb_id'], 'xs:string', 25);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	        },
 	        LocatieBestemming: function (writer, instance) {
@@ -535,7 +541,7 @@ define(function() {
 	            writer.attribute('sikb_id', instance['sikb_id'], 'xs:string', 25);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	        },
 	        LocatieKadastraal: function (writer, instance) {
@@ -573,7 +579,7 @@ define(function() {
 	            writer.attribute('vervolg_oordeel', instance['vervolg_oordeel'], 'xid');
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            "vakgebied;kaderaanlevering;kaderinwinning;kaderstellendeprocedure"
 	            	.split(";").forEach(function(name) {
 	            		var value = instance['brobhrgt:' + name];
@@ -621,7 +627,7 @@ console.log(name, value);
 	            writer.attribute('tijd', instance['tijd'], 'xs:time', 0);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	            writer.elements('point', instance['points'], this.GeoobjectPoint, this);
 	            writer.elements('polygon', instance['polygons'], this.Polygon, this);
@@ -656,7 +662,7 @@ console.log(name, value);
 	            writer.attribute('sikb_id', instance['sikb_id'], 'xs:string', 25);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('naam', instance['naam'], 'xs:string', 24);
 	            writer.content_element('barcode1', instance['barcode1'], 'xs:string', 24);
 	            writer.content_element('barcode2', instance['barcode2'], 'xs:string', 24);
@@ -686,7 +692,7 @@ console.log(name, value);
 	            writer.attribute('sikb_id', instance['sikb_id'], 'xs:string', 25);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	            writer.elements('component', instance['componenten'], this.AnalysemonsterAanvraagComponent, this);
 	        },
@@ -755,7 +761,7 @@ console.log(name, value);
 	            writer.attribute('sikb_id', instance['sikb_id'], 'xs:string', 25);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('code', instance['code'], 'xs:string', 24);
 	            //writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	
@@ -847,7 +853,7 @@ console.log(name, value);
 	            writer.attribute('tijd', instance['tijd'], 'xs:time', 0);
 	        },
 	        MeetpuntCasing: function (writer, instance) {
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.attribute('sikb_id', instance['sikb_id'], 'xs:string', 25);
 	            writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	            writer.element('bovenkcas', instance['bovenkant'], this.MeetpuntCasingVan, this);
@@ -874,7 +880,7 @@ console.log(name, value);
 	            writer.content_element('filterid', instance['filterid'], 'xs:string', 12);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	            writer.element('toervan', instance['bovenkant'], this.MeetpuntVertouringVan, this);
 	            writer.element('toertot', instance['onderkant'], this.MeetpuntVertouringTot, this);
@@ -895,7 +901,7 @@ console.log(name, value);
 	            }
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	            writer.element('van', instance['bovenkant'], this.MeetpuntAfwerkingVan, this);
 	            writer.element('tot', instance['onderkant'], this.MeetpuntAfwerkingTot, this);
@@ -919,7 +925,7 @@ console.log(name, value);
 	
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.attribute('datum', instance['datum'], 'xs:date', 0);
 	            writer.attribute('sikb_id', instance['sikb_id'], 'xs:string', 25);
 	            //writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
@@ -975,7 +981,7 @@ console.log(name, value);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            writer.content_element('id', instance.id, 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.content_element('naam', instance['naam'], 'xs:string', 60);
 	            writer.content_element('materiaalpb', instance['materiaalpb'], 'xs:string', 10);
 	            //writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
@@ -1079,8 +1085,8 @@ console.log(name, value);
 	            writer.attribute('bemonsteringsmethode', instance['bemonsteringsmethode'], 'xs:string', 24);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', id || getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", key));
-	            writer.comment(String.format("key-barcode: %d", keyBarcode));
+	            key !== undefined && commentKey(writer, {id: key});
+	            keyBarcode !== undefined && writer.comment(String.format("key-barcode: %d", keyBarcode));
 	            writer.content_element('naam', instance['naam'], 'xs:string', 24);
 	            writer.content_element('barcode1', instance['barcode1'], 'xs:string', 24);
 	            writer.content_element('barcode2', instance['barcode2'], 'xs:string', 24);
@@ -1162,7 +1168,7 @@ console.log(name, value);
 	            writer.attribute('sikb_id', instance['sikb_id'], 'xs:string', 25);
 	            //writer.content_element('id', instance['xid'], 'xs:string', 12);
 	            //writer.content_element('id', getNumericId(instance), 'xs:string', 12);
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	        	if(instance['steensoort']) {
 		            writer.comment(String.format("steensoort: %s", instance['steensoort'].xid));
 	        	}
@@ -1206,7 +1212,7 @@ console.log(name, value);
 	            writer.content_element('opmerking', instance['opmerking'], 'xs:string', 4000);
 	        },
 	        BodemlaagBijzonderheid: function (writer, instance) {
-	            writer.comment(String.format("key: %d", getNumericId(instance)));
+	            commentKey(writer, instance);
 	            writer.attribute('type', instance['type'], 'xid');
 	            writer.attribute('oorsprong', instance['oorsprong'], 'xid');
 	            writer.attribute('gradatie', instance['gradatie'], 'xid');
