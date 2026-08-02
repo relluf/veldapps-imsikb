@@ -1,3 +1,6 @@
+
+* [LEESMIJ.md]()
+
 # veldapps-imsikb `#todo:open`
 
 The purpose of this package is to centralize code and standards distilled from schemas and standards (indirectly) found at [https://codes.sikb.nl](https://codes.sikb.nl).

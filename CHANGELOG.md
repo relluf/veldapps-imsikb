@@ -1,4 +1,42 @@
+### `2026/08/01` XML profile integration and SIKB parser improvements
+
+#### XML profile support
+
+* Adds `src/bxv.js` to register XML profiles with `Profiles` using priority-based registration.
+* Adds `src/profiles/xml.js` for automatic SIKB XML profile detection.
+* Detects SIKB XML from namespaces and known root elements (`<metainformatie>`, `<labresultaat>`, `<bodeminformatie>`).
+* Adds XML version detection and profile-specific parser options.
+* Enables `comments: "kvp"` automatically for SIKB `9.1.0`.
+* Exposes parsed XML through `interpret()` with `capabilities.sikb`.
+
+#### Parser improvements
+
+* Updates `parseSikbDocument()` to accept pre-parsed input via `opts.parsed`.
+* Reuses parsed XML, detected type, and version when available.
+* Falls back to automatic detection only when parsed metadata is absent.
+* Preserves existing parsing and entity-linking behavior.
+
+#### Resource updates
+
+* Switches lookup resources from `13.5` to the `current` dataset.
+* Updates JSON table imports to use `./current/immetingen-all` and `./current/imsikb0101-all`.
+
+#### UI
+
+* Refactors SVG export visibility to detect an actual rendered `<svg>` in the preview.
+
+* Removes the dedicated preview-tab selection helper.
+
+* Prevents SVG export actions from appearing when no preview SVG is available.
+
+* No explicit breaking API changes are introduced in this diff. 
+
 ### `2026/07/31` Package-owned SIKB document facet and safer 9.1 output
+
+#### BXV integration contract
+
+* Adds the package-owned SIKB XML profile and an explicit, idempotent `bxv.install()` entrypoint.
+* Adds positive SIKB and generic XML fallback contract fixtures against the shared parser harness.
 
 #### Document parsing and views
 

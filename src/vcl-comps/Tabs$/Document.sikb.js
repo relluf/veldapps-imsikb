@@ -127,9 +127,10 @@ function sikbDocumentView(xml, type, version) {
 function parseSikbDocument(text, doc, opts) {
     opts = opts || {};
     const started = Date.now();
-    const type = String(opts.type || Parser.determineType(text) || "sikb");
-    const version = type.split("/").pop();
-    const xml = Xml.parse(text, {
+    const parsed = opts.parsed || {};
+    const type = String(opts.type || parsed.type || Parser.determineType(text) || "sikb");
+    const version = parsed.version || type.split("/").pop();
+    const xml = parsed.xml || Xml.parse(text, {
         namespaces: Parser.XML_NAMESPACES,
         decodeHTMLchar: true,
         comments: type.match(/sikb.*9\.1\.0/) ? "kvp" : false
@@ -1448,19 +1449,17 @@ function sikbExportPreviewTitle(action, count) {
         subtitle: count === 1 ? "1 gefilterd profiel" : js.sf("%d gefilterde profielen", count)
     };
 }
-function sikbPreviewTabSelected(component) {
-    const tab = component && component.ud && component.ud("#tab-preview");
-    const tabs = component && component.ud && component.ud("#tabs-sections");
-    if (tab && tab.isVisible instanceof Function && !tab.isVisible()) return false;
-    if (tab && tab.get instanceof Function && tab.get("visible") === false) return false;
-    if (tab && tab.isSelected instanceof Function && tab.isSelected()) return true;
-    if (tab && tab.get instanceof Function && tab.get("selected") === true) return true;
-    return !! (tab && tabs && tabs.getSelectedControl instanceof Function && (tabs.getSelectedControl(1) === tab || tabs.getSelectedControl() === tab));
-}
 function syncSikbPreviewSvgExportAction(component) {
     const action = component && component.ud && component.ud("#export-data-svg");
     const button = component && component.ud && component.ud("#export-data-svg-button");
-    const visible = sikbPreviewTabSelected(component);
+    const tab = component && component.ud && component.ud("#tab-preview");
+    const preview = component && component.ud && component.ud("#preview");
+    const node = preview && preview.getNode && preview.getNode();
+    const tabVisible = !! tab &&
+        !(tab.isVisible instanceof Function && !tab.isVisible()) &&
+        !(tab.get instanceof Function && tab.get("visible") === false);
+    const visible = tabVisible && !! (node && node.querySelector &&
+        node.querySelector("svg:not(.svg-inline--fa):not([data-icon])"));
     action && action.setVisible(visible);
     button && button.setVisible(visible);
 }
