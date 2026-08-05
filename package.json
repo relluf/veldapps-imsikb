@@ -4,7 +4,7 @@
   "description": "The purpose of this package is to centralize codes and standards distilled from schemas and standards (indirectly) found at https://codes.sikb.nl.",
   "main": "index.js",
   "scripts": {
-    "test": "node test/ParserContract.test.js"
+    "test": "node test/ParserContract.test.js && node test/Profiles.test.js"
   },
   "author": "relluf",
   "license": "ISC"

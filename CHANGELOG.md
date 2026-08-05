@@ -1,3 +1,30 @@
+### `2026/08/05` Normalized SIKB Documents, richer profiles and domain-table snapshots
+
+#### Parser-owned Document interpretation
+
+* Adds [src/Document.js]() as the package-owned interpreter for validation results, legacy SIKB documents and modern GML feature collections, returning the normalized SIKB facet, capabilities, view and timing contract.
+* Updates [src/profiles/xml.js]() to detect versions from modern namespace URIs and delegate interpretation to the new Document module with the parser-provided type and version.
+* Simplifies [src/vcl-comps/Tabs$/Document.sikb.js]() so already normalized SIKB Documents pass through unchanged and other input is routed back through `Parser.run()`; [src/index.js]() exports the interpreter for package consumers.
+
+#### Borehole profiles and preview controls
+
+* Extends [src/profiles.js]() to read BRO-BHR-GT attributes embedded in SIKB 9.1 layers, derive readable material details and patterns, and determine whether a profile follows NEN 5104, NEN-EN-ISO 14688 or NEN 6693.
+* Adds a fixed, content-aware material/filter/finishing/sample legend in [src/rendering/profiles.js]() and the matching layout and pattern styles in [src/vcl-comps/Tabs$/Document.sikb.css.js]().
+* Gives [src/vcl-comps/Tabs$/Document.sikb.js]() a fixed clickable project header with URN labels resolved through the SIKB 9.1 lookups, SIKB 9.1 layer-property filters, a menubar toggle for the filter panel and explicit SIKB facet activation; the generic print action is hidden for this specialized view.
+
+#### Domain-table acquisition and migration assets
+
+* Changes [.gitignore]() to keep only macOS `.DS_Store` files out of version control, making the previously ignored tools and migration snapshots part of the repository.
+* Adds [tools/scripts/download-sikb-domain-tables.js]() for reproducible catalog and table downloads and [tools/scripts/build-immetingen-new.js]() plus [tools/scripts/build-imsikb0101-new.js]() for converting a selected snapshot to package lookup structures.
+* Adds the complete 166-table service snapshot under [tools/output/domain-tables/2026-07-01T02-00-29-836Z/](): six catalog/registry/metadata aggregate files, 58 Metingen tables, 84 SIKB0101 tables and 24 SIKB0102 tables, with zero recorded download failures.
+* Adds the comparison/migration datasets [src/immetingen-old.json](), [src/imsikb0101-old.json]() and [src/imsikb0101-new.json]().
+
+#### BoToVa artifacts and tests
+
+* Adds the six-page BoToVa findings reference [tools/output/pdf/botova-sikb14-bevindingen.pdf]() and its intermediate/reference PDF and PNG renders under [tools/tmp/pdfs/]().
+* Adds [test/Profiles.test.js]() for legacy profile composition, BRO material enrichment, description-norm selection, legend filtering, SIKB facet activation and domain-label regressions.
+* Extends [test/ParserContract.test.js]() with the normalized facet contract and updates [package.json]() so parser and profile regressions both run under `npm test`.
+
 ### `2026/08/01` XML profile integration and SIKB parser improvements
 
 #### XML profile support

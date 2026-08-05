@@ -1,4 +1,4 @@
-define(["module", "veldapps-xml/index"], function(module, Xml) {
+define(["module", "veldapps-xml/index", "../Document"], function(module, Xml, Document) {
 
 	return [{
 		id: module.id,
@@ -11,6 +11,7 @@ define(["module", "veldapps-xml/index"], function(module, Xml) {
 		},
 		version(text) {
 			return (text.match(/<[^>]*version>(.*)<[^>]*version>/s) || [])[1] ||
+				(text.match(/www\.sikb\.nl\/(?:imsikb0101|immetingen)\/([0-9]+(?:\.[0-9]+){1,2})/s) || [])[1] ||
 				(text.match(/<metainformatie.*versie="([^"]*)"/s) || [])[1] ||
 				(text.match(/<labresultaat.*versie="([^"]*)"/s) || [])[1] || "1.0";
 		},
@@ -18,7 +19,11 @@ define(["module", "veldapps-xml/index"], function(module, Xml) {
 			return (version || this.version(text)) === "9.1.0" ? { comments: "kvp" } : {};
 		},
 		interpret(ctx, root, done) {
-			done({ xml: root, root: root, capabilities: { sikb: true } });
+			const version = ctx.version || this.version(ctx.resource && ctx.resource.text || "");
+			done(Document.interpret(root, {
+				type: ctx.type || "sikb/" + version,
+				version: version
+			}));
 		}
 	}];
 });

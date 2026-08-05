@@ -223,6 +223,7 @@ define(function(require) {
 			};
 		},
 		traverse: require("./traverse"),
+		Document: require("./Document"),
 		urns: urns,
 		guess: require("./guess"),
 		tables: {

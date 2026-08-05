@@ -432,6 +432,38 @@ define(function(require) {
 			renderBoreholeProfileSvg(profile, index, patternScope, registry, options),
 			facts ? sf("<div class='sikb-profile-facts'>%s</div>", facts) : "");
 	}
+	function renderProfileLegend(descriptionNorm, profiles) {
+		const items = [
+			["clay", "Klei"],
+			["sand", "Zand"],
+			["peat", "Veen / organisch"],
+			["silt", "Silt / leem"],
+			["gravel", "Grind"],
+			["filter", "Filter"],
+			["finishing", "Afwerking"],
+			["sample", "Monster"]
+		];
+		const used = {};
+		(profiles || []).forEach(profile => (profile.intervals || []).forEach(interval => {
+			const text = String(interval.material || interval.label || "").toLowerCase();
+			if(interval.kind === "Laag") {
+				const pattern = interval.soilPattern || (/grind|gravel/.test(text) ? "gravel" :
+					(/zand|sand/.test(text) ? "sand" : (/klei|clay/.test(text) ? "clay" :
+						(/veen|peat|humus/.test(text) ? "peat" : (/leem|silt/.test(text) ? "silt" : "")))));
+				pattern && (used[pattern] = true);
+			} else if(interval.kind === "Filter") used.filter = true;
+			else if(interval.kind === "Afwerking") used.finishing = true;
+			else if(interval.kind === "Monster") used.sample = true;
+		}));
+		const shownItems = profiles && profiles.length ? items.filter(item => used[item[0]]) : items;
+		return [
+			"<div class='sikb-profile-legend' role='group' aria-label='Legenda'>",
+			shownItems.map(item => sf("<span class='sikb-legend-item'><i class='sikb-legend-%H'></i>%H</span>",
+				item[0], item[1])).join(""),
+			descriptionNorm ? sf("<span class='sikb-legend-norm'><b>Beschrijfnorm:</b> %H</span>", descriptionNorm) : "",
+			"</div>"
+		].join("");
+	}
 
 	function renderBoreholeProfileHoverPreview(profile, index, patternScope, options) {
 		options = defaultOptions(options);
@@ -474,6 +506,7 @@ define(function(require) {
 		renderBoreholeProfileHoverHtml: renderBoreholeProfileHoverHtml,
 		renderBoreholeProfileHoverPreview: renderBoreholeProfileHoverPreview,
 		renderBoreholeProfileSvg: renderBoreholeProfileSvg,
+		renderProfileLegend: renderProfileLegend,
 		renderSoilPatternDefs: renderSoilPatternDefs,
 		sikbProfileHoverStyle: sikbProfileHoverStyle,
 		sikbProfileSvgExportStyle: sikbProfileSvgExportStyle,

@@ -596,7 +596,29 @@ define(function(require) {
 		const item = map[key];
 		return item && item.label ? item.label : (item || (text ? (fallbackPrefix ? fallbackPrefix + " " + text : text) : ""));
 	}
+	function legacyBroAttribute(layer, name) {
+		const qualifiedName = "brobhrgt:" + name;
+		const direct = legacyAttribute(layer, qualifiedName);
+		if(direct !== undefined) return direct;
+		const matchingKey = layer && Object.keys(layer).filter(key =>
+			key.replace(/^@_?/, "").toLowerCase() === qualifiedName.toLowerCase())[0];
+		return matchingKey ? layer[matchingKey] : undefined;
+	}
+	function legacyBroText(layer, name) {
+		const value = legacyBroAttribute(layer, name);
+		return textOf(value) || (value !== undefined && value !== null && typeof value !== "object" ? "" + value : "");
+	}
+	function readableBroValue(value) {
+		const text = String(value || "").trim().replace(/[_-]+/g, " ")
+			.replace(/([a-zà-ÿ0-9])([A-Z])/g, "$1 $2").replace(/\s+/g, " ");
+		return /^[A-Z]{2,}\d*$/.test(text) ? text : text.toLowerCase();
+	}
 	function legacySoilTypeOf(layer) {
+		const broRaw = legacyBroText(layer, "grondsoort");
+		if(broRaw) return {
+			label: readableBroValue(broRaw),
+			pattern: soilPatternKeyFromText(broRaw)
+		};
 		const value = legacyAttribute(layer, "grondsoort");
 		const key = parseInt(value, 10);
 		const mapped = LEGACY_SIKB9_GRONDSOORT[key];
@@ -612,13 +634,29 @@ define(function(require) {
 	}
 	function legacyLayerDescription(layer) {
 		const soil = legacySoilTypeOf(layer);
+		const broDetails = [
+			legacyBroText(layer, "zandmediaan"),
+			legacyBroText(layer, "tertiairebestanddelen"),
+			legacyBroText(layer, "kleur"),
+			legacyBroText(layer, "organischestofgehalte")
+		].map(readableBroValue).filter(value => value && value !== "geen");
+		const quality = legacyBroText(layer, "beschrijfkwaliteit");
+		if(quality) broDetails.push(readableBroValue(quality));
+		const anthropogenic = readableBroValue(legacyBroText(layer, "antropogeen"));
+		if(anthropogenic === "ja") broDetails.push("antropogeen");
+		else if(anthropogenic && anthropogenic !== "nee") broDetails.push(anthropogenic);
+		const boundary = readableBroValue(legacyBroText(layer, "laaggrensbepaling"));
+		if(boundary) broDetails.push("laaggrens " + boundary);
+		const drilling = readableBroValue(legacyBroText(layer, "boortechniek"));
+		if(drilling) broDetails.push(drilling);
 		const parts = [
 			soil.label,
 			legacyComponentLabel(layer, "aandeelgrind", "grind"),
 			legacyComponentLabel(layer, "aandeellutum", "lutum"),
-			legacyComponentLabel(layer, "aandeelhumus", "humus"),
+			legacyComponentLabel(layer, "aandeelhumus", "humus")
+		].concat(broDetails).concat([
 			legacyText(layer, ["opmerking"])
-		].filter(Boolean);
+		]).filter(Boolean).filter((value, index, values) => values.indexOf(value) === index);
 		return parts.join(", ") || "bodemlaag";
 	}
 	function legacyFilterLabel(filter) {
@@ -1074,6 +1112,41 @@ define(function(require) {
 			type.split("/").pop();
 		return sikbVersionNumberOf(version);
 	}
+	function descriptionNormOf(result, context) {
+		const xml = Common.rawXmlOfResult(result);
+		const stack = [xml];
+		const visited = typeof WeakSet !== "undefined" ? new WeakSet() : null;
+		const found = { nen5104: false, iso14688: false, nen6693: false, brobhrgt: false };
+		const inspect = value => {
+			const text = String(value === undefined || value === null ? "" : value).toLowerCase();
+			if(/brobhrgt/.test(text)) found.brobhrgt = true;
+			if(/(?:nen[^0-9]*)?5104/.test(text)) found.nen5104 = true;
+			if(/(?:iso[^0-9]*)?14688/.test(text)) found.iso14688 = true;
+			if(/(?:nen[^0-9]*)?6693/.test(text)) found.nen6693 = true;
+		};
+		while(stack.length) {
+			const value = stack.pop();
+			if(value === undefined || value === null) continue;
+			if(typeof value !== "object") {
+				inspect(value);
+				continue;
+			}
+			if(visited && visited.has(value)) continue;
+			visited && visited.add(value);
+			Object.keys(value).forEach(key => {
+				inspect(key);
+				const child = value[key];
+				if(child && typeof child === "object") stack.push(child);
+				else inspect(child);
+			});
+		}
+		if(found.nen6693) return "NEN 6693";
+		if(found.iso14688) return "NEN-EN-ISO 14688";
+		if(found.nen5104) return "NEN 5104";
+		if(found.brobhrgt) return "NEN-EN-ISO 14688";
+		const version = sikbVersionOf(result || {}, xml || context && context.xml);
+		return !isNaN(version) && version >= 15 ? "NEN 6693" : "NEN 5104";
+	}
 
 	return {
 		collectSikbSharedObjects: collectSikbSharedObjects,
@@ -1091,6 +1164,7 @@ define(function(require) {
 		relationRoleOf: relationRoleOf,
 		resolveRelationTargets: resolveRelationTargets,
 		legacySikbVersionOf: legacySikbVersionOf,
+		descriptionNormOf: descriptionNormOf,
 		sikbVersionOf: sikbVersionOf,
 		sikbVersionNumberOf: sikbVersionNumberOf
 	};

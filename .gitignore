@@ -1,5 +1,7 @@
-/tools/
-src/immetingen-old*
-src/imsikb0101-old*
-src/immetingen-new*
-src/imsikb0101-new*
+.DS_Store
+src/immetingen-old.json
+src/imsikb0101-new.json
+src/imsikb0101-old.json
+tools/output/
+tools/scripts/
+tools/tmp/

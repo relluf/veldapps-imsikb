@@ -5,9 +5,13 @@ const parserRoot = path.resolve(__dirname, "../../veldapps-bxv-parser");
 const { assertInstallIdempotent, runCases } = require(path.join(parserRoot, "test/Contract"));
 const { createHarness } = require(path.join(parserRoot, "test/ParserHarness"));
 const harness = createHarness();
+const SikbDocument = harness.loadAmd(path.resolve(__dirname, "../src/Document.js"), {
+	"veldapps-xml/index": harness.Xml
+});
 const XmlProfiles = harness.loadAmd(path.resolve(__dirname, "../src/profiles/xml.js"), {
 	module: { id: "veldapps-imsikb/profiles/xml" },
-	"veldapps-xml/index": harness.Xml
+	"veldapps-xml/index": harness.Xml,
+	"../Document": SikbDocument
 }, { id: "veldapps-imsikb/profiles/xml" });
 const Bxv = harness.loadAmd(path.resolve(__dirname, "../src/bxv.js"), {
 	"bxv/Profiles": harness.Profiles,
@@ -24,6 +28,7 @@ runCases(harness.Parser, [{
 		profile: "veldapps-imsikb/profiles/xml",
 		type: "sikb/14.9",
 		version: "14.9",
+		facetUri: "veldapps-imsikb/Tabs<Document.sikb>",
 		capabilities: ["sikb", "xml", "view"],
 		rootKeys: ["FeatureCollectionIMSIKB0101"]
 	}

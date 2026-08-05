@@ -1,4 +1,4 @@
-"use js, ol, veldapps-imsikb/vcl-comps/Tabs$/Document.sikb.css, veldapps-ol/proj/RD, veldapps-xml/index, veldoffice/Session, veldoffice/botova/Rendering, blocks/Factory, bxv/Parser, bxv/Layers, veldapps-imsikb/core, veldapps-imsikb/filter, veldapps-imsikb/export/BknTemplate, veldapps-imsikb/export/GeoJSON, veldapps-imsikb/testing/sample-report, veldapps-imsikb/rendering/profiles, veldapps-imsikb/rendering/sample-testing, veldapps-imsikb/ol/layers/Document, veldapps-imsikb/ol/layers/Project, veldapps-imsikb/ol/layers/Borehole, veldapps-imsikb/ol/layers/SoilLocation, veldapps-imsikb/ol/layers/Trench, veldapps-imsikb/ol/layers/ContaminationInformation, veldapps-imsikb/ol/layers/Remediation, veldapps-imsikb/ol/layers/Sample, veldapps-imsikb/ol/layers/Testing, veldapps-imsikb/botova/Testing, json!sikb/current/imsikb0101/Toetsoordelen, veldapps-imsikb/guess, veldapps-imsikb/js/nameOf/methods, vcl/Component, vcl/ui/Group, vcl/ui/Element, vcl/ui/Select";
+"use js, ol, veldapps-imsikb/vcl-comps/Tabs$/Document.sikb.css, veldapps-ol/proj/RD, veldapps-xml/index, veldoffice/Session, veldoffice/botova/Rendering, blocks/Factory, bxv/Parser, bxv/Layers, veldapps-imsikb/core, veldapps-imsikb/filter, veldapps-imsikb/export/BknTemplate, veldapps-imsikb/export/GeoJSON, veldapps-imsikb/testing/sample-report, veldapps-imsikb/rendering/profiles, veldapps-imsikb/rendering/sample-testing, veldapps-imsikb/ol/layers/Document, veldapps-imsikb/ol/layers/Project, veldapps-imsikb/ol/layers/Borehole, veldapps-imsikb/ol/layers/SoilLocation, veldapps-imsikb/ol/layers/Trench, veldapps-imsikb/ol/layers/ContaminationInformation, veldapps-imsikb/ol/layers/Remediation, veldapps-imsikb/ol/layers/Sample, veldapps-imsikb/ol/layers/Testing, veldapps-imsikb/botova/Testing, json!sikb/9.1.0/Lookups, json!sikb/current/imsikb0101/Toetsoordelen, veldapps-imsikb/guess, veldapps-imsikb/js/nameOf/methods, vcl/Component, vcl/ui/Group, vcl/ui/Element, vcl/ui/Select";
 
 require("veldapps-ol/proj/RD");
 require("veldapps-imsikb/js/nameOf/methods");
@@ -28,6 +28,7 @@ const SikbContaminationInformationLayer = require("veldapps-imsikb/ol/layers/Con
 const SikbRemediationLayer = require("veldapps-imsikb/ol/layers/Remediation");
 const SikbSampleLayers = require("veldapps-imsikb/ol/layers/Sample");
 const SikbTestingLayers = require("veldapps-imsikb/ol/layers/Testing");
+const Sikb91Lookups = require("json!sikb/9.1.0/Lookups");
 const SikbToetsoordelen = require("json!sikb/current/imsikb0101/Toetsoordelen");
 const SikbDocumentModel = SikbCore.DocumentModel;
 const SikbCommon = SikbCore.Common;
@@ -79,77 +80,14 @@ locale_ns.prefixed(["Document.sikb"], {
 const locale = locale_ns.prefixed("Document");
 const sikbLocale = locale_ns.prefixed("Document.sikb");
 
-function sikbDocumentView(xml, type, version) {
-    if(type.startsWith("sikb/validatieresultaat/")) {
-        const result = js.get("s:Envelope.s:Body.ValidateResponse.ValidateResult", xml);
-        return {
-            Messages: Array.as(js.get("a:Validation.a:Messages.a:ValidationMessage", result) || []),
-            "Validate Result": [result],
-            Envelope: [xml["s:Envelope"]]
-        };
-    }
-    if(parseFloat(version) >= parseFloat("12.0.0")) {
-        return Xml.gml(xml);
-    }
-    if(js.get("bodeminformatie.metainformatie.@_versie", xml)) {
-        const info = xml.bodeminformatie;
-        let locations, projects, points, filters, soilSamples, waterSamples;
-        return {
-            Bodeminformatie: Array.as(info),
-            Locaties: (locations = Array.as(info.locatie || [])),
-            Onderzoeken: (projects = locations.map(location => location.onderzoek || []).flat()),
-            Meetpunten: (points = projects.map(project => project.meetpunt || []).flat()),
-            Lagen: points.map(point => point.bodemlaag || []).flat(),
-            Casingen: points.map(point => point.casing || []).flat(),
-            Afwerking: points.map(point => point.afwerking || []).flat(),
-            Filters: (filters = points.map(point => point.filter || []).flat()),
-            Bodemmonsters: (soilSamples = points.map(point => point.bodemmonster || []).flat()),
-            Watermonsters: (waterSamples = filters.map(filter => filter.veldmonster || []).flat().filter(Array.fn.truthy)),
-            Potten: soilSamples.map(sample => sample.veldmonster).filter(Array.fn.truthy)
-                .map(sample => sample.barcode1 || sample.barcode2 || sample.barcode),
-            Flessen: waterSamples.map(sample => sample.fles || []).flat(),
-            Veldwaarnemingen: soilSamples.map(sample => sample.veldwaarneming || []).flat()
-                .concat(waterSamples.map(sample => sample.veldwaarneming || []).flat())
-        };
-    }
-    if(xml.labresultaat) {
-        const result = xml.labresultaat;
-        const samples = Array.as(js.get("projectgegevens.analysemonsters.analysemonster", result) || []);
-        return {
-            Project: Array.as(result.projectgegevens || []),
-            Analysemonsters: samples,
-            Analyseresultaten: samples.map(sample =>
-                Array.as(js.get("analyseresultaten.analyseresultaat", sample)).flat()).flat()
-        };
-    }
-    return xml;
-}
 function parseSikbDocument(text, doc, opts) {
     opts = opts || {};
-    const started = Date.now();
     const parsed = opts.parsed || {};
-    const type = String(opts.type || parsed.type || Parser.determineType(text) || "sikb");
-    const version = parsed.version || type.split("/").pop();
-    const xml = parsed.xml || Xml.parse(text, {
-        namespaces: Parser.XML_NAMESPACES,
-        decodeHTMLchar: true,
-        comments: type.match(/sikb.*9\.1\.0/) ? "kvp" : false
-    });
-    const view = sikbDocumentView(xml, type, version);
-    return {
-        type: type,
-        version: version,
-        xml: xml,
-        root: xml,
-        view: view,
-        timing: { total: Date.now() - started },
-        capabilities: {
-            gml: parseFloat(version) >= parseFloat("12.0.0"),
-            sikb: true,
-            xml: true,
-            view: true
-        }
-    };
+    if(parsed.capabilities && parsed.capabilities.sikb) return parsed;
+    const resource = Object.assign({}, opts.resource || {});
+    resource.text = text;
+    resource.name = resource.name || doc && (doc.naam || doc.id) || "document.xml";
+    return Parser.run({ resource: resource, type: opts.type });
 }
 
 const SIKB_VALIDATION_TYPES = ["BRO SAD IMBRO 1.1", "BRO SAD IMBRO/A 1.1", "Labopdracht", "Labresultaat", "LIB", "Melding", "Onderzoek"];
@@ -250,6 +188,39 @@ const LEGACY_SIKB9_AANDEEL = {
     4: "sterk",
     5: "uiterst"
 };
+const SIKB91_LAYER_PROPERTY_SPECS = [{
+    indicator: "Grondsoort",
+    attribute: "grondsoort",
+    lookup: "Grondsoort"
+},
+{
+    indicator: "Hoofdkleur",
+    child: "kleur",
+    attribute: "hoofdkleur",
+    lookup: "Kleur"
+},
+{
+    indicator: "Bijkleur",
+    child: "kleur",
+    attribute: "bijkleur",
+    lookup: "Kleur"
+},
+{
+    indicator: "Kleursterkte",
+    child: "kleur",
+    attribute: "sterkte",
+    lookup: "Kleurint"
+},
+{
+    indicator: "Mediaan",
+    attribute: "mediaan",
+    lookup: "Mediaan"
+},
+{
+    indicator: "Apparaat",
+    attribute: "apparaat",
+    lookup: "Boorapparaat"
+}];
 
 const BKN_TEMPLATE_SHEETS = SikbBknTemplate.sheets;
 const SIKB_PROFILE_CODE_COLLATOR = typeof Intl !== "undefined" && Intl.Collator ? new Intl.Collator("nl-NL", {
@@ -1047,6 +1018,43 @@ function profileIntervalTextOf(profile, kind) {
     return profile.intervals.filter(interval => interval.kind === kind).map(interval => [
     interval.label, interval.material, formatDepthCm(interval.upper), formatDepthCm(interval.lower), interval.details && interval.details.join(" ")].filter(Boolean).join(" ")).join(" ");
 }
+function isSikb91PreviewContext(context) {
+    const version = context && context.xml && SikbProfiles.legacySikbVersionOf(context.xml);
+    return !!(context && context.legacy && String(version || "").trim() === "9.1.0");
+}
+function sikb91LayerAttributeOf(obj, name) {
+    if (!obj) return undefined;
+    if (obj["@_" + name] !== undefined) return obj["@_" + name];
+    if (obj["@" + name] !== undefined) return obj["@" + name];
+    return obj[name];
+}
+function sikb91LayerPropertyTargets(layer, spec) {
+    if (!spec.child) return [layer];
+    const value = layer && (layer[spec.child] !== undefined ? layer[spec.child] : layer[spec.child.charAt(0).toUpperCase() + spec.child.substring(1)]);
+    return Array.isArray(value) ? value : (value ? [value] : []);
+}
+function sikb91LayerPropertyInfo(value, spec) {
+    const rawValue = sikb91LayerAttributeOf(value, spec.attribute);
+    const raw = textOf(rawValue) || (rawValue !== undefined && rawValue !== null && typeof rawValue !== "object" ? String(rawValue) : "");
+    if (!raw) return null;
+    const lookup = Sikb91Lookups[spec.lookup] || {};
+    const item = lookup[raw] || lookup[parseInt(raw, 10)] || {};
+    const label = String(item.omschrijving || item.waarde || raw);
+    const result = String(item.waarde || item.omschrijving || raw);
+    return {
+        indicator: spec.indicator,
+        label: label,
+        result: result,
+        text: [spec.indicator, label, result, item.bm, raw].filter(Boolean).join(" ")
+    };
+}
+function sikb91LayerPropertyInfos(layer) {
+    return SIKB91_LAYER_PROPERTY_SPECS.reduce((infos, spec) => infos.concat(sikb91LayerPropertyTargets(layer, spec).map(value => sikb91LayerPropertyInfo(value, spec)).filter(Boolean)), []);
+}
+function sikb91ProfileLayerPropertyTextOf(profile, context) {
+    if (!isSikb91PreviewContext(context)) return "";
+    return (profile.intervals || []).filter(interval => interval.kind === "Laag").reduce((parts, interval) => parts.concat(sikb91LayerPropertyInfos(interval.target).map(info => info.text)), []).join(" ");
+}
 function profileIntervalRangesOf(profile, kind) {
     return profile.intervals.filter(interval => interval.kind === kind).map(interval => js.sf("%s:%s", isFinite(interval.upper) ? interval.upper : "", isFinite(interval.lower) ? interval.lower : "")).join(" ");
 }
@@ -1130,10 +1138,11 @@ function sikbProfileFilterData(profile, index, context, source) {
     const characteristicText = needsCharacteristicText ? ensureProfileCharacteristicText(context, profile) : (profile.characteristicText || "");
     const analysisText = needsAnalysisText ? ensureProfileAnalysisText(context, profile) : (profile.analysisText || "");
     const diagnostics = needsDiagnostics ? ensureProfileDiagnostics(context, profile) : (profile.diagnostics || {});
+    const sikb91LayerPropertyText = sikb91ProfileLayerPropertyTextOf(profile, context);
     const layerText = [
-    profileIntervalTextOf(profile, "Laag"), characteristicText].filter(Boolean).join(" ");
+    profileIntervalTextOf(profile, "Laag"), characteristicText, sikb91LayerPropertyText].filter(Boolean).join(" ");
     const text = [
-    profile.name, profileTypeLabelOf(profile), formatDepthCm(profile.depth), profile.startTime, profile.endTime, profileIntervalTextOf(profile, "Laag"), profileIntervalTextOf(profile, "Filter"), profileIntervalTextOf(profile, "Monster"), profileIntervalTextOf(profile, "Afwerking"), characteristicText, analysisText].filter(Boolean).join(" ").toLowerCase();
+    profile.name, profileTypeLabelOf(profile), formatDepthCm(profile.depth), profile.startTime, profile.endTime, layerText, profileIntervalTextOf(profile, "Filter"), profileIntervalTextOf(profile, "Monster"), profileIntervalTextOf(profile, "Afwerking"), analysisText].filter(Boolean).join(" ").toLowerCase();
     return {
         index: index,
         name: profile.name || "",
@@ -1168,6 +1177,9 @@ function renderSikbPreviewFilterControls(profiles, stats) {
 }
 function renderBoreholeProfileCard(profile, index, registry, patternScope) {
     return SikbProfileRendering.renderBoreholeProfileCard(profile, index, registry, patternScope, sikbProfileRenderingOptions());
+}
+function renderSikbProfileLegend(descriptionNorm, profiles) {
+    return SikbProfileRendering.renderProfileLegend(descriptionNorm, profiles);
 }
 function normalizeSikbExportFileName(value, fallback) {
     const name = String(value || fallback || "data").trim().replace(/[\\\/:*?"<>|]+/g, "_").replace(/\s+/g, "_").replace(/^_+|_+$/g, "");
@@ -2732,6 +2744,19 @@ function sikbValueSelectGroupsFromIntervals(profiles, kind, specs) {
         return groups[key];
     }).filter(group => group.items.length).sort((left, right) => compareNaturalProfileCodes(left.indicator, right.indicator));
 }
+function sikb91LayerPropertyValueGroups(profiles) {
+    const seen = {};
+    const groups = {};
+    (profiles || []).forEach(profile => {
+        (profile.intervals || []).filter(interval => interval.kind === "Laag").forEach(interval => {
+            sikb91LayerPropertyInfos(interval.target).forEach(info => sikbPushValueSelectItem(groups, seen, info.indicator, info.label, info.result));
+        });
+    });
+    return Object.keys(groups).map(key => {
+        groups[key].items.sort(compareCharacteristicResultDisplayInfo);
+        return groups[key];
+    }).filter(group => group.items.length).sort((left, right) => compareNaturalProfileCodes(left.indicator, right.indicator));
+}
 function sikbAnalysisParameterValueOf(analysis) {
     return js.get("immetingen:physicalProperty.immetingen:PhysicalProperty.immetingen:parameter", analysis) || js.get("immetingen:physicalProperty.immetingen:parameter", analysis) || js.get("physicalProperty.PhysicalProperty.parameter", analysis) || js.get("physicalProperty.parameter", analysis);
 }
@@ -2768,6 +2793,7 @@ function sikbAnalysisValueGroupsFromProfiles(profiles, context) {
     }).filter(group => group.items.length).sort((left, right) => compareNaturalProfileCodes(left.indicator, right.indicator));
 }
 function sikbFilterValueGroups(name, profiles, context) {
+    if (name === "layer" && isSikb91PreviewContext(context)) return sikb91LayerPropertyValueGroups(profiles);
     if (name === "layer" || name === "characteristic") return sikbCharacteristicResultGroupsFromProfiles(profiles, context);
     if (name === "filter") {
         return sikbValueSelectGroupsFromIntervals(profiles, "Filter", [{
@@ -2905,9 +2931,7 @@ function updateSikbFacetedFilterValueSelects(preview, renderState) {
     syncSikbFilterValueSelectsAll(preview);
 }
 function setupSikbPreviewVclFilters(action, preview, profiles, stats, context) {
-    const panel = action.ud("#sikb_preview_filter_panel");
     const html = action.ud("#sikb_preview_html");
-    panel && panel.setVisible(true);
     html && html.setVisible(true);
     updateSikbFilterValueSelectsAll(action, preview, profiles, context);
     const statsText = stats.map(item => js.sf("%d %s", item.count, item.label)).join("   ");
@@ -2923,18 +2947,46 @@ function clearSikbPreviewVclFilters(preview) {
     updateSikbPreviewFilterStateFromVcl(preview);
     applySikbPreviewFilters(preview);
 }
-function sikbPreviewValueOf(obj, keys) {
-    return keys.map(key => js.get(key, obj)).map(value => textOf(value) || normalizedReference(value)).filter(Boolean)[0] || "";
+function sikbPreviewLabelOf(value) {
+    const raw = textOf(value) || normalizedReference(value);
+    if (!raw) return "";
+
+    const urn = String(raw).replace(/^urn:/i, "urn:");
+    if (urn.indexOf("urn:") === 0) {
+        const resolved = js.nameOf(urn);
+        if (resolved && resolved !== urn && resolved !== "[object Object]") {
+            return String(resolved).replace(/\s*\(urn:[^)]+\)\s*$/, "");
+        }
+    }
+    return String(raw);
 }
-function renderSikbProjectSummary(context, profileTitle, fallbackText, registry) {
+function sikbPreviewValueOf(obj, keys) {
+    return keys.map(key => js.get(key, obj)).map(sikbPreviewLabelOf).filter(Boolean)[0] || "";
+}
+function renderSikbProjectSummaryContent(context, profileTitle, fallbackText, registry) {
     const project = context && context.objects && context.objects.projects && context.objects.projects[0];
     if (!project) {
-        return js.sf("<div class='sikb-profile-summary'><b>%H</b><span>%H</span></div>", profileTitle, fallbackText);
+        return [js.sf("<strong>%H</strong>", profileTitle), js.sf("<span class='sikb-summary-value'>%H</span>", fallbackText)].join("<span class='sikb-preview-separator'>·</span>");
     }
     const title = sikbPreviewValueOf(project, ["imsikb0101:name", "name", "imsikb0101:reportNumber", "reportNumber", "imsikb0101:projectCode", "projectCode", "imsikb0101:assignmentCode", "assignmentCode"]) || profileTitle;
     const parts = [
     sikbPreviewValueOf(project, ["imsikb0101:projectCode", "projectCode", "imsikb0101:assignmentCode", "assignmentCode"]), sikbPreviewValueOf(project, ["imsikb0101:projectType", "projectType"]), sikbPreviewValueOf(project, ["imsikb0101:investigationReason", "investigationReason"]), sikbPreviewValueOf(project, ["imsikb0101:phase", "phase"]), sikbPreviewValueOf(project, ["imsikb0101:reportDate", "reportDate"])].filter(Boolean).filter((part, index, arr) => arr.indexOf(part) === index);
-    return js.sf("<div class='sikb-profile-summary'><b class='profile-clickable'%s>%H</b><span>%H</span></div>", sikbInstanceAttrs(registry, project, title), title, parts.join(" · ") || fallbackText);
+    return [js.sf("<strong class='profile-clickable'%s>%H</strong>", sikbInstanceAttrs(registry, project, title), title)].concat((parts.length ? parts : [fallbackText]).map(part => js.sf("<span class='sikb-summary-value'>%H</span>", part))).join("<span class='sikb-preview-separator'>·</span>");
+}
+function renderSikbProjectSummary(context, profileTitle, fallbackText, registry) {
+    return "<div class='sikb-profile-summary'>" + renderSikbProjectSummaryContent(context, profileTitle, fallbackText, registry) + "</div>";
+}
+function renderSikbPreviewHeader(context, profileTitle, fallbackText, registry) {
+    return "<div class='sikb-preview-header'>" + renderSikbProjectSummaryContent(context, profileTitle, fallbackText, registry) + "</div>";
+}
+function setSikbPreviewFiltersVisible(component, visible) {
+	const root = component.up("Tabs<Document>:root") || component.up(":root") || component;
+	const panel = root.qs("#sikb_preview_filter_panel");
+	const toggle = root.qs("#toggle-sikb-preview-filters");
+    visible = visible === true;
+    panel && panel.setVisible(visible);
+    toggle && toggle.setState && toggle.setState(visible);
+    return visible;
 }
 function updateSikbProfileGridColumns(preview) {
     const node = sikbPreviewContentNodeOf(preview);
@@ -2977,7 +3029,6 @@ function renderSikbPreviewPending(action) {
     preview.vars("sikb.preview.render-state", null);
     detachSikbPreviewLazyLoading(preview);
     if (sikbPreviewUseVclFilters(preview)) {
-        filterPanel && filterPanel.setVisible(true);
         filterStats && filterStats.setContent("");
         filterCount && filterCount.setContent("Profielen voorbereiden...");
         filterRoot && filterRoot.setText && filterRoot.setText("Filteren en sorteren");
@@ -3042,6 +3093,7 @@ function renderSikbPreview(action, result) {
     };
     const patternScope = soilPatternScopeFor(preview);
     const legacy = collection.context && collection.context.legacy;
+    const descriptionNorm = SikbProfiles.descriptionNormOf(result, collection.context);
     const sampleTestingReport = !legacy && collection.context && collection.context.objects && !collection.context.objects.boreholes.length ? collectSikbSampleTestingReport(result, collection.context, action) : null;
     if (sampleTestingReport) {
         const panel = action.ud("#sikb_preview_filter_panel");
@@ -3087,7 +3139,7 @@ function renderSikbPreview(action, result) {
         panel && panel.hide();
     }
     const setContentStarted = Date.now();
-    previewHtml.setContent(["<div class='sikb-profile-zoom-viewport'><div class='sikb-profile-zoom-content'><div class='sikb-profile-preview'>", "<svg class='sikb-profile-defs' width='0' height='0' aria-hidden='true'><defs>", renderSoilPatternDefs(patternScope), "</defs></svg>", renderSikbProjectSummary(collection.context, profileTitle, fallbackSummary, registry), sikbPreviewUseVclFilters(preview) ? "" : renderSikbPreviewFilterControls(profiles, stats), profiles.length ? js.sf("<div class='%s'>%s</div>", profiles.length === 1 ? "sikb-profile-grid single-profile" : "sikb-profile-grid", "") : "", profiles.length ? "<div class='sikb-profile-sentinel' data-sikb-profile-sentinel></div>" : "", "</div></div></div>"].join(""));
+    previewHtml.setContent([renderSikbPreviewHeader(collection.context, profileTitle, fallbackSummary, registry), "<div class='sikb-profile-layout'><div class='sikb-profile-zoom-viewport'><div class='sikb-profile-zoom-content'><div class='sikb-profile-preview'>", "<svg class='sikb-profile-defs' width='0' height='0' aria-hidden='true'><defs>", renderSoilPatternDefs(patternScope), "</defs></svg>", sikbPreviewUseVclFilters(preview) ? "" : renderSikbPreviewFilterControls(profiles, stats), profiles.length ? js.sf("<div class='%s'>%s</div>", profiles.length === 1 ? "sikb-profile-grid single-profile" : "sikb-profile-grid", "") : "", profiles.length ? "<div class='sikb-profile-sentinel' data-sikb-profile-sentinel></div>" : "", "</div></div></div>", renderSikbProfileLegend(descriptionNorm, profiles), "</div>"].join(""));
     const setContentDuration = addTimingStep("setContent", setContentStarted);
     const postRenderStarted = Date.now();
     preview.vars("sikb.preview.render-state", {
@@ -3099,6 +3151,7 @@ function renderSikbPreview(action, result) {
         batchSize: SIKB_PREVIEW_BATCH_SIZE,
         registry: registry,
         patternScope: patternScope,
+        descriptionNorm: descriptionNorm,
         scrollNode: previewHtml.getNode && previewHtml.getNode(),
         previewHtml: previewHtml
     });
@@ -4483,9 +4536,12 @@ function activateSikbFacetUi(action, opts) {
     if(setSummary instanceof Function) {
         setSummary(result.summary);
     }
-    action.ud("#show-on-map").setVisible(!isValidationResult);
-    validateDocument.setEnabled(!isValidationResult && sikbValidationSupported);
-    validateDocument.setVisible(validateDocumentVisible);
+	action.ud("#show-on-map").setVisible(!isValidationResult);
+	validateDocument.setEnabled(!isValidationResult && sikbValidationSupported);
+	validateDocument.setVisible(validateDocumentVisible);
+	const filterToggle = action.ud("#toggle-sikb-preview-filters");
+	filterToggle && filterToggle.setVisible(!isValidationResult);
+	setSikbPreviewFiltersVisible(action, false);
     action.ud("#validate-sikb-xml").setVisible(validateSikbVisible);
     SIKB_VALIDATION_TYPES.forEach(type => {
         const validationAction = action.ud("#" + sikbValidationActionNameFor(type));
@@ -4679,7 +4735,7 @@ function openBotovaTestingResults(action) {
 	vars: {
 		"devtools/Alphaview<> #reflect:transform": sikbAlphaviewTransform,
 		document: {
-			// "activate-facet": activateSikbFacet,
+			"activate-facet": activateSikbFacet,
 			activateParsed: activateParsedSikbFacet,
 			parse: parseSikbDocument,
 			sikb: {
@@ -4731,6 +4787,32 @@ function openBotovaTestingResults(action) {
 			return validateSikbXml(this, evt);
 		}
 	}],
+	["vcl/Action", ("toggle-sikb-preview-filters"), {
+		content: "<i class='fa fa-filter'></i>",
+		state: false,
+		selected: "state",
+		visible: false,
+		on() {
+			const visible = !this.getState();
+			if(visible) {
+				this.ud("#tab-preview").set("selected", true);
+			}
+			return setSikbPreviewFiltersVisible(this, visible);
+		}
+	}],
+	[("#menubar"), [
+		["vcl/ui/Button", ("toggle-sikb-preview-filters-button"), {
+			action: "toggle-sikb-preview-filters",
+			attributes: {
+				title: "Filteren en sorteren"
+			},
+			onLoad() {
+				const result = this.inherited(arguments);
+				this.setIndex(1);
+				return result;
+			}
+		}]
+	]],
 	[("#export-data-svg"), {
 		on() {
 			return exportSikbPreviewSvg(this);
