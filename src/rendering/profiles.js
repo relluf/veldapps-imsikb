@@ -124,6 +124,46 @@ define(function(require) {
 		return value % 1 === 0 ? sf("%d", value) : value.toFixed(1);
 	}
 
+	function niceDepthStepAtLeast(value) {
+		if(!isFinite(value) || value <= 0) return 1;
+		const power = Math.pow(10, Math.floor(Math.log(value) / Math.LN10));
+		const fraction = value / power;
+		const niceFractions = [1, 2, 2.5, 5, 10];
+		const niceFraction = niceFractions.find(candidate => candidate >= fraction - 1e-10) || 10;
+		return niceFraction * power;
+	}
+
+	function profileDepthTickScale(maxDepth, chartHeight) {
+		maxDepth = Math.max(1, Number(maxDepth) || 1);
+		chartHeight = Math.max(1, Number(chartHeight) || 1);
+
+		// Keep adjacent labels at least 32 SVG pixels apart. The resulting step is
+		// rounded up to a familiar 1/2/2.5/5 x 10^n depth interval.
+		const maxMajorIntervals = Math.max(2, Math.floor(chartHeight / 32));
+		const majorStep = niceDepthStepAtLeast(maxDepth / maxMajorIntervals);
+		// One intermediate tick keeps long well profiles readable without losing
+		// the visual midpoint between two labelled depths.
+		const minorDivisions = 2;
+		const minorStep = majorStep / minorDivisions;
+		const tickCount = Math.floor(maxDepth / minorStep + 1e-10);
+		const ticks = [];
+
+		for(let index = 0; index <= tickCount; index++) {
+			const depth = Math.round(index * minorStep * 1e9) / 1e9;
+			const majorRatio = depth / majorStep;
+			ticks.push({
+				depth: depth,
+				major: Math.abs(majorRatio - Math.round(majorRatio)) < 1e-8
+			});
+		}
+
+		return {
+			majorStep: majorStep,
+			minorStep: minorStep,
+			ticks: ticks
+		};
+	}
+
 	function intervalFillFor(interval, profileIndex) {
 		const text = (interval.material || interval.label || interval.kind || "").toLowerCase();
 		if(interval.kind === "Laag" && interval.soilPattern) return sf("url(#%s)", soilPatternId(profileIndex, interval.soilPattern));
@@ -254,11 +294,7 @@ define(function(require) {
 		const labelW = Math.max(120, labelRightX - labelX);
 		const holeTop = layers.length ? layers.reduce((min, interval) => Math.min(min, interval.upper), layers[0].upper) : 0;
 		const holeBottom = Math.max(actualDepth, layers.reduce((max, interval) => Math.max(max, interval.lower), 0));
-		const ticks = [];
-		for(let depth = 0; depth <= maxDepth; depth += 10) {
-			ticks.push(depth);
-		}
-		if(ticks[ticks.length - 1] !== maxDepth) ticks.push(maxDepth);
+		const depthTickScale = profileDepthTickScale(maxDepth, chartHeight);
 
 		let descriptionY = margin.top;
 		const layerDescriptions = layers.map((interval, layerIndex) => {
@@ -297,14 +333,14 @@ define(function(require) {
 			profile.depth ? ["diepte", options.formatDepthCm(profile.depth)] : null,
 			coordinate ? ["x y", coordinate] : null
 		].filter(Boolean);
-		const ticksSvg = ticks.map(depth => {
+		const ticksSvg = depthTickScale.ticks.map(tick => {
+			const depth = tick.depth;
 			const y = yOf(depth);
-			const major = depth % 50 === 0 || depth === maxDepth;
 			return [
 				sf("<line x1='%s' y1='%s' x2='%s' y2='%s' class='%H'/>",
-					major ? axisX - 8 : axisX - 4, y.toFixed(1), axisX, y.toFixed(1),
-					major ? "profile-tick major" : "profile-tick"),
-				major ? sf("<text x='%s' y='%s' class='profile-depth-label'>%H</text>",
+					tick.major ? axisX - 8 : axisX - 4, y.toFixed(1), axisX, y.toFixed(1),
+					tick.major ? "profile-tick major" : "profile-tick"),
+				tick.major ? sf("<text x='%s' y='%s' class='profile-depth-label'>%H</text>",
 					axisX - 12, y + 4, compactDepthLabel(depth)) : ""
 			].join("");
 		}).join("");
@@ -499,6 +535,7 @@ define(function(require) {
 		compactDepthLabel: compactDepthLabel,
 		formatDepthCm: formatDepthCm,
 		intervalFillFor: intervalFillFor,
+		profileDepthTickScale: profileDepthTickScale,
 		profileCountsOf: profileCountsOf,
 		profileTypeLabelOf: profileTypeLabelOf,
 		reportProfileDescriptionFor: reportProfileDescriptionFor,

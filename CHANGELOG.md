@@ -1,3 +1,11 @@
+### `2026/08/07` Adapts borehole depth axes to the available profile space
+
+#### Adaptive profile ticks
+
+* Replaces the fixed ten-centimetre tick loop in [src/rendering/profiles.js]() with a height-aware scale that selects rounded 1, 2, 2.5 or 5 × 10^n major intervals and one intermediate tick.
+* Keeps adjacent depth labels at least 32 SVG pixels apart, preventing deep profiles from becoming label-heavy while retaining useful detail for shallow profiles, and exports `profileDepthTickScale()` for reuse and verification.
+* Extends [test/Profiles.test.js]() with shallow, deep and detailed scale cases plus an SVG regression that limits the rendered depth-label count.
+
 ### `2026/08/05` Normalized SIKB Documents, richer profiles and domain-table snapshots
 
 #### Parser-owned Document interpretation

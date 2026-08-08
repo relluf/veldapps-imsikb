@@ -167,6 +167,33 @@ assert.match(profileCard, /Lagen <b>1<\/b>/);
 assert.match(profileCard, /Filters <b>1<\/b>/);
 assert.match(profileCard, /Afwerkingen <b>1<\/b>/);
 assert.match(profileCard, /Monsters <b>1<\/b>/);
+
+const shallowDepthTicks = ProfileRendering.profileDepthTickScale(3100, 620);
+assert.strictEqual(shallowDepthTicks.majorStep, 200,
+	"een profiel van 31 meter moet ronde labels per 2 meter krijgen");
+assert.strictEqual(shallowDepthTicks.minorStep, 100,
+	"minor ticks moeten de major stap rustig in tweeën delen");
+assert.ok(shallowDepthTicks.ticks.filter(tick => tick.major).length <= 20,
+	"het aantal dieptelabels moet door de beschikbare hoogte worden begrensd");
+
+const deepDepthTicks = ProfileRendering.profileDepthTickScale(12450, 620);
+assert.strictEqual(deepDepthTicks.majorStep, 1000,
+	"een diep profiel moet automatisch naar labels per 10 meter opschalen");
+assert.strictEqual(deepDepthTicks.minorStep, 500);
+assert.ok(deepDepthTicks.ticks.filter(tick => tick.major).length <= 20,
+	"ook diepe profielen mogen geen zee van labels produceren");
+const deepProfileSvg = ProfileRendering.renderBoreholeProfileSvg({
+	name: "diep profiel",
+	depth: 12450,
+	intervals: []
+}, 0, "deep-test", { count: 0, items: {} });
+assert.ok((deepProfileSvg.match(/class='profile-depth-label'/g) || []).length <= 20,
+	"de SVG-renderer moet de adaptieve labelschaal daadwerkelijk gebruiken");
+
+const detailedDepthTicks = ProfileRendering.profileDepthTickScale(10, 220);
+assert.strictEqual(detailedDepthTicks.majorStep, 2,
+	"ondiepe profielen moeten juist voldoende detail behouden");
+assert.strictEqual(detailedDepthTicks.minorStep, 1);
 const legend = ProfileRendering.renderProfileLegend("NEN-EN-ISO 14688");
 assert.match(legend, /class='sikb-profile-legend'/);
 assert.match(legend, /Zand/);
